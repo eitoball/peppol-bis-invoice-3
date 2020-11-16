@@ -1,0 +1,16 @@
+@startuml
+skinparam monochrome true
+left to right direction
+
+:顧客: as customer
+:請求受領者: as invoice_receiver
+:請求発行者: as invoice_sender
+:納入者: as supplier
+:支払者: as payee
+"請求処理" as (invocing)
+customer --> invoice_receiver
+invoice_receiver -- (invocing)
+(invocing) -- invoice_sender
+invoice_sender <-- supplier
+supplier <-- payee
+@enduml
