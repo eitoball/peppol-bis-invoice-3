@@ -1,13 +1,12 @@
 [[benefits]]
-= Benefits
+= 利点
 
-The invoice and credit note provides simple support for complex invoicing, where there is a need for credit note in addition
-to an invoice. Other potential benefits are, among others:
+請求書と信用手形取引は、請求書に加えて信用手形取引が必要な場合など複雑な請求作業への単純なサポートを提供します。その他、次のような潜在的な利点があります:
 
-* Can be mandated as a basis for national or regional eInvoicing initiatives.
-* Procurement agencies can use them as basis for moving all invoices into electronic form. The flexibility of the specifications allows the buyers to automate processing of invoices gradually, based on different sets of identifiers or references, based on a cost/benefit approach.
-* SME can offer their trading partners the option of exchanging standardised documents in a uniform way and thereby move all invoices/credit notes into electronic form.
-* Large companies can implement these transactions as standardised documents for general operations and implement custom designed bi-lateral connections for large trading partners.
-* Supports customers with need for more complex interactions.
-* Can be used as basis for restructuring of in-house processes of invoices.
-* Significant saving can be realised by the procuring agency by automating and streamlining in-house processing. The accounting can be automated significantly, approval processes simplified and streamlined, payment scheduled timely and auditing automated.
+* 国や地域の電子インボイスへの取り組みの基礎として義務付けることができます。
+* 調達機関は、すべての請求書を電子化するための基礎として使用することができます。仕様の柔軟性により、購入者は、費用や利点の観点からや、異なる識別子や参照先のセットの観点から、請求書の処理を徐々に自動化することができます。
+* 中小企業は、標準化されたドキュメントを統一された方法で交換するオプションを取引先に提供し、それによってすべての請求書や信用手形取引を電子形式に移行することができます。
+* 大企業は、一般業務での標準化文書としてこれらの商取引や大規模な取引先専用の双方向の接続を実装することができます。
+* より複雑なやり取りが必要なお客様をサポートします。
+* 請求書の社内プロセスの再構築の基礎として使用することができます。
+* 社内処理を自動化および合理化することにより、調達機関は大幅な節約を実現することができます。会計処理は大幅に自動化され、承認処理は簡素化および合理化され、支払い処理は適宜予定に入り、監査処理は自動化されます。
