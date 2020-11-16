@@ -1,13 +1,13 @@
 
-= Auditing
+= 監査
 
-Companies audit themselves as means of internal control or they may be audited by external parties as part of a legal obligation. Accounting is a regular, ongoing process whereas an audit is a separate review process to ensure that the accounting has been carried out correctly. The auditing process places certain information requirements on an invoice. These requirements are mainly related to enable verification of authenticity and integrity of the accounting transaction.
+企業は内部統制の手段として自らを監査するか、法的義務の一部として外部の関係者によって監査される場合があります。 会計処理は定期的で継続的なプロセスですが、監査は会計が正しく実行されたことを確認するための別個のレビュープロセスです。 監査プロセスでは、特定の情報要件が請求書に記載されます。 これらの要件は主に、会計トランザクションの信頼性と整合性の検証を可能にすることに関連しています。
 
-Invoices, conformant to this PEPPOL BIS support the auditing process by providing sufficient information for:
+この PEPPOL BIS に準拠した請求書は、以下の情報を提供することで監査過程をサポートします。
 
-* identification of the relevant Buyer and Seller
-* identification of the products and services traded, including description, value and quantity
-* information for connecting the invoice to its payment
-* information for connecting the invoice to relevant documents such as a contract and a purchase order
+* 関係する買い手と売り手の識別
+* 説明、価値、数量などを含む、取引された製品やサービスの識別
+* 請求書のその支払いに接続するための情報
+* 請求書に関連する契約書や発注書などの関連文書に接続するための情報
 
-Detailed requirements for supporing accounting functionality can be found at <<auditingreq>>
+会計処理機能をサポートするための詳細な要件は、<<auditingreq>> にあります。

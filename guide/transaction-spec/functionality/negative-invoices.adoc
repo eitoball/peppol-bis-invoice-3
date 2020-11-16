@@ -1,27 +1,27 @@
 
-= Negative invoices and credit notes
+= マイナスの請求書と信用手形取引
 
 
-In line with requirements of {EN16931} this BIS supports negative grand totals. This represents a significant change in comparison to {openpeppol}’s previous specifications where invoices and credit notes have non-negative total.
+{EN16931} の要件に沿って、BIS は負の総計をサポートします。これは、請求書と信用手形の合計が負ではない {openpeppol} の以前の仕様と比較して大幅な変更となっています。
 
-The argument for negative invoices is to open up for a wider spectrum of invoicing processes.
+マイナスの請求書に対応することで、より幅広い請求処理に対応できるようになります。
 
-Examples of such processes are
+そのような処理の例は以下の通りです。
 
-*	Preliminary (estimated) consumption invoice that is balanced out in a later meter-based invoice;
-*	Pre-payment (with or without VAT) is settled through a final invoice; and
-* Some user communities prefer to use negative invoice rather than credit note when correcting transactions.
+* 後に請求される従量課金での請求書で調節されるが取られる事前（推定）消費請求書。
+* 前払い（付加価値税の有無にかかわらず）は、最終的な請求書で決済されます。そして
+* 一部の人は、帳簿を修正する場合に、信用手形ではなくマイナスの請求書を使用することを好みます。
 
 ====
-NOTE: Buyers who value automatic matching of e-invoices to orders or invoicing objects may wish to limit the areas and situations where complex transactions can be accepted and voice their requirements at time of procurement.
+注：電子請求書と注文または請求対象との自動照合を重視する買い手は、複雑なトランザクションを受け入れることができる領域と状況を制限し、調達時に要件を明示することをお勧めします。
 ====
 
-The decision has the following implications on the transaction format:
+この決定は、トランザクション形式に次の影響を及ぼします。
 
-* The invoice (now with “negative invoice capacity”) can function as an alternative to the credit note. Invoice-generating systems may implement either option, while invoice-receiving systems have to support both of them.
-*	The transaction format for credit note has to be designed to accommodate for negative grand total, as well; this is because an entire negative invoice may have to be balanced out by means of a credit note.
+* 請求書（「マイナスの請求書」）は、信用手形の代替として機能できます。請求書生成システムはどちらを利用しても実装できますが、請求書受信システムは両方をサポートする必要があります。
+* 信用手形の取引形式は、マイナスの総計にも対応できるように設計する必要があります。これは、マイナスの請求書全体を信用手形で相殺する必要がある場合があるためです。
 
-Attention is drawn to the intrinsic differences between credit note and negative invoice when it comes to convey crediting information.
+与信情報の伝達に関して、信用手形とマイナスの請求書の本質的な違いがあることに注意する必要があります。
 
 
 include::../../syntax/negative-invoices.adoc[]

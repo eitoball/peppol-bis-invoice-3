@@ -1,5 +1,5 @@
 
-= Invoice functionality
+= 請求機能
 
 :leveloffset: +1
 

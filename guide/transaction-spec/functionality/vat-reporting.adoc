@@ -1,8 +1,8 @@
 
-= VAT Reporting
+= 付加価値税 (VAT) レポート
 
-The invoice is used to carry VAT related information from the Seller to the Buyer to enable the Buyer and Seller to correctly handle VAT booking and reporting. An invoice should contain sufficient information to enable the Buyer and any auditor to determine whether the invoice is correct from a VAT point of view.
+請求書は、付加価値税 (VAT) 関連情報を売り手から買い手に伝えるために使用され、買い手と売り手が付加価値税の記帳と報告を正しく処理できるようにします。 請求書には、バイヤーと監査人がVATの観点から請求書が正しいかどうかを判断できるようにするための十分な情報が含まれている必要があります。
 
-The invoice shall allow the determination of the VAT regime, the calculation and description of the tax, in accordance with the {VAT-dir} and subsequent amendments.
+請求書は、{VAT-dir} 、および、その後の修正に従って、付加価値税制度の決定、税の計算および説明を許可するものとします。
 
-Detailed requirements for supporing accounting functionality can be found at <<vatreq>>
+会計機能をサポートするための詳細な要件は、 <<vatreq>> にあります。

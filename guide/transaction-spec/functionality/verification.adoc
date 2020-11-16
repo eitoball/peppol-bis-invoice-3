@@ -1,15 +1,15 @@
 
-= Invoice verification
+= 請求書の検証
 
-This process forms part of the Buyer’s internal business controls. The invoice shall refer to an authentic commercial transaction. Support for invoice verification is a key function of an invoice. The invoice should provide sufficient information to look up relevant existing documentation, electronic or paper, for example, and as applicable:
+このプロセスは、購入者の内部業務管理の一部を形成します。 請求書は、認証済みの商取引に言及するものとします。 請求書検証のサポートは、請求書の重要な機能です。 請求書には、関連する既存の文書（電子文書や紙など）を検索するのに十分な情報が記載されている必要があります。
 
-* the relevant purchase order
-* the contract
-* the call for tenders, that was the basis for the contract
-* the Buyer’s reference
-* the confirmed receipt of the goods or services
-* delivery information
+* 関連する注文書
+* その契約
+* 契約の基礎となった入札の呼びかけ
+* 購入者の身元保証
+* 商品またはサービスの確認済み受領
+* 納品に関する情報
 
-An invoice should also contain sufficient information that allows the received invoice to be transferred to a responsible authority, person or department, for verification and approval.
+請求書には、確認と承認のために、受け取った請求書を責任のある当局、個人、または部門に転送できるようにするための十分な情報も含まれている必要があります。
 
-Detailed requirements for supporing accounting functionality can be found at <<verificationreq>>
+会計機能をサポートするための詳細な要件は、<<verificationreq>> にあります。

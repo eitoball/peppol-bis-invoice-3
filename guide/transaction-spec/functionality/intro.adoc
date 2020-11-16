@@ -1,22 +1,22 @@
 
 
 
-An invoice may support functions related to a number of related (internal) business processes. This PEPPOL BIS shall support the following functions:
+請求書では、いくつかの関連する（内部）商取引処理に関連する機能をサポートする場合があります。 PEPPOL BIS では、以下の機能をサポートするものとします。
 
-* Accounting
-* Invoice verification against the contract, the purchase order and the goods and service delivered
-* VAT reporting
-* Auditing
-* Payment
+* 会計処理
+* 契約、発注書、および提供された商品とサービスに対する請求書の検証
+* 付加価値税 (VAT) 報告
+* 監査
+* 支払い
 
-In the following chapters an assessment is made of what information is needed for each of the functions listed above and whether it is in scope or out of scope for this PEPPOL BIS.
+次の第5章では、上記の各機能に必要な情報と、それがこの PEPPOL BIS の範囲内か範囲外かを評価します。
 
-Please also see <<requirements>> for further details.
+詳細については、 <<requirements>> も参照してください。
 
-Explicit support for the following functions (but not limited to) is out of scope: 
+次の機能（ただしこれらに限定されない）の明示的なサポートは範囲外です。
 
-* Inventory management
-* Delivery processes
-* Customs clearance
-* Marketing
-* Reporting
+* 在庫管理
+* 配送処理
+* 通関
+* マーケティング
+* レポート

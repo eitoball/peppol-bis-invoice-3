@@ -1,6 +1,6 @@
 
-= Accounting
+= 会計処理
 
-Recording a business transaction into the financial accounts of an organization is one of the main objectives of the invoice. According to financial accounting best practice and VAT rules every Taxable person shall keep accounts in sufficient detail for VAT to be applied and its application checked by the tax authorities. For that reason, an invoice shall provide for the information at document and line level that enables booking on both the debit and the credit side.
+組織の財務勘定に商取引を記録することが、請求書の主な目的の1つです。 財務会計のベストプラクティスと付加価値税 (VAT) 規則に従って、すべての課税対象者は、付加価値税が適用され、その適用が税務当局によって監査されるように、アカウントを十分に詳細に保持する必要があります。 そのため、請求書には、借方と貸方の両方で文書や明細単位での記帳にかんする情報が記載されている必要があります。
 
-Detailed requirements for supporing accounting functionality can be found at <<accountingreq>>
+会計処理機能をサポートするための詳細な要件は、<<accountingreq>> にあります。
