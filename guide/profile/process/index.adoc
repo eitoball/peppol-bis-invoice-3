@@ -1,5 +1,5 @@
 [[process]]
-= Business processes
+= 取引過程
 
 
 :leveloffset: +1

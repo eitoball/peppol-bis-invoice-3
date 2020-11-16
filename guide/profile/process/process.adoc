@@ -1,33 +1,33 @@
 
-= General invoicing process
+= 一般的な請求処理
 
-The invoicing process includes issuing and sending the invoice and the credit note from the supplier to the customer and the reception  and handling of the same at the customer’s site.
+請求処理には、納入者から顧客への請求書と信用手形の発行と送信、および、顧客側でのそれらの受信と処理が含まれます。
 
-The invoicing process is shown in this work flow:
+請求処理は、以下の作業の流れで示されます:
 
-* A supplier issues and sends an invoice to a customer. The invoice refers to one order and a specification of delivered goods and services.
+* 納入者が請求書を発行し、顧客に送信します。請求書には、提供する商品もしくはサービスの明細が仕様を記載されています。
 
-An invoice may also refer to a contract or a frame agreement. The invoice may specify articles (goods and services) with article number or article description.
+請求書は、契約または包括契約を参照する場合もあります。請求書には、文書番号または説明を含む条項（商品およびサービス）を指定できます。
 
-* The customer receives the invoice and processes it in the invoice control system leading to one of the following results:
-  .. The customer fully approves the invoice, posts it in the accounting system and passes it on to be paid.
-  .. The customer completely rejects the invoice, contacts the supplier and requests a credit note.
-  .. The customer disputes parts of the invoice, contacts the supplier and requests a credit note and a new invoice.
+* 顧客は請求書を受け取り、それを請求書管理システムで処理して、次のいずれかの結果になります。
+  .. 顧客は請求書を完全に承認し、会計システムに転記して、支払いのために渡します。
+  .. 顧客は請求書を完全に拒否し、納入者に連絡して信用手形取引を依頼します。
+  .. 顧客は請求書の一部に異議を唱え、納入者に連絡し、信用手形取引と新しい請求書を依頼します。
 
-The diagram below shows the basic invoicing process with the use of this PEPPOL BIS profile. This process assumes that both the invoice and the credit note are exchanged electronically.
+以下の図は、この PEPPOL BIS プロファイルを使用した基本的な請求処理を示しています。この処理は、請求書と信用手形の両方が電子的に交換されることを前提としています。
 
 image::../shared/images/process.png[The invoicing process, align="center"]
 
-This profile covers the following invoice processes:
+このプロファイルは、以下の請求処理を取り扱います:
 
 
 [horizontal]
-P1:: Invoicing of deliveries of goods and services against purchase orders, based on a contract
-P2:: Invoicing deliveries of goods and services based on a contract
-P3:: Invoicing the delivery of an incidental purchase order
-P4:: Pre-payment
-P5:: Spot payment
-P6:: Payment in advance of delivery
-P7:: Invoices with references to a despatch advice
-P8:: Invoices with references to a despatch advice and a receiving advice
-P9:: Credit notes or invoices with negative amounts, issued for a variety of reasons including the return of empty packaging
+P1:: 契約に基づく、発注書に対する商品およびサービスの配送の請求
+P2:: 契約に基づく商品およびサービスの納品の請求
+P3:: 付随的な発注書の配達の請求
+P4:: 前払い
+P5:: 現金支払い
+P6:: 配達前払い
+P7:: 発送通知書を参照した請求書
+P8:: 発送通知書と受取通知書を参照した請求書
+P9:: 空のパッケージの返品など、さまざまな理由で発行された、負の金額の信用手形または請求書
