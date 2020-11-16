@@ -1,15 +1,15 @@
 [preface]
-= Introduction to openPEPPOL and BIS
+= openPEPPOL と BIS の紹介
 
 
-This {peppol} BIS provides a set of specifications for implementing a {peppol} business process.
+{peppol} BIS では、 {peppol} ビジネスプロセスを実装するための一連の仕様を提供します。
 
-This specification, is a Core Invoice Usage Specification (CIUS) of {EN16931}, following the guidance given in chapter 7 of the {EN16931}. Any instance documents compliant to this specification will be compliant with the European Standard ({EN16931}).
+この仕様では、 {EN16931} の 第7章のガイダンスに従っており、Core Invoice Specification (CIUS) of {EN16931} に準拠しています。この仕様に準拠している文書は、欧州仕様 ({EN16931}) に準拠することになります。
 
-The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the billing process.
+この文書では、課金プロセスに関する効果的な実装と電子的協業の利用増加を促進を目的としています。
 
 
-.Statement of copyright
+.著作権宣言
 ****
 This PEPPOL Business Interoperability Specification (PEPPOL BIS) document is a Core Invoice Usage Specification (CIUS) based on CEN/EN 16931:2017. The restrictions on CEN/EN 16931:2017 implemented in this PEPPOL BIS appear from the conformance statement provided in appendix A.
 
@@ -21,37 +21,37 @@ This PEPPOL BIS document may not be modified, re-distribute, sold or repackaged 
 ****
 
 
-== Document Structure
+== 文書構造
 
-This document is structured as follows:
+この文書の構造は以下のようになっています:
 
-*	*Chapters 1 - 5* gives general information on the business processes, requirements and functionalities
-*	*Chapter 6* describes the semantical data types
-*	*Chapters 7 - 9* describes VAT, calculations and rounding.
-*	*Chapter 10* provides examples of selected parts of the invoice
-*	*Chapter 11* gives details and links to all code lists used
-* *Chapter 12* gives information on PEPPOL identifiers
-*	*Chapter 13* describes in detail central information elements.
-*	*Chapters 14 and 15* provides information on validation and validation rules
-*	*Annexes* give information on restrictions according to {EN16931}, use of Cross Industry Invoice syntax and national and syntax rules.
+*	*第1章から第5章* ビジネスプロセス、要求、および、機能について
+*	*第6章* 意味的データ型について
+*	*第7章から第9章* VAT、その計算方法や丸め方について
+*	*第10章* 請求書データ例
+*   *第11章* サンプルコードの詳細と一覧
+*   *第12章* PEPPOL識別子についての情報
+*	*第13章* UBLスキーマと名前空間について
+*	*第14・15章* 文書データの検証についてや検証ルールについて
+*	*補足* {EN16931}に関する制限、産業間共通請求書の利用、 各国固有の規則、構文規則について
 
-== Scope
+== スコープ
 
-This document is concerned with clarifying requirements for ensuring interoperability  and provides guidelines for the support and implementation of these requirements. This document will also provide a detailed implementation guideline for the invoice and credit note transactions.
+この文書では、相互運用性を確保するための要件を明確にすることに関するものであり、これらの要件をサポートし、実施するためのガイドラインを提供します。また、請求書及び信用手形取引の詳細な実施ガイドラインを提供します。
 
-== Audience
+== 対象
 
-The audience for this document is organisations wishing to be PEPPOL enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organisations may be:
+この文書は、電子請求書の交換のためのPEPPOL対応を希望する組織やICTサプライヤーを対象としています。対象となる組織は以下のようになります:
 
-     * Service providers
-     * Contracting Authorities (CA)
-     * Economic Operators (EO)
-     * Software Developers
+     * サービス提供事業者
+     * 契約期間 (CA)
+     * 事業者 (EO)
+     * ソフトウェア開発者
 
-More specifically, roles addressed are the following:
+さらに具体的には、以下のような役割の方が対象です:
 
-    * ICT Architects
-    * ICT Developers
-    * Business Experts
+    * ICT アーキテクト
+    * ICT 開発者
+    * ビジネス専門家
 
-For further information on PEPPOL/OpenPEPPOL, please see {common}
+PEPPOLやOpenPEPPOLについては、 {common} を参照して下さい。
