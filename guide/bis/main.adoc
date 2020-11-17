@@ -8,6 +8,7 @@ v{version}
 :icons: font
 :stem:
 :toc: left
+:toc-title: 目次
 :toclevels: 2
 :source-highlighter: coderay
 :source-language: xml
@@ -18,9 +19,9 @@ v{version}
 
 
 
-= Link to main site of documentation
+= 文書サイトへのリンク
 
-link:/poacc/billing/3.0/[Main documentation site]
+link:https://docs.peppol.eu/poacc/billing/3.0/[文書サイト]
 
 :leveloffset: +1
 

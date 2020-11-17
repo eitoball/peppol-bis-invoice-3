@@ -1,7 +1,7 @@
-:lang: en
+:lang: ja
 
 :doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] PEPPOL BIS Billing
-:version: 3.0.5
+:version: 3.0.8-ja
 :shared-dir: ../../shared
 :snippet-dir: ../../rules/snippets
 
