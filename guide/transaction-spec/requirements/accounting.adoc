@@ -1,18 +1,18 @@
 
 [[accountingreq, Accounting requirements]]
-.Accounting requirements
+.経理要求
 [cols="1,10", options="header"]
 |===
-|Id
-|Requirement (depending, as applicable, on the respective business case)
+|識別子
+|（それぞれの取引に応じての）要求
 
 |R1
-|information at document level that enables the identification of the Payee, if different from the Seller
+|売り手と異なる場合には、受取人を特定できるようにするための文書全体での情報
 |R2
-|information at document level that enables booking on both the debit and the credit side
+|貸方と借方の両方の記帳を可能にする文書全体での情報
 |R3
-|information at invoice line level that enables booking on the debit side
+|引き落とし側での記帳を可能にする請求明細単位での情報
 |R4
-|Buyer-specific booking information (account numbers)
+|買い手固有の記帳情報（口座番号）
 
 |===

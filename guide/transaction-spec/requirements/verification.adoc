@@ -1,87 +1,88 @@
 
 [[verificationreq, Invoice verification requirements]]
-.Invoice verification requirements
+.請求書検証要求
 [cols="1,10", options="header"]
 |===
-|Id
-|Requirement (depending, as applicable, on the respective business case)
+|識別子
+|（それぞれの取引に応じての）要求
 
 |R5
-|information to trace to a single related purchase order from the document level
+|請求書から1つの関連する注文書をたどるための情報
 |R6
-|information to trace to a single related purchase order line from the invoice line
+|請求明細行から1つの関連する注文明細行購入行をたどるための情報
 |R7
-|information to trace to a single contract and the underlying call for tenders from the document level
+|請求書から1つの契約と元となる入札募集をたどるための情報
 |R8
-|a reference supplied by the Buyer at document level
+|請求書で注文者から提供された参照
 |R9
-|information to trace to a single despatch advice from the document level
+|請求書から1つの発送通知書をたどるための情報
 |R10
-|information to trace to a single receiving advice from the document level
+|請求書から1つの受取通知書をたどるための情報
 |R11
-|information to trace to a related invoice to be corrected from the document level
+|請求書から修正するための関連する請求書をたどるための情報
 |R13
-|information to allow an invoice and related documents to be transferred to a responsible authority, entity, person or department, for verification and approval
+|請求書および関連文書を、検証および承認のために責任ある当局、事業体、個人または部門に転送するための情報
 |R14
-|information about net price and the quantity on which the price is based at invoice line level, additional information such
-as gross price and price discount may be added
+|請求書での価格とその合計のベースとなる数量に関する情報、追加情報、総合計と値引きが追加される場合があります。
 |R15
-|descriptive and coded information about allowances and charges at both document level and at invoice line level
+|請求書と請求明細での両方での引当金と料金に関する記述的でコード化された情報
 |R16
-|information about charges, (non-VAT-)taxes, duties and levies, with their VAT information, that are not included in the line amounts at document level
+|請求書の明細合計金額に含まれていない料金、（付加価値税（VAT）以外の）税金、関税および課徴金に関する情報と付加価値税情報。
 |R17
-|information about charges, (non-VAT-)taxes, duties and levies that compose the taxable amount and are not included in the unit price at separate invoice lines, with a proper identification and/or description
+|課税対象となる金額を構成し、かつ単価に含まれていない料金、（非VAT）税、関税および課徴金に関する情報を、適切な識別、および、説明とともに、別個の請求明細に記載すること。
 |R18
-|information about charges at invoice line level as part of the line amount
+|明細金額の一部としての請求明細の料金情報
 |R19
-|the amounts of allowances and charges at document and invoice line level
+|請求書、および、請求明細書の引当金および手数料の金額
 |R20
-|textual descriptions of invoiced goods and services at invoice line level
+|請求書で請求する商品とサービスのテキスト記述
 |R21
-|identification of invoiced goods and services by means of a Seller's item number at invoice line level
+|請求明細での販売者による品目番号による請求される商品・サービスの識別
 |R22
-|identification of invoiced goods and services by means of a Buyer's item number at invoice line level
+|請求明細での購入者による品目番号による請求される商品・サービスの識別
 |R23
-|identification of invoiced goods and services by means of a qualified general item identifier at invoice line level as agreed by the Buyer and the Seller
+|購入者と販売者が合意した通りに、請求明細での適格な品目識別子とスキーマ参照を用いて、請求される商品およびサービスを識別すること。
 |R24
-|classification of invoiced goods and services by means of applicable classification identifiers and schema reference as agreed between the Seller and the Buyer at invoice line level
+|明細行で売主と買主の間で合意された、適用可能な分類識別子およびスキーマ参照による、請求された商品およびサービスの分類
 |R25
-|information about returned and credited returnable assets or packages, such as pallets, and package charges, stated as normal invoice lines
+|通常の明細行として記載された、パレットなどの返品・入金された返品可能な資産や梱包材、梱包料金に関する情報
 |R26
-|information about returnable asset charges, stated as normal invoice lines
+|通常の請求明細行として記載されている回収可能な資産の費用に関する情報
 |R27
-|information about returned goods, stated as normal invoice lines
+|通常の請求明細行として記載されている送り状に記載された返品情報
 |R28
-|descriptive information about attributes of goods and services at invoice line level
+|請求明細行の商品・サービスの属性に関する記述情報
 |R29
-|information about the country of origin of goods and services at invoice line level
+|請求明細行の商品・サービスの原産国情報
 |R30
-|an invoice line period at invoice line level
+|請求明細行の請求行の期間
 |R31
-|one delivery date at document level
+|文書での納期
 |R32
-|one delivery location or address at document level
+|文書での納品場所、もしくは、住所
 |R33
-|identification of the invoiced object at document and line level
+|文書、および、明細行での請求対象の識別子
 |R34
 |a delivery/invoice period at document level
+|R34
+|文書での納品、または、請求期間
 |R35
-|attached documents of a limited set of file types
+|ファイルタイプが限定された添付文書
 |R36
-|multiple attached or referenced documents at document level
+|文書での複数の添付文書、または、参照文書
 |R37
-|a VAT category and rate at invoice line level
+|明細行での付加価値税（VAT）カテゴリーと税率
 |R38
-|VAT totals per category at document level
+|文書でのカテゴリーごとの付加価値税（VAT）合計
 |R39
-|a quantity and a net amount (exclusive of VAT) at invoice line level
+|請求明細行での数量と（付加価値税抜きの）正味金額
 |R40
-|all amounts at document and invoice line level that make up the invoice total amount and the amount due for payment
+|総額を構成するすべての文書、および、請求明細行での金額と支払期日の金額
 |R41
-|Reference to a sales order, issued by the Seller at document level
+|文書で売主が発行した販売指示書への参照
 |R42
-|Allowance/charge percentage and base amount at document and invoice line level
+|文書、および、請求明細行での値引き/手数料の割合と基準額
 |R44
-|Information to allow automated validation of a received electronic invoice
+|受信した電子インボイスの自動検証を可能にするための情報
 
 |===

@@ -1,39 +1,39 @@
 
 [[vatreq, VAT reporting requirements]]
-.VAT reporting requirements
+.付加価値税（VAT）報告要求
 [cols="1,10", options="header"]
 |===
-|Id
-|Requirement (depending, as applicable, on the respective business case)
+|識別子
+|（それぞれの取引に応じての）要求
 
 |R45
-|information to determine the requirements of the applicable VAT legislation in force and the calculation and reporting thereof;
+|適用される付加価値税（VAT）法の要件、および、その計算と報告を決定するための情報;
 |R46
-|information on the date the VAT is liable at document level;
+|文書レベルでの付加価値税（VAT）の支払い義務のある日に関する情報;
 |R47
-|the necessary elements for national legal VAT requirements that apply for invoices issued to national and foreign Buyers, such as the legal registration status of the Seller;
+|売主の法的登録状況など、国内、および、海外の買主に発行された請求書に適用される国内法上の付加価値性（VAT）要件に必要な要素;
 |R48
-a|information to support the following VAT use cases:
+a|以下の付加価値税（VAT）に関する使用事例をサポートするための情報:
 
-*	Invoices for supplies for which VAT is charged;
-*	Invoices for supplies for which VAT is not charged based on an exemption reason;
-*	Invoices for supplies for which the Seller’s goods and services are exempt from VAT at line level;
-*	Invoices for supplies that are issued under reverse charge;
-*	Invoices for exempt intra-community supplies for which an intra-community acquisition shall be done;
-*	Invoices for supplies outside the scope of the {VAT-dir} (non-VAT invoices);
+*	付加価値税（VAT）が課されている供給品の請求書;
+*   免除理由に基づいて付加価値税（VAT）が請求されない供給品の請求書;
+*   売り手の商品、および、サービスが明細行にて付加価値税（VAT）を免除されている供給品の請求書;
+*   リバースチャージで発行する供給品の請求書;
+*   地域内取得が免除された地域内供給品の請求書;
+*   {VAT-dir} の適用外の供給品の（非付加価値税（VAT)請求書）請求書;
 
 |R49
-|the total VAT amount at document level;
+|文書での付加価値税（VAT）総額;
 |R50
-|total taxable amount per VAT rate at document level;
+|文書での付加価値税（VAT）率あたりの課税総額;
 |R51
-|any additional information required to support the exemption evidence in case VAT is not charged based on an exemption reason at document and at invoice line level;
+|免除理由に基づいて付加価値税（VAT）が請求されない場合に、免除の証拠を裏付けるために必要な文書、および、明細行での追加情報;
 |R52
-|the legal registration number and the VAT registration number of the Seller and Buyer and the VAT registration number of the Tax representative of the Supplier;
+|売主および買主の法定登録番号、VAT登録番号、および買主の税務担当者のVAT登録番号
 |R53
-|the official postal address of the Buyer, Seller and Tax representative of the Supplier and their place of business and registered office;
+|買い手、売り手、サプライヤーの税務担当者の正式な住所、事業所、および、登録事務所の住所;
 |R54
-|the invoice currency and the VAT accounting currency at document level if different from the invoice currency;
+|文書での請求額の通貨、および、請求額の通貨と異なる場合は、付加価値税（VAT）の通貨;
 |R55
-|codes for exemption reasons at document and invoice line level.
+|文書、および、請求明細行での免除理由のためのコード。
 |===

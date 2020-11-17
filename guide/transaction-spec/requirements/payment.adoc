@@ -1,35 +1,35 @@
 
 [[paymentreq, Payment requirements]]
-.payment requirements
+.支払いプロセス要求
 [cols="1,10", options="header"]
 |===
-|Id
-|Requirement (depending, as applicable, on the respective business case)
+|識別子
+|（それぞれの取引に応じての）要求
 
 |R58
-|identification of the means of settlement;
+|決済手段;
 |R59
-|the requested amount due for payment;
+|振込依頼金額;
 |R60
-|the date on which payment is due;
+|振込期日;
 |R61
-|necessary details to support bank transfers in accordance with SEPA and national systems;
+|単一ユーロ決済圏（SEPA）や国の制度に対応した振込対応に必要な内容;
 |R62
-|a reference number and any additional reference data to be included in the payment;
+|照会番号と支払いに含まれる追加の照会情報;
 |R63
-|reference number and any additional reference data to be included in the payment, in order to relate the payment to the invoice;
+|参照番号、および、請求書と支払いを関連付けるために、支払いに含まれる追加の参照情報;
 |R64
-|information for relating an invoice to a payment card used for settlement;
+|決済に使用したペイメントカードと請求書を関連付けるための情報;
 |R65
-|basic information to support national payment systems for use in domestic trade;
+|国内貿易における国の決済システムを支援するための基本情報;
 |R66
-|information about the amount that was pre-paid;
+|前払いした金額についての情報;
 |R67
-|invoices that have a total amount of zero;
+|請求書の総額がゼロになっている請求書;
 |R68
-|invoices that have an amount to pay of zero;
+|振込先がゼロになる請求書;
 |R69
-|necessary details to support direct debits.
+|振込口座引落しに対応するために必要な詳細情報;
 |R70
-|pre-payment invoices
+|前払い請求書;
 |===

@@ -1,13 +1,13 @@
 
 
 [[requirements]]
-= Invoice and credit note business requirements
+= 請求書と信用手形のビジネス要件
 
-The table below gives an overview of the business requirements from {tc434} supported by this BIS:
+以下の表は、BIS でサポートされている {tc434} からのビジネス要求の概要です。
 
 ====
-Legend::
-Requirements with an id *R__nn__* are from {EN16931} (Example R19).
+凡例::
+*R__n__* 要求に対する {EN16931} (Example R19) での形式の識別子
 ====
 
 include::accounting.adoc[]
