@@ -1,21 +1,21 @@
 
-= Code
+= コード（Code）
 
 
-Codes are used to specify allowed values in elements as well as for lists of options. Code is different from Identifier in that allowed values have standardized meanings that can be known by the recipient.
+コードは、オプションの一覧と同様に、要素内で許可される値を指定するために使用されます。コードは識別子とは異なり、許容値が受信者が知ることができる標準化された意味を持つという点で異なります。
 
-IMPORTANT: Codes shall be entered exactly as shown in the selected code list of the applicable syntax.
+IMPORTANT: コードは、適用される構文の選択されたコード一覧に示されている通りに正確に入力する必要があります。
 
 
 [cols="1s,1,1,1", options="header"]
 |===
-|Component
-|Use
-|Primitive Type
-|Example
+|構成要素
+|利用
+|基本データ型
+|例
 
-|Content
-|Mandatory
-|String
+|コンテンツ
+|必須
+|文字列型
 |Abc123
 |===

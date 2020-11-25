@@ -1,19 +1,19 @@
 
-= Quantity
+= 数量（Quantity）
 
-Quantities are used to state a number of units such as for items. The code for the Unit of Measure is defined as a separate business term.
+数量は、品目などの単位の数を表すために用いられます。単位のコードは、別のビジネス用語として定義されています。
 
-IMPORTANT:  No restriction on number of decimals for quantities.
+IMPORTANT: 数量には、小数点以下の数に制限はありません。
 
 [cols="1s,1,1,1", options="header"]
 |===
-|Component
-|Use
-|Primitive Type
-|Example
+|構成要素
+|利用
+|基本データ型
+|例
 
-|Content
-|Mandatory
-|Decimal
+|コンテンツ
+|必須
+|数値型
 |10000.1234
 |===

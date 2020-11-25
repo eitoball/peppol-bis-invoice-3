@@ -1,9 +1,9 @@
 
-= Semantic data types
+= セマンティックデータ型
 
-The different semantic data types are described in the tables below, where various features such as attributes, format, and decimals as well as the basic type are defined for each semantic data type. They are based on {ISO15000}.
+以下の表では、各セマンティックデータ型について、基本データ型の他に属性、書式、小数などの様々な特徴を定義しています。これらは {ISO15000} に基づいています。
 
-When used in an instance of an invoice, each data element will contain data. In the below tables this is identified as the “content”. Whenever a business term is used this term shall *always* have content and therefore the content is always mandatory.
+電子インボイスのインスタンスで使用される場合、各データ要素にはデータが含まれます。以下の表では、これを「コンテンツ」と呼ぶ。ビジネス用語が使用される場合、この用語は *常に* コンテンツを持っている必要があります。したがって、コンテンツは常に必須である。
 
 
 :leveloffset: +1

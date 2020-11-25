@@ -1,20 +1,20 @@
 
-= Document Reference
+= 文書参照（Document Reference）
 
 
-Document Reference Types are identifiers that were assigned to a document or document line by the Buyer, the Seller or by a third party.
+文書参照は、買手、売手、または第三者によって文書または文書明細行に割り当てられた識別子のことです。
 
 
 .Document Reference. Type
 [cols="1s,1,1,1", options="header"]
 |===
-|Component
-|Use
-|Primitive Type
-|Example
+|構成要素
+|利用
+|基本データ型
+|例
 
-|Content
-|Mandatory
-|String
+|コンテンツ
+|必須
+|文字列型
 |abc:123-DEF
 |===

@@ -1,9 +1,9 @@
 
-= Semantic datatypes
+= セマンティックデータ型
 
-Semantic data types are used to bridge the gap between the semantic concepts expressed by the information elements defined in the semantic model from {EN16931} and the technical implementation. The semantic data types define the allowed value domain for the content, and any additional information components (attributes) needed in order to ensure its precise interpretation.
+セマンティックデータ型は、 {EN16931} からのセマンティックモデルで定義された情報要素によって表現される意味概念と、技術的な実装との間のギャップを埋めるために使用されます。セマンティックデータ型は、コンテンツの許容値領域と、その正確な解釈を確実にするために必要な追加の情報構成要素（属性）を定義します。
 
-NOTE: The details of the technical implementation can be found in <<Detailed UBL message guideline>>
+NOTE: 技術的な実装の詳細は、 <<Detailed UBL message guideline>> に記載されています。
 
 :leveloffset: +1
 

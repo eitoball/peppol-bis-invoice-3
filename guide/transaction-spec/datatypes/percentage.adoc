@@ -1,19 +1,19 @@
 
-= Percentage
+= パーセンテージ (Percentage)
 
-Percentages are given as fractions of a hundred (per cent) e.g. the value 34,78 % in percentage terms is given as 34,78. 
+パーセンテージは、百分の一の端数（パーセンテージ）で表されます。例えば、パーセンテージの値、34,78 %は、34,78と表されます。
 
-IMPORTANT:  No restriction on number of decimals for percentages.
+IMPORTANT: パーセンテージの小数点以下の数に制限はありません。
 
 [cols="1s,1,1,1", options="header"]
 |===
-|Component
-|Use
-|Primitive Type
-|Example
+|構成要素
+|利用
+|基本データ型
+|例
 
-|Content
-|Mandatory
-|Decimal
+|コンテンツ
+|必須
+|数値型
 |34.7812
 |===

@@ -1,18 +1,18 @@
 
-= Text
+= テキスト（Text）
 
-Text is the actual wording of anything written or printed. Line breaks in the text may be present, and any line breaks should be preserved and respected by the receiver’s system
+テキストとは、書かれたものや印刷されたものの実際の表現のことです。テキストの中に改行がある場合がありますが、改行は受信側のシステムで保存され、尊重されるべきです。
 
 
 [cols="1s,1,1,1", options="header"]
 |===
-|Component
-|Use
-|Primitive Type
-|Example
+|構成要素
+|利用
+|基本データ型
+|例
 
-|Content
-|Mandatory
-|String
-|5% allowance when paid within 30 days
+|コンテンツ
+|必須
+|文字列型
+|30日以内の支払い完了で5％割引
 |===

@@ -1,20 +1,20 @@
 
-= Unit Price Amount
+= 小計（Unit Price Amount)
 
-A unit price amount states a numerical monetary amount value for data elements that contain item prices that may be multiplied by item quantities.
-The currency of the amount is defined as a separate business term.
+小計とは、品目価格を含むデータ要素に、品目数量を乗じた金額を数値化したものです。
+金額の通貨は別のビジネス用語として定義されます。
 
-IMPORTANT: Unit price amount does not set restrictions on number of decimals, as contrast to the Amount type
+IMPORTANT: 小計は、金額（Amount）型とは異なり、小数点以下の数の制限を設けていません。
 
 [cols="1s,1,1,1", options="header"]
 |===
-|Component
-|Use
-|Primitive Type
-|Example
+|構成要素
+|利用
+|基本データ型
+|例
 
-|Content
-|Mandatory
-|Decimal
+|コンテンツ
+|必須
+|数値型
 |10000.1234
 |===

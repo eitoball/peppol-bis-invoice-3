@@ -1,22 +1,22 @@
 
-= Primitive types
+= 基本データ型
 
-Semantic data type content may be of the following primitive types. These primitive types were taken from {ISO15000}, Annex A.
+セマンティックデータ型の内容は、以下の基本データ型であってもよい。これらの基本データ型は、 {ISO15000} の補足 A から引用したものです。
 
 [cols="1s,7", options="header"]
 |===
-|Primitive type
-|Definition
+|基本データ型
+|定義
 
-|Binary
-|A set of finite-length sequences of binary digits.
+|バイナリー（Binary）型
+|有限長の連続した2進数の集合。
 
-|Date
-|Time point representing a calendar day on a time scale consisting of an origin and a succession of calendar {ISO8601}.
+|日付（Date）型
+|ある原点と連続した暦 {ISO8601} からなる時間軸上の暦日を表す時間点。
 
-|Decimal
-|A subset of the real numbers, which can be represented by decimal numerals.
+|数値（Decimal）型
+|10進数で表すことができる実数の部分集合。
 
-|String
-|A finite sequence of characters.
+|文字列（String）型
+|有限長の文字列。
 |===

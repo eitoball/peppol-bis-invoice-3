@@ -1,19 +1,19 @@
-= Amount
+= 金額 (Amount)
 
-An amount states a numerical monetary value. The currency of the amount is defined as a separate business term.
+金額とは、貨幣価値を数値で表したものです。金額の通貨は別のビジネス用語として定義されています。
 
-IMPORTANT: Amount is floating up to two fraction digits.
+IMPORTANT: 金額は端数2桁までの浮動小数点となります。
 
 
 [cols="1s,1,1,1", options="header"]
 |===
-|Component
-|Use
-|Primitive Type
-|Example
+|構成要素
+|利用
+|基本データ型
+|例
 
-|Content
-|Mandatory
-|Decimal
+|コンテンツ
+|必須
+|数値型
 |10000.25
 |===

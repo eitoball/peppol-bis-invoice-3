@@ -1,31 +1,32 @@
 
-= Identifier
+= 識別子（Identifier）
 
-Identifiers (IDs) are keys that are issued by the sender or recipient of a document or by a third party.
+識別子（ID）とは、文書の送信者や受信者、または第三者が発行するキーとなります。
 
 
-IMPORTANT: The use of the attributes is specified for each information element.
+IMPORTANT: 属性の使用は、情報要素ごとに指定されます。
+
 
 
 [cols="1s,1,1,1", options="header"]
 |===
-|Component
-|Use
-|Primitive Type
-|Example
+|構成要素
+|利用
+|基本データ型
+|例
 
-|Content
-|Mandatory
-|String
+|コンテンツ
+|必須
+|文字列型
 |abc:123-DEF
 
-|Scheme identifier
-|Conditional
-|String
+|スキーマ識別子
+|任意
+|文字列型
 |GLN
 
-|Scheme version identifier
-|Conditional
-|String
+|スキーマバージョン識別子
+|任意
+|文字列型
 |1.0
 |===
