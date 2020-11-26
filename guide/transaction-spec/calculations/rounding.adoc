@@ -1,14 +1,14 @@
 
-= Rounding
+= 丸め計算
 
 
-To minimize the risk of differences due to rounding, the following rules apply:
+丸め計算による差異のリスクを最小限に抑えるために、以下のルールが適用されます:
 
 [IMPORTANT]
 ====
-* All document level amounts shall be rounded to two decimals for accounting
-* Invoice line net amount shall be rounded to two decimals
-* Results from calculations involving already rounded amounts are not subject to rounding, like payable amounts and total amounts included VAT.
+* すべての文書での金額は、会計上の理由から小数点以下2桁に四捨五入するものとします。
+* 請求明細行の純額は、小数点以下第3位を四捨五入して表示します。
+* 付加価値税（VAT)を含む支払い額や総額のような既に四捨五入された計算結果は、四捨五入の影響を受けません。
 ====
 
-Please also see <<Calculation>> for details on how to calculate the different amounts.
+金額の違いの計算方法については、 <<Calculation>> もご覧ください。
