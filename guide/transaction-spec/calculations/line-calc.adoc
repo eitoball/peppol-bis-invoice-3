@@ -1,14 +1,15 @@
 
-= Calculation on line level
+= 明細行の計算
 
 [[price-calc]]
-== Item net price (BT-146)
+== 請求明細行の正味金額 (BT-146)
 
-If gross price and discount exist, the Item net price has to equal with the item gross price less the item price discount.
+総額と割引額が存在する場合、明細行の正味金額は、明細の総額から割引額を差し引いたものと同じである必要があります。
 
-Calculation formula:
+計算式:
+
 ====
-stem:["Item net price" = "Item gross price (BT-148)" - "Item price discount (BT-147)"]
+stem:["明細行の正味金額" = "明細の総額 (BT-148)" - "明細の割引額 (BT-147)"]
 ====
 
 include::../../syntax/priceamount.adoc[]

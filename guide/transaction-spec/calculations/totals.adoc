@@ -1,49 +1,49 @@
 
 
-= Calculation of totals
+= 合計の計算
 
-Formulas for the calculations of totals are as follows:
+合計の計算式は以下の通りになります:
 
 [cols="1,4a,7", options="header"]
 |===
-| Business term id
-| Term name
-| Calculation
+| ビジネス用語ID
+| 用語名
+| 計算式
 
 | BT-106
-| Sum of invoice line net amounts
-| stem:[sum("BT-131: Invoice line net amount")]
+| 請求明細行の正味金額の合計
+| stem:[sum("BT-131: 請求明細行の正味金額")]
 
 | BT-107
-| Sum of allowances on document level
-| stem:[sum("BT-92: Document level allowance amount")]
+| 文書での値引額の合計 
+| stem:[sum("BT-92: 文書での値引額")]
 
 | BT-108
-| Sum of charges on document level
-| stem:[sum("BT-99: Document level charge amount")]
+| 文書での手数料の合計
+| stem:[sum("BT-99: 文書での手数料")]
 
 
 | BT-109
-| Invoice total amount without VAT
-| stem:[\ \ \ \ "BT-106: Sum of invoice line net amounts"] +
-stem:[- \ "BT-107: Sum of allowances on document level"] +
-stem:[+ \ "BT-108: Sum of charges on document level"]
+| 付加価値税（VAT)抜き請求総合計額
+| stem:[\ \ \ \ "BT-106: 請求明細行の正味金額の合計"] +
+stem:[- \ "BT-107: 文書での値引額の合計"] +
+stem:[+ \ "BT-108: 文書での手数料の合計"]
 
 | BT-110
-| Invoice total VAT amount
-| stem:[sum("BT-117: VAT category tax amount")]
+| 付加価値税（VAT）総合計
+| stem:[sum("BT-117: 付加価値税（VAT）カテゴリー合計")]
 
 
 | BT-112
-| Invoice total amount with VAT
-| stem:[\ \ \ \ "BT-109: Invoice total amount without VAT"] +
-stem:[+ \ "BT-110: Invoice total VAT amount"]
+| 付加価値税（VAT)込み請求総合計額
+| stem:[\ \ \ \ "BT-109: 付加価値税（VAT)抜き請求総合計額"] +
+stem:[+ \ "BT-110: 付加価値税（VAT）総合計"]
 
 | BT-115
-| Amount due for payment
-| stem:[\ \ \ \ "BT-112: Invoice total amount with VAT"] +
-stem:[- \ "BT-113: Paid amount"] +
-stem:[+ \ "BT-114: Rounding amount"]
+| 支払予定額
+| stem:[\ \ \ \ "BT-112: 付加価値税（VAT)込み請求総合計額"] +
+stem:[- \ "BT-113: 支払額"] +
+stem:[+ \ "BT-114: 丸め込み額"]
 
 |===
 

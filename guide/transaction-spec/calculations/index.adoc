@@ -1,6 +1,6 @@
 
 
-= Calculation
+= 計算
 
 :leveloffset: +1
 

@@ -1,9 +1,9 @@
 
-.UBL example of item net price
+.明細行の正味金額のUBLでの例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Calc.xml[tags=price]
 ----
-<1> Item gross price
-<2> Item price discount
-<3> stem:["Item price net amount" = "Item gross price" - "Item price discount"]
+<1> 明細の総額
+<2> 明細の割引額
+<3> stem:["明細行の正味金額" = "明細の総額" - "明細の割引額"]

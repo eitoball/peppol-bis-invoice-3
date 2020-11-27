@@ -1,12 +1,12 @@
 
 [[totals]]
-== UBL syntax calculation formulas
+== UBL構文での計算式
 
-The following elements show the legal monetary totals for an invoice or credit note
+以下の要素は、請求書、または、クレジットノートの法定金額の合計を示しています:
 [cols="3,5", options="header"]
 |===
-| Element
-| Formula
+| 要素
+| 計算式
 
 | <cbc:LineExtensionAmount>
 | stem:[sum("cac:InvoiceLine/cbc:LineExtensionAmount")]
@@ -27,10 +27,10 @@ stem:[+ \ "cac:LegalMonetaryTotal/cbc:ChargeTotalAmount"]
 stem:[+ \ "cac:TaxTotal/cbc:TaxAmount"]
 
 | <cbc:PrepaidAmount>
-| _Not applicable_
+| _該当なし_
 
 | <cbc:PayableRoundingAmount>
-| _Not applicable_
+| _該当なし_
 
 | <cbc:PayableAmount>
 | stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount"] +
@@ -40,10 +40,10 @@ stem:[+ \ "cac:LegalMonetaryTotal/cbc:PayableRoundingAmount"]
 
 
 
-== Element for rounding amount, the PayableRoundingAmount
+== 支払い可能丸め込み額（PayableRoundingAmount）の要素
 
-It is possible to round the expected payable amount.
+支払い予定額は丸め込むことができます。
 
-The element `cac:LegalMonetaryTotal/cbc:PayableRoundingAmount` is used for this purpose and is specified on the header level. This value shall be added to the value in `cac:LegalMonetaryTotal/cbc:PayableAmount`.
+要素 `cac:LegalMonetaryTotal/cbc:PayableRoundingAmount` は、この目的のために使用され、ヘッダレベルで指定される。この値は、`cac:LegalMonetaryTotal/cbc:PayableAmount` の値に加算されます。
 
-Example:  Amount  999.81 rounded to  1000.  PayableRounding Amount = 0.19
+例:  合計が 999.81 の場合、丸め込むと 1000 になります.  支払い可能丸め込み額は、 0.19 となります。

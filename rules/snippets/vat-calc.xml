@@ -120,7 +120,7 @@
     <!-- tag::vat-calc[] -->
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-        <cbc:AllowanceChargeReason>Cleaning</cbc:AllowanceChargeReason>
+        <cbc:AllowanceChargeReason>棚卸し</cbc:AllowanceChargeReason>
         <cbc:Amount currencyID="EUR">200</cbc:Amount><!--1-->
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
@@ -133,7 +133,7 @@
     
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-        <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
+        <cbc:AllowanceChargeReason>出精値引き</cbc:AllowanceChargeReason>
         <cbc:Amount currencyID="EUR">100</cbc:Amount><!--2-->
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
@@ -165,7 +165,7 @@
             <cac:TaxCategory>
                 <cbc:ID>E</cbc:ID>
                 <cbc:Percent>0</cbc:Percent>
-                <cbc:TaxExemptionReason>Reason for tax exempt</cbc:TaxExemptionReason>
+                <cbc:TaxExemptionReason>非課税の理由</cbc:TaxExemptionReason>
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>

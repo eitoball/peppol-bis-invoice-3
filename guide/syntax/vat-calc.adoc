@@ -4,9 +4,9 @@
 ----
 include::{snippet-dir}/vat-calc.xml[tags=vat-calc]
 ----
-<1> Document level charge amount for category S and rate 25%
-<2> Document level allowance amount for category S and rate 25%
-<3> VAT Breakdown for category S and rate = 25%
-<4> Taxable amount = sum of line amount (line 1 and 3), plus charge amount minus allowance amount where category = S and rate = 25%
-<5> stem:["Tax Amount" = "Taxable amount" times ("VAT rate" div 100)]
-<6> VAT Breakdown for category E, and rate = 0%
+<1> 文書での S カテゴリーで、付加価値税 25% の手数料
+<2> 文書での S カテゴリーで、付加価値税 25% の値引き額
+<3> S カテゴリーで、付加価値税 25% の付加価値税（VAT)明細
+<4> 課税対象額 = 明細の合計 (明細1行目と3行目)に S カテゴリーで、付加価値税 25% の手数料から割引額を和
+<5> stem:["課税額" = "課税対象額" times ("付加価値税（VAT）割合" div 100)]
+<6> E カテゴリーで、付加価値税 0% の付加価値税（VAT)明細

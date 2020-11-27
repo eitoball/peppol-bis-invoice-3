@@ -1,18 +1,18 @@
 
 
-.UBL example of calculations of allowances and charges where base amount and percentage exist
+.基準額と割合が存在する場合の割引と手数料の計算の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Calc.xml[tags=allowance1]
 ----
-<1> Base amount, to be used with the percentage to calculate the amount
-<2> Charge percentage
-<3> stem:["Base amount" times ("Percentage" div 100) = "Amount"]
+<1> 基準額、割合と一緒に合計を計算します
+<2> 手数料割合
+<3> stem:["基準額" times ("割合" div 100) = "合計"]
 
 
-.UBL example of calculations of allowances and charges where base amount and percentage does not exist
+.基準額と割合が存在しない場合の割引と手数料の計算の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Calc.xml[tags=allowance2]
 ----
-<1> Amount of allowance without calculations based on base amount and percentage
+<1> 基準額と割合での計算がない場合の割引額
