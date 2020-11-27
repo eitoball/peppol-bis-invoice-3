@@ -201,7 +201,7 @@
         <cac:CardAccount>
             <cbc:PrimaryAccountNumberID>123236</cbc:PrimaryAccountNumberID><!--2-->
             <cbc:NetworkID>VISA</cbc:NetworkID><!--3-->
-            <cbc:HolderName>Card holders name</cbc:HolderName><!--4-->
+            <cbc:HolderName>カード所有者名</cbc:HolderName><!--4-->
         </cac:CardAccount>
     </cac:PaymentMeans>
     <!-- end::card[] -->

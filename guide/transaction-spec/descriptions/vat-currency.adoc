@@ -1,17 +1,16 @@
 
-= VAT accounting currency
+= 付加価値税（VAT） 利用通貨
 
-Article 230 of {VAT-dir} states:
+{VAT-dir} の230条によると:
 [quote]
 ____
-The amounts which appear on the invoice may be expressed in
-any currency, provided that the amount of VAT payable is
-expressed in the national currency of the Member State in which
-the supply of goods or services takes place, using the conversion
-mechanism laid down in Article 91.
+第91条に規定されている変換メカニズムを用いて、
+商品、または、サービスの供給が行われている加盟国の国内通貨で
+表示されていることを条件に、請求書に記載されている金額は、
+どの通貨でも表示することができます。
 ____
 
 
-If the invoice currency is different from the national currency, this is expressed in the invoice by stating the national currency in the element VAT accounting currency (BT-6), and the amount of VAT payable in national currency is stated in the element Invoice total VAT amount in accounting currency (BT-111). The exchange rate to use for calculating is described in Article 91 of {VAT-dir}. The exchange rate is not specified in the invoice instance, and hence this calculation is not validated.
+請求書に表示されている通貨が、国内通貨と異なる場合、その旨は、付加価値税（VAT）会計通貨の要素（BT-6）に国内通貨を記載することで請求書に表示され、国内通貨で支払うべき付加価値税（VAT）の金額は、会計通貨での請求書での総付加価値税（BT-111）に記載されます。計算に使用する為替レートは、 {VAT-dir} の第91条に記載されています。請求書のインスタンスでは為替レートが指定されていないため、この計算は有効ではありません。
 
 include::../../syntax/vat-currency.adoc[]

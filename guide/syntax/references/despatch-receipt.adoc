@@ -1,12 +1,12 @@
 
-= Despatch and receipt advice references
+= 発送と受け取り通知の参照
 
-To reference or match an invoice to a despatch or receipt advice use the following elements:
+請求書を発送、または、受け取りの通知に参照、または、一致させるには、以下の要素を使用します:
 
-.UBL example of despatch and receipt advice
+.発送と受け取り通知のUBLでの例
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/Snippet-refs.xml[tags=desp-rec]
 ----
-<1> Despatch advice
-<2> Receipt advice
+<1> 発送通知
+<2> 受け取り通知

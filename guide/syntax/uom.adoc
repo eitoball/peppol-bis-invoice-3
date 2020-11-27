@@ -1,7 +1,7 @@
-.UBL example of unit of measure
+.数量の単位の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/item.xml[tags=uom]
 ----
-<1> Code H87 from Recommendation no. 20
-<2> Code PX, prefixed with an X from Recommendation no. 21
+<1> 勧告第20号でのコード H87
+<2> Xを前に付与した勧告第21号でのコード PX

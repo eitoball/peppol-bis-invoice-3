@@ -1,12 +1,12 @@
 
 
 
-.UBL example of payment means info when payment is done by credit transfer
+.銀行口座振替による支払いの場合の支払い情報の UBL の例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/payment-credit.xml[tags=credit]
 ----
-<1> Mandatory, payment means code for credit transfer
-<2> Remittance information
-<3> Mandatory, IBAN (in case of a SEPA payment) or a national account number (BBAN)
-<4> BIC or a national clearing code
+<1> 必須、口座振替の支払い方法コード
+<2> 送金情報
+<3> 必須、（SEPA 支払いの場合）IBAN、もしくは、国際口座番号（BBAN）
+<4> BIC、もしくは、国際決済コード

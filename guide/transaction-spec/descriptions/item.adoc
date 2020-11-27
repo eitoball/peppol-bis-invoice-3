@@ -1,14 +1,13 @@
-= Item information
+= 商品情報
 
-== Item identifiers
+== 商品識別子
 
-In an invoice line the seller item identifier, the buyer item identifier and the standard item identifier can be provided. For sellers and buyers item identifiers, no scheme attribute is used, whilst the `schemeID`
-is mandatory for the standard item identification, and must be from the ISO 6523 ICD list.
+明細行内では、売り手の商品識別子、買い手の商品識別子、標準商品識別子を提供することができます。売り手と買い手の商品識別子については、スキーマ属性は使用されず、標準商品識別子には、 `schemeID` が必須であり、ISO 6523 ICD の一覧からのものである必要があります。
 
 include::../../syntax/item-identification.adoc[]
 
-== Item classification
+== 商品分類
 
-Several different item classification codes can be provided per invoice line, and the codes must be from one of the classification schemes in code list UNCL7143.
+請求書明細行ごとに複数の異なる項目分類コードを提供することができ、コードは、UNCL7143 コード一覧の分類スキームのいずれである必要があります。
 
 include::../../syntax/item-classification.adoc[]

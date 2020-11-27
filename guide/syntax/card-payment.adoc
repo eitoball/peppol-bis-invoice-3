@@ -1,10 +1,10 @@
 
-.UBL example of payment means info when payment is done by payment card
+.支払いカードによる支払いの場合の支払い情報の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/payment1.xml[tags=card]
 ----
-<1> Payment means code for credit card
-<2> Mandatory, shall be the last 4 to 6 digits of the payment card number
-<3> Mandatory, used to identify the financial service network provider of the card. Examples are VISA, MasterCard, American Express.
-<4> Card holder name
+<1> クレジットカードの支払い手段コード
+<2> 必須、支払いカード番号の下4～6桁の数字である必要があります。
+<3> 必須、カードの金融サービス・ネットワーク・プロバイダーを識別するために使用されます。例：VISA、マスターカード、American Express。
+<4> カード所有者名

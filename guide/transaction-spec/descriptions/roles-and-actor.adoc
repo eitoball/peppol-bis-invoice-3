@@ -1,9 +1,9 @@
 
-= Parties
+= 関係者（Parties）
 
-The following roles may be specified. The same actor may play more than one role depending on the handling routine.
+以下に示す役割を指定することができます。処理内容によっては、同じ人がが複数の役割を務める場合があります。
 
-Further details on the roles/actors can be found in <<roles>>.
+役割/参加者の詳細については、 <<roles>> を参照してください。
 
 :leveloffset: +1
 

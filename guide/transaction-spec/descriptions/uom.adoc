@@ -1,86 +1,86 @@
-= Unit of measure
+= 数量の単位
 
-Unit of measure in an invoice allows the use of codes from UNECE Recommendation No. 20 (version 11e), as well as codes from UNECE Recommendation No. 21 prefixed with an X.
-Please also see <<uom>> for further information on the code lists.
+請求書の単位は、UNECE勧告第20号（バージョン11e）のコードと、前にXを付けたUNECE勧告第21号のコードを使用することができます。
+コードリストの詳細については、 <<uom>> を参照して下さい。
 
-.Examples of unit of measure from Recommendation No. 20
+.勧告第20号からの数量の単位の例
 [cols="1,5", options="header"]
 |===
-|Code
-|Name
+|コード
+|数量の単位
 
 |H87
-|Piece
+|個
 
 |KGM
-|Kilogram
+|キログラム
 
 |MTR
-|Meter
+|メーター
 
 |LTR
-|Litre
+|リッター
 
 |MTK
-|Square metre
+|平方メーター
 
 |MTQ
-|Cubic metre
+|立方メーター
 
 |KTM
-|Kilometre
+|キロメーター
 
 |TNE
-|Tonne (metric ton)
+|トン（メートルトン）
 
 |KWH
-|Kilowatt hour
+|時間当たりのキロワット
 
 |DAY
-|Day
+|日
 
 |HUR
-|Hour
+|時間
 
 |MIN
-|Minute
+|分
 |===
 
-.Examples of unit of measure from Recommendation No. 21, prefixed with an X
+.前にXを付けた勧告第21号からの数量の例
 [cols="1,5", options="header"]
 |===
-|Code
-|Name
+|コード
+|数量の単位
 
 |XBG
-|Bag
+|袋
 
 |XBX
-|Box
+|箱
 
 |XCT
-|Carton
+|カートン
 
 |XCY
-|Cylinder
+|シリンダー
 
 |XBA
-|Barrel
+|バーレル
 
 |XPK
-|Package
+|パッケージ
 
 |XPX
-|Pallet
+|パレット
 
 |XRL
-|Reel
+|巻
 
 |XSA
-|Sack
+|袋
 
 |XST
-|Sheet
+|枚
 |===
 
 

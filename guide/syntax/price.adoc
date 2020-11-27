@@ -1,17 +1,18 @@
 
 
-.UBL example of price with price discount
+.割引きされている価格の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/price.xml[tags=price]
 ----
-<1> Item gross price
-<2> Item price discount
-<3> Item price base quantity
-<4> Item net price, must be equal to Item Gross price - item price discount (if these elements are used)
+<1> 商品総価格
+<2> 商品価格の割引
+<3> 商品価格基準数量
+<4> 商品純価格は、総価格 -　割引（これらの要素が使用されている場合）と同じである必要があります。
 
 
-.UBL example of price without price discount
+
+.割引きなしの価格の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/price.xml[tags=simple-price]

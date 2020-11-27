@@ -1,9 +1,9 @@
 
-= Intrastat
+= イントラスタット（EU内流通報告）
 
-When EU member states buy from other EU members, traders commonly require some statistical information in the invoice, normally a classification code as the Combined Nomenclature.
+EU加盟国が、他のEU加盟国から購入する場合、貿易業者は、通常、請求書に統計情報、通常は、複合命名法としての分類コードを要求します。
 
-It is recommended to use the Item classification identifier (BT-158) for this purpose, with the code "HS" as list identifier.
+この目的のためには、品目分類識別子（BT-158）を使用し、リスト識別子としてコード「HS」を使用することを推奨します。
 
 
 include::../../syntax/intrastat.adoc[]

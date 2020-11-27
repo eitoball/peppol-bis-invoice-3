@@ -1,15 +1,15 @@
 
 [[orderref]]
-= Purchase order and sales order reference
+= 発注・受注書の参照
 
-The purchase order is **conditional**. If order reference exist, use that, else use Buyer reference (see <<buyerref>>).
+発注書は **条件付き** です。注文参照が存在する場合は、それを使用して、存在しない場合は、購入者参照を使用してください（ <<buyerref>> を参照してください）。
 
-The customer will issue an order with a unique order number. This unique purchase order number should be supplied as the order reference on the invoice.
+顧客は一意の注文番号を使って、発注書を発行します。この一意の注文番号は、請求書の注文参照として提供する必要があります。
 
-If order reference is stated at header level, the order reference element on line level can be used to state the order line numbers.
+注文参照が、請求書レベルで記述されている場合は、明細レベルの注文参照要素を使って、注文行番号を記述することができます。
 
-A sales order is issued by the seller, confirming the sale of specified products.
+売主は、指定された商品の販売を確認するために販売指示書を発行します。
 
-IMPORTANT: In the invoice, both a purchase order and a sales order reference can be given, but be aware that an invoice instance cannot have a sales order reference, without the corresponding purchase order reference.
+IMPORTANT: 請求書では、注文書と受注書の参照の両方を指定することができますが、対応する発注書の参照がない場合、請求書のインスタンスは、受注書の参照を持つことができないことに注意してください。
 
 include::../../../syntax/references/order.adoc[]

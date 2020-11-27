@@ -1,8 +1,8 @@
 
-= Preceding invoice references
+= 過去の請求書の参照
 
-A credit note or negative invoice can refer to one or more initial invoice(s). This is done in the business group BG-3 Preceding invoice reference, providing the invoice number and issue date. The issue date shall be provided in case the preceding invoice reference is not unique.
+クレジット・ノートやネガティブ請求書は、1つ以上複数の元の請求書を参照することができます。。これは、ビジネスグループ BG-3「過去の請求書参照」で行われ、請求書番号と発行日を提供する。過去の請求書の参照が一意でない場合は、発行日を記載します。
 
-In case correction applies to a large number of invoices, the invoicing period (BG-14), as necessary combined with a clarifying invoice note (BT-22), may instead be be given at document level.
+訂正が多数の請求書に適用される場合は，必要に応じて請求書発行期間（BG-14）を文書で記載する代わりに，明確にする請求書備考（BT-22）と組み合わせて記載することが可能です。
 
 include::../../syntax/preceding-invoice.adoc[]

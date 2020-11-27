@@ -1,8 +1,8 @@
 
-= Invoiced object identifier
+= 請求対象識別子
 
-The invoiced object identifier is the identifier for an object on which the invoice is based, given by the Seller. Examples may be a subscription number, telephone number, meter point, vehicle, person etc., as applicable.
+請求対象識別子は、販売者によって与えられた、請求書上の請求品目の識別子です。例としては、購読番号、電話番号、メーターポイント、車両、人物などが挙げられます。
 
-If it is not clear to the receiver what scheme is used for the identifier, a conditional scheme identifier should be used, that shall be chosen from the <<inv-object-code>>.
+識別子にどのようなスキームが使用されるかが受信者に明確でない場合は、条件付きスキーマ識別子を使用する必要があります。それは <<inv-object-code>> から選択する必要があります。
 
 include::../../../syntax/references/invoiced-object.adoc[]

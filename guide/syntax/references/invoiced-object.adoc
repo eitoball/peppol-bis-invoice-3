@@ -1,10 +1,10 @@
 
-The invoiced object reference is provided by using the element `cac:AdditionalDocumentReference` with the document type code = 130
+請求対象への参照は、文書型コード 130 で、 `cac:AdditionalDocumentReference` 要素を使って、提供されます。
 
-.UBL example of invoiced object identifier
+.請求対象識別子のUBLでの例
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/Snippet-refs.xml[tags=object]
 ----
-<1> Scheme identifier from <<id_schemes, UN/CEFACT 1153 code list>>
-<2> Document type code shall be ´130´ to indicate Invoiced object
+<1> <<id_schemes, UN/CEFACT 1153 code list>> からのスキーマ識別子です。
+<2> 請求対象ことを示すために文書型コードは ´130´ です。

@@ -1,10 +1,10 @@
 
-= Tender reference
-
-To identify the call for tender or lot the invoice relates to, use the 'OriginatorDocumentReference'. The identifier is, in most cases, the Procurement Procedure Identifier.
+= 入札参照
 
 
-.UBL example of tender reference
+
+請求書が関連する入札募集、または、ロットを識別するには、 `OriginatorDocumentReference` を使用します。識別子は、ほとんどの場合、調達手続き識別子です。
+.入札参照のUBLでの例
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/Snippet-refs.xml[tags=tender]

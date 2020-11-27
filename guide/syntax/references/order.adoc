@@ -1,9 +1,9 @@
 
 
-.UBL example or order and sales order reference
+.UBLでの発注書・受注書参照の例
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/Snippet-refs.xml[tags=order-ref]
 ----
-<1> Purchase order reference
-<2> Sales order reference
+<1> 発注書参照
+<2> 受注書参照

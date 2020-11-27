@@ -1,43 +1,43 @@
 
-= Payment means information
+= 支払方法情報
 
-== Credit transfer
+== 銀行口座振替
 
-If payment is made by credit transfer, the Payment account identifier (BT-84) is mandatory
+銀行口座振替の場合は、決済口座識別子(BT-84)が必須となります。
 
-See <<payment-means>> for all allowed codes. Examples of codes for payment by credit transfer are:
+すべての許可されたコードについては、 <<payment-means>> を参照してください。銀行口座振替による支払いのためのコードの例は次のとおりです。
 
-* 30 - Credit transfer
-* 58 - SEPA credit transfer
+* 30 - 銀行口座振替
+* 58 - SEPA 銀行口座振替
 
 include::../../syntax/credit-payment.adoc[]
 
-== Card Payment
+== カード支払い
 
-If the Buyer had opted to pay by using a payment card such as a credit or debit card, information on the Primary Account Number (PAN) shall be present in the invoice.
+購入者がクレジットカードやデビットカードなどの支払いカードを使用して支払うことを選択した場合、請求書にはプライマリアカウント番号（PAN）の情報が記載されている必要があります。
 
-See <<payment-means>> for all allowed codes. Examples of codes for payment by card are:
+許可されているすべてのコードについては、 <<payment-means>> を参照してください。カード払いのコードの例は以下の通りです。
 
-* 48 - Bank card
-* 54 - Credit card
-* 55 - Debet card
+* 48 - 銀行カード
+* 54 - クレジットカード
+* 55 - デビットカード
 
 include::../../syntax/card-payment.adoc[]
 
-== Direct debit
+== 自動引き落とし
 
-See <<payment-means>> for all allowed codes. Examples of codes for payment by direct debit are:
+すべての許可されたコードについては、 <<payment-means>> を参照してください。自動引き落としによる支払いのためのコードの例は以下の通りです。
 
-* 49 - Direct debit
-* 59 - SEPA direct debit
+* 49 - 口座引き落とし
+* 59 - SEPA口座引き落とし
 
 include::../../syntax/direct-debit.adoc[]
 
-== Payment by post- or bank giro
+== 郵便、もしくは、銀行振替による支払い
 
-See <<payment-means>> for all allowed codes. Examples of codes for payment by giro are:
+すべての許可されたコードについては、 <<payment-means>> を参照してください。振替による支払いのためのコードの例は以下の通りです。
 
-* 50 - Payment by postgiro
-* 56 - Bankgiro
+* 50 - 郵便振替による支払い
+* 56 - 銀行振替
 
 include::../../syntax/giro.adoc[]

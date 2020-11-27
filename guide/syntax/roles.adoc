@@ -1,64 +1,64 @@
 
 
-= Seller (AccountingSupplierParty)
+= 売り手（Seller (AccountingSupplierParty)）
 
-Seller is mandatory information and provided in element `cac:AccountingSupplierParty`
+売り手は、必須な情報で、 `cac:AccountingSupplierParty` 要素で指定します。
 
-.UBL example of seller information
+.UBLでの売り手情報の例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Snippet-full.xml[tags=seller]
 ----
-<1> schemeID attribute is mandatory for electronic addresses, ie. EndpointID
-<2> schemeID attribute is recommended for all party identifiers
-<3> VAT identifiers shall be prefixed with the country code
+<1> schemeID 属性は、エンドポイントIDといった電子アドレスには必須です。
+<2> schemeID 属性は、全ての関係者の識別子に利用することが推奨されています。
+<3> 付加価値税（VAT）の識別子の前には、国コードを付加する必要があります。
 
 
 
-= Buyer (AccountingCustomerParty)
 
-Buyer is mandatory information and provided in element `cac:AccountingCustomerParty`
+= 買い手（Buyer (AccountingCustomerParty)）
 
-.UBL example ofbuyer information
+買い手は、必須な情報で、 `cac:AccountingCustomerParty` 要素で指定します。
+
+.UBLでの買い手情報の例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Snippet-full.xml[tags=buyer]
 ----
-<1> schemeID attribute is mandatory for electronic addresses, ie. EndpointID
-<2> schemeID attribute is recommended for all party identifiers
-<3> VAT identifiers shall be prefixed with the country code
-<4> schemeID attribute is recommended for party legal entity identifiers
+<1> schemeID 属性は、エンドポイントIDといった電子アドレスには必須です。
+<2> schemeID 属性は、全ての関係者の識別子に利用することが推奨されています。
+<3> 付加価値税（VAT）の識別子の前には、国コードを付加する必要があります。
+<4> schemeID 属性は、全ての関係者の法人識別子に利用することが推奨されています。
+
+= 決済受取人（Payment receiver (PayeeParty)）
+
+決済受取人は、任意の情報です。この情報が提供されていない場合、売り手が決済受取人となります。支払い先情報が、送信される場合は、ファクタリングの状況が文書化されていることを表しています。
+
+債権買取者への請求書の譲渡を反映させるためには、以下の条件を満たしている必要があります:
+
+. 請求書に債権買取者へ譲渡されたことを免責事項（通知通知）を記載する。免責条項は、文書でのノート（BT-22）に記載する必要があります。
+
+. 支払先として債権買取者を指定する。
+
+. 債権買取者が指定する銀行口座へ変更する。
 
 
-= Payment receiver (PayeeParty)
-
-Payment receiver is optional information. If this information is not supplied, the seller is the payment receiver. When payee information is sent this is indicating that a factoring situation is being documented.
-
-To reflect the assignment of an Invoice to a factor there is a need to:
-
-. have a disclaimer (notification notice) on the Invoice that the Invoice has been assigned to a factor. The disclaimer should be given using the Invoice note (BT-22) on document level.
-
-. identify the Factor as the Payee
-
-. to have the bank account changed to favour of a Factor.
-
-
-.UBL example of payee information
+.UBLでの決済受取人の例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Snippet-full.xml[tags=payee]
 ----
-<1> schemeID attribute is recommended for all party identifiers
-<2> schemeID attribute is recommended for party legal entity identifiers
+<1> schemeID 属性は、全ての関係者の識別子に利用することが推奨されています。
+<2> schemeID 属性は、全ての関係者の法人識別子に利用することが推奨されています。
 
 
-= Sellers Tax Representative (TaxRepresentativePary)
+= 売り手の税務代理人（Sellers Tax Representative (TaxRepresentativePary)）
 
-Tax representative party for the seller is relevant for sellers delivering goods and services in a country without having a permanent establishment in that country. In such cases information on the tax representative shall be included in the invoice.
+その国に恒久的な施設を持たずにその国で商品やサービスを引き渡す売り手の場合には、税務代理人が該当します。このような場合には、税務代理人に関する情報を請求書に記載する必要があります。
 
-.UBL example of tax representative information
+.UBLでの税務代理人の例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Snippet-full.xml[tags=taxrep]
 ----
-<1> VAT identifiers shall be prefixed with the country code
+<1> 付加価値税（VAT）の識別子の前には、国コードを付加する必要があります。

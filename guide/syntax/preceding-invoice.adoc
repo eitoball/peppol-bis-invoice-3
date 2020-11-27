@@ -1,9 +1,9 @@
 
-.UBL example of preceding invoice information
+.過去の請求書の情報の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Snippet-cn.xml[tags=prec-inv]
 ----
-<1> The identifier is mandatory if `cac:BillingReference` is provided
-<2> Issue date shall be filled if the invoice reference is not unique
-<3> Repeat the `cac:BillingReference` to add several preceding invoice references
+<1> `cac:BillingReference` が提供されている場合は、識別子が必須です。
+<2> 請求書への参照が一意でない場合は、発行日を記載することができます。
+<3> 複数の過去の請求書を参照するために `cac:BillingReference` を複数使用できます。

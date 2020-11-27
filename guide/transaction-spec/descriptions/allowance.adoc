@@ -1,29 +1,30 @@
 
-= Allowances and Charges
+= 引当金と手数料
 
 
-The Invoice and credit note transactions has elements for Allowance/charge on 3 levels.
 
-The element `cac:AllowanceCharge` with sub element `cbc:ChargeIndicator` indicates whether the instance is a charge (true) or an allowance (false).
+請求書とクレジットノートでの取引において、3段階の割引きと手数料が発生します。
 
-The header level:: _Applies to the whole invoice and is included in the calculation of the invoice total amount._
-* Several allowances and charges may be supplied
-* Specification of VAT for allowances and charges, `cac:TaxCategory` with sub elements, shall be supplied
-* The sum of all allowances and charges on the header level shall be specified in `cbc:AllowanceTotalAmount` and `cbc:ChargeTotalAmount` respectively. See <<totals>>
+要素 `cac: AllowanceCharge` と子要素 `cbc:ChargeIndicator` は、そのインスタンスが、割引き（true）か、手数料（false）偽)かを表します。
 
-The line level:: _Applies to the line level and is included in the calculation of the line amount._
-* Several allowances and charges may be supplied
-* Specification of VAT for allowances and charges shall not be specified, as the VAT category stated for the invoice line itself, applies also to the allowances or charges of that line.
-* The sum of all allowances and charges on the line level shall be taken into account, subtracted or added, when calculating the line extension amount . These line level allowances and charges shall not be calculated into the header level elements.
+文書全体:: _請求書全体に適用され、請求書総額の計算に含まれます。_
+* 複数の割引きと手数料が提供される可能性があります。
+* `cac:TaxCategory` と子要素に割引きと手数料の付加価値税（VAT）の明細が提供される可能性があります。
+* 文書全体でのすべての割引きと手数料の合計は、それぞれ `cbc:AllowerTotalAmount` と `cbc:ChargeTotalAmount` で指定します。 <<totals>>> を参照。
+
+明細行:: _明細行に適用され、明細金額の計算に含まれます。_
+* 複数の割引きと手数料が提供される可能性があります。
+* 明細行に記載されている付加価値税（VAT）カテゴリーは、その明細行の割引き・手数料にも適用されるため、付加価値税（VAT）の指定はできません。
+* 明細行のすべての割引きと手数料の合計は、line extension amount を計算する際に、考慮する必要があります。これらの明細での割引きと手数料は，文書全体の要素には含めません。
 
 
-The line level Price element:: _A way to inform the buyer how the price is set. Is also relevant if the seller or buyer want to post the allowance in their accounting systems. The price itself shall always be the net price, i.e. the base amount reduced with a discount (allowance)._
-* Only one occurence of allowance (discount) is allowed.
-* Specification of VAT for allowance shall not be specified
-* Allowance related to Price shall not be part of any other calculations.
-* Allowance related to Price may specify amount and the base amount.
+明細行の単価:: _単価がどのように設定されているかを買い手に知らせる方法です。売り手、または、買い手が、割引きを会計システムに計上したい場合にも関連します。。単価自体は常に正味価格、すなわち、割引で減額された基準額である必用があります。_
+* 引当金（割引）の発生は1回のみ認められます。
+* 引当金にかかる付加価値税（VAT）の指定は、指定できません。
+* 価格に係る引当金は、他の計算には含まれません。
+* 価格に係る引当金は、金額及び基準額を指定することができます。
 
-Further details of the calculation of allowance/charge amount, can be found in <<allowance-calc>>
+引当金の計算方法の詳細は、 <<allowance-calc>> に記載されています。
 
 include::../../syntax/allowance.adoc[]
 include::../../syntax/allowance-line.adoc[]

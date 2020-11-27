@@ -1,6 +1,7 @@
 
 
 .UBL example of Combined nomenclature information
+.復号命名法の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Snippet-full.xml[tags=intrastat]

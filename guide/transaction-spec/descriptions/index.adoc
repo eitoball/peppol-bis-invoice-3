@@ -1,7 +1,7 @@
 [[descriptions]]
-= Examples of selected parts of the transaction
+= 取引の部分例
 
-In the subchapters below you find examples of selected parts of the transaction. Please also look into the <<Detailed UBL message guideline>> for details on all elements and attributes, and their rules and use of code lists.
+以下の節では、取引の部分例を示しています。また、すべての要素や属性、それらのルールやコード一覧の使用についての詳細は、 <<Detailed UBL message guideline>> を参照してください。
 
 :leveloffset: +1
 

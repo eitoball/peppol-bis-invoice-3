@@ -2,12 +2,13 @@
 
 
 .UBL example of Allowances and Charges on the document level
+.文書での引当金と手数料の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Snippet-refs.xml[tags=allowance]
 ----
-<1> ChargeIndicator = true to indicate a charge
-<2> ChargeIndicator = false to indicate an allowance
-<3> Base amount, to be used with the percentage to calculate the amount
-<4> Charge percentage
-<5> stem:["Amount" = "Base amount" times ("Percentage" div 100)]
+<1> ChargeIndicator = true;　手数料であることを示している
+<2> ChargeIndicator = false; 引当金であることを示している
+<3> 基準額、割合とともに額を計算するために使用される
+<4> 手数料割合
+<5> stem:["額" = "基準額" times ("割合" div 100)]

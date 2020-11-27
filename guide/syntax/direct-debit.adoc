@@ -1,10 +1,10 @@
 
-.UBL example of payment means info when payment is done by SEPA direct debit
+.SEPA 講座振替による支払いでの支払い情報の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/direct-debit.xml[tags=direct-debit]
 ----
-<1> Unique banking reference identifier of the Seller or Payee, schemeID shall have value "SEPA"
-<2> Payment means code
-<3> Remittance information
-<4> Mandate reference identifier
+<1> 売り手、もしくは、受取人の一意な銀行参照識別子、schemaID  は "SEPA" である必要があります。
+<2> 支払い方法コード
+<3> 送金情報
+<4> 必須の参照情報

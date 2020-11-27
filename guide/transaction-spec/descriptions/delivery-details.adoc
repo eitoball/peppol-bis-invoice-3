@@ -1,10 +1,12 @@
 
-= Delivery Details (Date and Location)
+= 配達内容 (日付と場所)
 
-Delivery details may be given at document level.
 
-Place and date of delivery is recommended, and should be sent unless this does not affect the ability to ensure the correctness of the invoice.
+配達内容は、文書単位で記載されている場合があります。
 
-The delivery element contains information on name, address and delivery location identifier (`cac:Delivery/cac:DeliveryLocation/cbc:ID`) which may be used if the place of delivery is defined through an identifier. For example GLN (Global Location Number)issued by GS1.
+配達場所、および、配達日は，請求書の正確性に影響しない場合には，送付することが推奨されています。
+
+配達内容の要素には、名前、住所、配達場所の識別子（`cac:Delivery/cac:DeliveryLocation/cbc:ID`）に関する情報が含まれ、配達場所が識別子で定義されている場合に使用されることがあります。例えば、GLN (Global Location Number、企業識別コード) は、 GS1 が発行したものです。
+
 
 include::../../syntax/delivery.adoc[]

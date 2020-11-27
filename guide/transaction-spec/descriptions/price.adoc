@@ -1,8 +1,8 @@
-= Price information
+= 価格情報
 
 
-An invoice must contain information about the item net price and additional information such as gross price, item price base quantity and price discount may be added.
+請求書には、商品の正味価格に関する情報を記載しなければならず、総価格、商品価格の基準数量、値引きなどの情報を追加することができます。
 
-For details on calculating price see <<price-calc>>.
+価格の計算方法については、 <<price-calc>> を参照してください。
 
 include::../../syntax/price.adoc[]

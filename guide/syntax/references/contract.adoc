@@ -1,9 +1,9 @@
 
-= Contract reference
+= 契約参照
 
-To reference or match an invoice to a purchase contract, the contract number could be specified like this:
+請求書を購入契約に参照、または、一致させるには、以下のように契約番号を指定します。
 
-.UBL example of contract reference
+.契約参照のUBLでの例
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/Snippet-refs.xml[tags=contract]

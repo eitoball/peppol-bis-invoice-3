@@ -1,6 +1,6 @@
 
 
-.UBL example of Allowances and Charges on invoice line
+.明細行での引当金と手数料の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Snippet-refs.xml[tags=charge-line]
