@@ -1,6 +1,6 @@
 
-= Charge reason codes
+= 負担原因コード
 
-Any charge reason code shall be from {UNCL7161}
+すべての負担原因コードは {UNCL7161} からである必要があります。
 
 include::../../syntax/codelists/charge.adoc[]

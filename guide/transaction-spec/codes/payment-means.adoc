@@ -1,7 +1,7 @@
 
 [[payment-means]]
-= Payment means type code
+= 支払い方法タイプコード
 
-Payment means type code shall be from {UNCL4461}
+支払い方法タイプコードは、 {UNCL4461} からである必要があります。
 
 include::../../syntax/codelists/payment.adoc[]

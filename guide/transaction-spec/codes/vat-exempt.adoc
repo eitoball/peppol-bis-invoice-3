@@ -1,7 +1,8 @@
 
-= VAT exemption reason code
+= 付加価値税（VAT）免除理由コード
 
-{EN16931} mandates use of a code list maintained by _Connecting Europe Facility (CEF)_
+{EN16931} では、 _コネクティング・ヨーロッパ・
+ファシリティ (CEF)_ によって管理されているコード一覧を使用を必須としています。
 
 
 include::../../syntax/codelists/vat-exempt.adoc[]

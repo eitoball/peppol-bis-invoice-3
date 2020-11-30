@@ -1,18 +1,18 @@
 
 [cols="2,3,3", options="header"]
 |===
-|Business Term
-|Applicable XPath
-|Code list (link or subset values)
+| ビジネス用語
+| 適用される XPath
+| コード一覧（リンク、もしくは、一部の値）
 
-| Party identifiers (Buyer, Seller, Payee)
+| 当事者識別子（売り手、買い手、支払い先）
 | cac:PartyIdentification/cbc:ID/@schemeID
-.3+^.^| ICD list from {ISO6523}
+.3+^.^| {ISO6523} からの ICD 一覧
 
-| Legal registration identifiers (Buyer, Seller, Payee)
+| 法定登録識別子スキーマ（売り手、買い手、支払い先）
 | cac:PartyLegalEntity/cbc:CompanyID/@schemeID
 
-| Deliver to location identifier
+| 配送先識別子
 | cac:Delivery/cac:DeliveryLocation/cbc:ID/@schemeID
 
 

@@ -1,9 +1,9 @@
 
 [cols="1,4"]
 |===
-h| Document location
+h| 文書での位置
 | `cbc:EmbeddedDocumentBinaryObject/@mimeCode`
-h| Source codelist
+h| コード一覧提供元
 |
-  Subset of link:http://www.iana.org/assignments/media-types[IANA]
+  link:http://www.iana.org/assignments/media-types[IANA] の一部
 |===

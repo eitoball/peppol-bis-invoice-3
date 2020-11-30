@@ -1,6 +1,6 @@
 
 
-= Code lists for coded elements
+= コード化された要素のコード一覧
 
 :leveloffset: +1
 

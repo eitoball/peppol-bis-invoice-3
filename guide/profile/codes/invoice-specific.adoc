@@ -1,94 +1,94 @@
 
-= Specific code lists for the invoice
+= 請求書独自のコード一覧
 
-== Invoice Type Code
+== 請求書型コード
 
 include::../../syntax/codelists/inv-type.adoc[]
 
 
 
 [cols="1h,2s,4a,1,2m", options="header"]
-.Code list
+.コード一覧
 |===
-| Code
-| Name
-| Description
-| Synonym with
-| UBL Message type
+| コード
+| 名前
+| 説明
+| 同義コード
+| UBL 文言型
 
 
 | 380
-| Commercial invoice
-| Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer.
+| 商業請求書
+| 売り手の買い手の間で合意された条件の下で供給された商品、または、サービスの支払いを請求する文書、もしくは、メッセージ。
 |
 | Invoice
 
 
 | 393
-| Factored invoice
-| Invoice assigned to a third party for collection.
+| 代理請求書
+| 第三者に回収を依頼した請求書
 | 380
 | Invoice
 
 
 | 82
-| Metered services invoice
-| Document/message claiming payment for the supply of metered services (e.g., gas, electricity, etc.) supplied to a fixed meter whose consumption is measured over a period of time.
+| 従量制サービスの請求書
+| 一定期間にわたって消費量が測定される固定メーターに供給される従量制サービス（ガス、電気など）の供給に対する支払いを請求する文書、もしくは、メッセージ。
 | 380
 | Invoice
 
 
 | 80
-| Debit note related to goods or services
-| Debit information related to a transaction for goods or services to the relevant party.
+| 商品、もしくは、サービスに関連する引落し手形
+| 当該取引先への商品やサービスの取引に関連した引き落とし情報。
 | 380
 | Invoice
 
 
 | 84
-| Debit note related to financial adjustments
-| Document/message for providing debit information related to financial adjustments to the relevant party.
+| 財務調整に関する引き落とし情報
+| 当該取引先への財務調整に関係する引き落とし情報を提供する文書、もしくは、メッセージ。
 | 380
 | Invoice
 
 
 | 395
-| Consignment invoice
-| Commercial invoice that covers a transaction other than one involving a sale.
+| 委託請求書
+| 販売を伴う取引以外の取引を対象とする商業請求書。
 | 380
 | Invoice
 
 
 | 575
-| Insurer's invoice
-| Document/message issued by an insurer specifying the cost of an insurance which has been effected and claiming payment therefore
+| 保険会社の請求書
+| 保険会社から発行された文書、もしくは、メッセージ。保険が発効した保険の費用が明記されているため、保険金の支払いを請求することができます。
 | 380
 | Invoice
 
 
 | 623
-| Forwarder's invoice
-| Invoice issued by a freight forwarder specifying services rendered and costs incurred and claiming payment therefore.
+| 運送業者の請求書
+| 提供されたサービスと発生した費用が明記されており、その支払いを請求する貨物運送業者が発行する請求書。
 | 380
 | Invoice
 
 
 | 780
-| Freight invoice
-| Document/message issued by a transport operation specifying freight costs and charges incurred for a transport operation and stating conditions of payment.
+| 積荷請求書
+| 運送事業者が発行する、運送事業のために発生した運賃や料金、支払条件を明記した文書、または、メッセージ。
 | 380
 | Invoice
 
-|383
-|Debit note
-| Document/message for providing debit information to the relevant party.
+| 383
+| 借方票
+| 引き落とし情報を関係者に提供するための文書、または、メッセージ
 | 380
 | Invoice
 
 
-|386
-|Prepayment invoice
-|An invoice to pay amounts for goods and services in advance; these amounts will be subtracted from the final invoice.
+| 386
+| 前払い請求書
+| 商品やサービスの代金を事前に支払うための請求書。これらの金額は最終的な請求書から差し引かれます。
 | 380
 | Invoice
 

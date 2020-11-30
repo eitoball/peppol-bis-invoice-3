@@ -1,10 +1,10 @@
 
-.Document and VAT currency codes
+.文書と付加価値税（VAT）での通貨コード
 [cols="1,4"]
 |===
-h| Document location
+h| 文書での位置
 | `cbc:DocumentCurrencyCode` +
 `cbc:TaxCurrencyCode`
-h| Source codelist
+h| コード一覧提供元
 | {ISO4217}
 |===

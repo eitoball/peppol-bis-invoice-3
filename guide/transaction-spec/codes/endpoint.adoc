@@ -1,8 +1,8 @@
 
 
-= Electronic address identifier scheme
+= 電子アドレス識別子スキーマ
 
-For BT-49 and BT-34 Sellers and Buyers Electronic address identifiers (Endpoint identification) the {EN16931} mandates use of a code list to be maintained by _Connecting Europe Facility (CEF)_.
+BT-49 と BT-34 の売り手と買い手の電子アドレス識別子（エンドポイント識別）については、 {EN16931} では、 _コネクティング・ヨーロッパ・ファシリティ (CEF)_ が維持するコード一覧の使用が義務付けられています。
 
 
 include::../../syntax/codelists/endpoint.adoc[]

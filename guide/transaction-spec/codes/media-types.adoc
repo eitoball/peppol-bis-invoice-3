@@ -1,29 +1,29 @@
 
 [[media-type]]
-= Media type code of attached document
+= 添付文書のメディアタイプコード
 
-Subset of {IANA} Media Types.
+{IANA} メディアタイプの一部になります。
 
 include::../../syntax/codelists/mime-code.adoc[]
 
-Valid values are listed in the table below.
+有効な値は以下の表の通りです。
 
 [cols="1,4"]
-.Code list
+.コード一覧
 |===
 
-.1+h| Documents
+.1+h| 文書
 | application/pdf
 
-.2+h| Images
+.2+h| 画像
 | image/png
 | image/jpeg
 
 
-.1+h| Text
+.1+h| テキスト
 | text/csv
 
-.2+h| Spreadsheet
+.2+h| スプレッドシート
 | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 | application/vnd.oasis.opendocument.spreadsheet
 |===

@@ -1,11 +1,11 @@
 
 [cols="2,3,3", options="header"]
 |===
-|Business Term
-|Applicable XPath
-|Code list (link or subset values)
+| ビジネス用語
+| 適用される XPath
+| コード一覧（リンク、もしくは、一部の値）
 
-| Electronic address identifiers (Endpoint)
+| 電子アドレス識別子 (エンドポイント)
 | cbc:EndpointID/@schemeID
 a| {eas}
 |===

@@ -1,12 +1,12 @@
 [[uom]]
-= Unit of measure
+= 測定単位
 
-Valid unit codes shall be from {UNRec20}. Unless codes for unit of measure are not in common daily use, implementers should as necessary provide a function for clarification of codes when invoices are visualised.
+有効な単位コードは、 {UNRec20} からのものである必要があります。単位コードが、日常的に一般的に使用されていない場合を除き、実装者は、必要に応じて、請求書を表示する際に単位コードを明確にする機能を提供することが望まれています。
 
 
 ****
-NOTE: Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of {UNRec20}: +
-_The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure._
+NOTE: UNECE勧告第21号の包装単位のコードは、 {UNRec20} の「紹介」の項の記述に従って使用することができます。: +
+_UNECE勧告第21号の2文字英数字コード値を使用しなければならない。UNECE勧告第20号の既存のコード値との重複を避けるために、UNECE勧告第21号の各コード値の前に "X"を付けなければならず、その結果、測定単位として使用される場合には3文字の英数字コードとなる。_
 ****
 
 include::../../syntax/codelists/uom.adoc[]

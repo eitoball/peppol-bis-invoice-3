@@ -1,8 +1,8 @@
 
 
-= Item standard identifier scheme
+= 商品標準識別子スキーマ
 
-An item standard identifier has a *mandatory* scheme attribute. The value shall be chosen from the ICD list from {ISO6523}
+商品標準識別子には、スキーマ属性は *必須* です。属性には、 {ISO6523} からの ICD 一覧からの値を使用する必要があります。
 
 
 include::../../syntax/codelists/item-id.adoc[]

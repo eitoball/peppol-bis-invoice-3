@@ -1,9 +1,9 @@
 
-.Currency identifiers
+.通貨識別子
 [cols="1,4"]
 |===
-h| Document location
+h| 文書での位置
 | `cbc:*/@currencyID`
-h| Source codelist
+h| コード一覧提供元
 | {ISO4217}
 |===

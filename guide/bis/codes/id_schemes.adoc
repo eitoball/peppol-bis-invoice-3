@@ -1,6 +1,6 @@
 
 [[id_schemes]]
-= Code lists for identifier schemes
+= 識別子スキーマのコード一覧
 
 :leveloffset: +1
 

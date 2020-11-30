@@ -1,7 +1,8 @@
 
-= Currency code
+= 通貨コード
 
-All currencies in an invoice or credit note shall be the alphabetic code from {ISO4217}
+請求書、または、クレジットノート内では、通貨コードとして、{ISO4217} のアルファベットコードを利用する必要があります。
+
 
 include::../../syntax/codelists/currency-codes.adoc[]
 include::../../syntax/codelists/currency-id.adoc[]

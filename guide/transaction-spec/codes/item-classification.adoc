@@ -1,8 +1,8 @@
 
 
-= Item classification identifier
+= 商品分類識別子
 
-An item classification identifier has a *mandatory* scheme attribute. The value shall be chosen from {UNCL7143}.
+商品分類識別子には、スキーマ属性は *必須* です。属性には、 {UNCL7143} からの値を使用する必要があります。
 
 
 include::../../syntax/codelists/item-classification.adoc[]

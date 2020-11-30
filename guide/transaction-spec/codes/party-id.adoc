@@ -1,8 +1,8 @@
 
 
-= Party identifiers and party legal registration identifier scheme
+= 当事者識別子と当事者法定登録識別子スキーマ
 
-All party identifiers and party legal registration identifier has an optional scheme attribute. If used, the value shall be chosen from the ICD list from {ISO6523}
+すべての当事者識別子及び当事者法定登録識別子は，任意のスキーマ属性を持ちます。使用する場合は、  {ISO6523} からの ICD 一覧からの値を選択する必要があります。
 
 
 include::../../syntax/codelists/party-id.adoc[]

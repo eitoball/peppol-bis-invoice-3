@@ -1,75 +1,75 @@
 
-= Allowance reason codes
+= 引当金原因コード
 
-Any allowance reason codes shall be from {UNCL5189}
+すべての引当金原因コードは {UNCL5189} からである必要があります。
 
 
 include::../../syntax/codelists/allowance.adoc[]
 
-Valid values are listed in the table below:
+有効な値は以下の表の通りです:
 
 [cols="1,4", options="header"]
 .Code list
 |===
-| Code
-| Description
+| コード
+| 説明
 
 
 | 41
-| Bonus for works ahead of schedule
+| 予定より早く作業が完了した時の賞与
 
 | 42
-| Other bonus
+| 他の賞与
 
 | 60
-| Manufacturer's consumer discount
+| メーカーの消費者割引
 
 | 62
-| Due to military status
+| 軍事的地位のため
 
 | 63
-| Due to work accident
+| 労災によるもの
 
 | 64
-| Special agreement
+| 特約によるもの
 
 | 65
-| Production error discount
+| 製造エラー割引
 
 | 66
-| New outlet discount
+| 新品アウトレット割引
 
 | 67
-| Sample discount
+| サンプル品割引
 
 | 68
-| End-of-range discount
+| 規格外割引
 
 | 70
-| Incoterm discount
+| インコタームズ割引
 
 | 71
-| Point of sales threshold allowance
+| 売上高達成割引
 
 | 88
-| Material surcharge/deduction
+| 原料追加・控除額
 
 | 95
-| Discount
+| 割引
 
 | 100
-| Special rebate
+| 特別払い戻し
 
 | 102
-| Fixed long term
+| 長期固定
 
 | 103
-| Temporary
+| 一時的
 
 | 104
-| Standard
+| 標準
 
 | 105
-| Yearly turnover
+| 年間取引高
 
 |===

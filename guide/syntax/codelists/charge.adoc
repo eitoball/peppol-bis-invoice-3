@@ -1,8 +1,8 @@
 
 [cols="1,4"]
 |===
-h| Document location
+h| 文書での位置
 | `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=true]`
-h| Source codelist
+h| コード一覧提供元
 | {UNCL7161}
 |===

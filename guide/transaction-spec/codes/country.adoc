@@ -1,6 +1,6 @@
 
-= Country code
+= 国コード
 
-All country codes in an invoice or credit note shall be the alpha-2 code from {ISO3166}
+請求書、または、クレジットノート内では、国コードとして、{ISO3166} の alpha-2 コードを利用する必要があります。
 
 include::../../syntax/codelists/country.adoc[]

@@ -1,7 +1,7 @@
 
 [[inv-object-code]]
-= Invoiced object identifier scheme
+= 請求対象識別子スキーマ
 
-The invoiced object identifier scheme shall be from {UNCL1153}
+請求対象識別子スキーマは、 {UNCL1153} の値を使用する必要があります。
 
 include::../../syntax/codelists/inv-object.adoc[]

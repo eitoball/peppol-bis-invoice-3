@@ -1,55 +1,55 @@
 
 
-= Specific code lists for the credit note
+= クレジットノート独自のコード一覧
 
-== Credit note Type Code
+== クレジットノート型コード
 
 include::../../syntax/codelists/cn-type.adoc[]
 
 
 
 [cols="1h,2s,4a,1,2m", options="header"]
-.Code list
+.コード一覧
 |===
-| Code
-| Name
-| Description
-| Synonym with
-| UBL Message type
+| コード
+| 名前
+| 説明
+| 同義コード
+| UBL 文言型
 
 
 | 381
-| Credit note
-| Document/message for providing credit information to the relevant party.
+| クレジットノート
+| 信用情報を関係者に提供するための文書、もしくは、メッセージ
 |
 | CreditNote
 
 
 
 | 396
-| Factored credit note
-| Credit note related to assigned invoice(s).
+| 代理クレジットノート
+| 割り当てられた請求書に関連するクレジットノート
 | 381
 | CreditNote
 
 
 | 81
-| Credit note related to goods or services
-| Document message used to provide credit information related to a transaction for goods or services to the relevant party.
+| 商品やサービスに関連するクレジットノート
+| 商品やサービスの取引に関連した信用情報を関係者に提供するために使用される文書メッセージ。
 | 381
 | CreditNote
 
 
 | 83
-| Credit note related to financial adjustments
-| Document message for providing credit information related to financial adjustments to the relevant party, e.g., bonuses.
+| 財務調整に関するクレジットノート
+| 補助金など財務調整に関する信用情報を関係者に提供するための文書メッセージ。
 | 381
 | CreditNote
 
 
 | 532
-| Forwarder's credit note
-|  Document/message for providing credit information to the relevant party.
+| 運送業者のクレジットノート
+| 信用情報を関係者に提供するための文書、または、メッセージ
 | 381
 | CreditNote
 

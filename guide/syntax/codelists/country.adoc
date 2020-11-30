@@ -1,9 +1,9 @@
 
 [cols="1,4"]
 |===
-h| Document location
+h| 文書での位置
 | `cac:CountryCode/cbc:IdentificationCode` +
 `cac:OriginCountry/cbc:IdentificationCode` +
-h| Source codelist
+h| コード一覧の提供元
 | {ISO3166}
 |===

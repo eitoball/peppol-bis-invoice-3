@@ -1,42 +1,42 @@
 
-= VAT category codes
+= 付加価値税（VAT）カテゴリーコード
 
-A subset of values from {UNCL5305} shall be used.
+{UNCL5305} からの一部値を使用する必要があります。
 
 include::../../syntax/codelists/vat-category.adoc[]
 
-Valid values are listed in the table below:
+有効な値は以下の表の通りです:
 
 [cols="1,4", options="header"]
-.Code list
+.コード一覧
 |===
-| Code
-| Description
+| コード
+| 説明
 
 | AE
-| Vat Reverse Charge
+| 付加価値税（VAT)リバースチャージ
 
 | E
-| Exempt from Tax
+| 非課税
 
 | S
-| Standard rate
+| 標準税率
 
 | Z
-| Zero rated goods
+| 無税率商品
 
 | G
-| Free export item, tax not charged
+| 免税商品
 
 | O
-| Services outside scope of tax
+| 課税対象外サービス
 
 | K
-| VAT exempt for EEA intra-community supply of goods and services
+| EEA（欧州経済領域）域内での商品・サービスの供給の付加価値税（VAT）免除
 
 | L
-| Canary Islands general indirect tax
+| カナリア諸島一般間接税
 
 | M
-| Tax for production, services and importation in Ceuta and Melilla
+| セウタとメリリャでの生産・サービス・輸入にかかる税金
 |===
