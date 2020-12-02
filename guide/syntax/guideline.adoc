@@ -1,7 +1,7 @@
 
-= UBL schemas and namespaces
+= UBL スキーマと名前空間
 
-The XML schemas used are
+使用される XML スキーマは、以下になります。
 
-* {UBLInv} with the target namespace `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2`
-* {UBLCreditNote} with the target namespace `urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2`
+* {UBLInv} 、名前空間は `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2`
+* {UBLCreditNote} 、名前空間は `urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2`
