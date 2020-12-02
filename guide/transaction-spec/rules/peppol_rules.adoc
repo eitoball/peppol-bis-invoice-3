@@ -1,16 +1,16 @@
 [[peppol_rules]]
-= PEPPOL transaction business rules
+= PEPPOL 商取引ルール
 
-The following rules have been defined by {openpeppol} in addition to the rules adopted from {EN16931}.
-These rules apply in *all* profiles that use this transaction specification.
+以下のルールは、 {EN16931} から採用されたルールに加えて、 {openpeppol} によって定義されています。
+これらのルールは、本取引仕様を使用する *すべての* プロファイルで適用されます。
 
-Please also see <<Restrictions on EN16931>> for further details on the restrictions imposed by these rules.
+これらのルールによって課される制限の詳細については、<<Restrictions on EN16931>> も参照してください。
 
-.PEPPOL transaction business rules
+.PEPPOL 商取引ルール
 [cols="1,4", options="header"]
 |====
-|Rule
-|Message/Context/Test
+| ルール
+| 説明・コンテキスト・検証ルール
 
 include::{rules-dir}/PEPPOL-EN16931-UBL-GENERAL.sch.adoc[]
 |====

@@ -1,15 +1,15 @@
 [[cen_rules]]
-= EN 16931 transaction business rules
+= EN 16931 商取引ルール
 
-The following {EN16931} rules apply to invoice and credit note transaction as it is used in this {peppol} BIS.
-This PEPPOL BIS uses a forked version of the validation rules from {EN16931}.
-Further details can be found at https://github.com/OpenPEPPOL/tc434-validation.
+以下の {EN16931} ルールは、この {peppol} BIS で使用されているように、請求書とクレジットノートの取引に適用されます。
+この PEPPOL BISは {EN16931} の検証ルールから分岐したルールをを使用しています。
+詳細は https://github.com/OpenPEPPOL/tc434-validation を参照してください。
 
-.EN 16931 business rules
+.EN 16931 商取引ルール
 [cols="1,4", options="header"]
 |====
-|Rule
-|Message
+| ルール
+| 説明
 
 include::{rules-dir}/CEN-EN16931-UBL-GENERAL.sch.adoc[]
 |====

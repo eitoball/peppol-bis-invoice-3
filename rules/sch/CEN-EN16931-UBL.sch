@@ -29,7 +29,7 @@
       <assert id="BR-63" flag="fatal" test="exists(@schemeID)">[BR-63]-The Buyer electronic address (BT-49) shall have a Scheme identifier.</assert>
     </rule>
     <rule context="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress">
-      <assert id="BR-11" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''">[BR-11]-The Buyer postal address shall contain a Buyer country code (BT-55).</assert>
+      <assert id="BR-11" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''" diagnostics="BR-11-ja">[BR-11]-The Buyer postal address shall contain a Buyer country code (BT-55).</assert>
     </rule>
     <rule context="cac:PaymentMeans/cac:CardAccount">
       <assert id="BR-51" flag="fatal" test="string-length(cbc:PrimaryAccountNumberID)>=4 and string-length(cbc:PrimaryAccountNumberID)&lt;=6">[BR-51]-The last 4 to 6 digits of the Payment card primary account number (BT-87) shall be present if Payment card information (BG-18) is provided in the Invoice.</assert>
@@ -56,10 +56,10 @@
       <assert id="BR-DEC-06" flag="fatal" test="string-length(substring-after(cbc:BaseAmount,'.'))&lt;=2">[BR-DEC-06]-The allowed maximum number of decimals for the Document level charge base amount (BT-100) is 2.</assert>
     </rule>
     <rule context="cac:LegalMonetaryTotal">
-      <assert id="BR-12" flag="fatal" test="exists(cbc:LineExtensionAmount)">[BR-12]-An Invoice shall have the Sum of Invoice line net amount (BT-106).</assert>
-      <assert id="BR-13" flag="fatal" test="exists(cbc:TaxExclusiveAmount)">[BR-13]-An Invoice shall have the Invoice total amount without VAT (BT-109).</assert>
-      <assert id="BR-14" flag="fatal" test="exists(cbc:TaxInclusiveAmount)">[BR-14]-An Invoice shall have the Invoice total amount with VAT (BT-112).</assert>
-      <assert id="BR-15" flag="fatal" test="exists(cbc:PayableAmount)">[BR-15]-An Invoice shall have the Amount due for payment (BT-115).</assert>
+      <assert id="BR-12" flag="fatal" test="exists(cbc:LineExtensionAmount)" diagnostics="BR-12-ja">[BR-12]-An Invoice shall have the Sum of Invoice line net amount (BT-106).</assert>
+      <assert id="BR-13" flag="fatal" test="exists(cbc:TaxExclusiveAmount)" diagnostics="BR-13-ja">[BR-13]-An Invoice shall have the Invoice total amount without VAT (BT-109).</assert>
+      <assert id="BR-14" flag="fatal" test="exists(cbc:TaxInclusiveAmount)" diagnostics="BR-14-ja">[BR-14]-An Invoice shall have the Invoice total amount with VAT (BT-112).</assert>
+      <assert id="BR-15" flag="fatal" test="exists(cbc:PayableAmount)" diagnostics="BR-15-ja">[BR-15]-An Invoice shall have the Amount due for payment (BT-115).</assert>
       <assert id="BR-CO-10" flag="fatal" test="(xs:decimal(cbc:LineExtensionAmount) = (round(sum(//(cac:InvoiceLine|cac:CreditNoteLine)/xs:decimal(cbc:LineExtensionAmount)) * 10 * 10) div 100))">[BR-CO-10]-Sum of Invoice line net amount (BT-106) = Σ Invoice line net amount (BT-131).</assert>
       <assert id="BR-CO-11" flag="fatal" test="xs:decimal(cbc:AllowanceTotalAmount) = (round(sum(../cac:AllowanceCharge[cbc:ChargeIndicator=false()]/xs:decimal(cbc:Amount)) * 10 * 10) div 100) or  (not(cbc:AllowanceTotalAmount) and not(../cac:AllowanceCharge[cbc:ChargeIndicator=false()]))">[BR-CO-11]-Sum of allowances on document level (BT-107) = Σ Document level allowance amount (BT-92).</assert>
       <assert id="BR-CO-12" flag="fatal" test="xs:decimal(cbc:ChargeTotalAmount) = (round(sum(../cac:AllowanceCharge[cbc:ChargeIndicator=true()]/xs:decimal(cbc:Amount)) * 10 * 10) div 100) or (not(cbc:ChargeTotalAmount) and not(../cac:AllowanceCharge[cbc:ChargeIndicator=true()]))">[BR-CO-12]-Sum of charges on document level (BT-108) = Σ Document level charge amount (BT-99).</assert>
@@ -75,16 +75,16 @@
       <assert id="BR-DEC-18" flag="fatal" test="string-length(substring-after(cbc:PayableAmount,'.'))&lt;=2">[BR-DEC-18]-The allowed maximum number of decimals for the Amount due for payment (BT-115) is 2.  </assert>
     </rule>
     <rule context="/ubl:Invoice | /cn:CreditNote">
-      <assert id="BR-01" flag="fatal" test="(cbc:CustomizationID) != ''">[BR-01]-An Invoice shall have a Specification identifier (BT-24).   </assert>
-      <assert id="BR-02" flag="fatal" test="(cbc:ID) !=''">[BR-02]-An Invoice shall have an Invoice number (BT-1).</assert>
-      <assert id="BR-03" flag="fatal" test="(cbc:IssueDate) !=''">[BR-03]-An Invoice shall have an Invoice issue date (BT-2).</assert>
-      <assert id="BR-04" flag="fatal" test="(cbc:InvoiceTypeCode) !='' or (cbc:CreditNoteTypeCode) !=''">[BR-04]-An Invoice shall have an Invoice type code (BT-3).</assert>
-      <assert id="BR-05" flag="fatal" test="(cbc:DocumentCurrencyCode) !=''">[BR-05]-An Invoice shall have an Invoice currency code (BT-5).</assert>
-      <assert id="BR-06" flag="fatal" test="(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) !=''">[BR-06]-An Invoice shall contain the Seller name (BT-27).</assert>
-      <assert id="BR-07" flag="fatal" test="(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) !=''">[BR-07]-An Invoice shall contain the Buyer name (BT-44).</assert>
-      <assert id="BR-08" flag="fatal" test="exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)">[BR-08]-An Invoice shall contain the Seller postal address. </assert>
-      <assert id="BR-10" flag="fatal" test="exists(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)">[BR-10]-An Invoice shall contain the Buyer postal address (BG-8).</assert>
-      <assert id="BR-16" flag="fatal" test="exists(cac:InvoiceLine) or exists(cac:CreditNoteLine)">[BR-16]-An Invoice shall have at least one Invoice line (BG-25)</assert>
+      <assert id="BR-01" flag="fatal" test="(cbc:CustomizationID) != ''" diagnostics="BR-01-ja">[BR-01]-An Invoice shall have a Specification identifier (BT-24).   </assert>
+      <assert id="BR-02" flag="fatal" test="(cbc:ID) !=''" diagnostics="BR-02-ja">[BR-02]-An Invoice shall have an Invoice number (BT-1).</assert>
+      <assert id="BR-03" flag="fatal" test="(cbc:IssueDate) !=''" diagnostics="BR-03-ja">[BR-03]-An Invoice shall have an Invoice issue date (BT-2).</assert>
+      <assert id="BR-04" flag="fatal" test="(cbc:InvoiceTypeCode) !='' or (cbc:CreditNoteTypeCode) !=''" diagnostics="BR-04-ja">[BR-04]-An Invoice shall have an Invoice type code (BT-3).</assert>
+      <assert id="BR-05" flag="fatal" test="(cbc:DocumentCurrencyCode) !=''" diagnostics="BR-05-ja">[BR-05]-An Invoice shall have an Invoice currency code (BT-5).</assert>
+      <assert id="BR-06" flag="fatal" test="(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) !=''" diagnostics="BR-06-ja">[BR-06]-An Invoice shall contain the Seller name (BT-27).</assert>
+      <assert id="BR-07" flag="fatal" test="(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) !=''" diagnostics="BR-07-ja">[BR-07]-An Invoice shall contain the Buyer name (BT-44).</assert>
+      <assert id="BR-08" flag="fatal" test="exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)" diagnostics="BR-08-ja">[BR-08]-An Invoice shall contain the Seller postal address.</assert>
+      <assert id="BR-10" flag="fatal" test="exists(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)" diagnostics="BR-10-ja">[BR-10]-An Invoice shall contain the Buyer postal address (BG-8).</assert>
+      <assert id="BR-16" flag="fatal" test="exists(cac:InvoiceLine) or exists(cac:CreditNoteLine)" diagnostics="BR-16-ja">[BR-16]-An Invoice shall have at least one Invoice line (BG-25)</assert>
       <assert id="BR-53" flag="fatal" test="every $taxcurrency in cbc:TaxCurrencyCode satisfies exists(//cac:TaxTotal/cbc:TaxAmount[@currencyID=$taxcurrency])">[BR-53]-If the VAT accounting currency code (BT-6) is present, then the Invoice total VAT amount in accounting currency (BT-111) shall be provided.</assert>
       <assert id="BR-66" flag="fatal" test="count(cac:PaymentMeans/cac:CardAccount) &lt;= 1">[BR-66]-An Invoice shall contain maximum one Payment Card account (BG-18).</assert>
       <assert id="BR-67" flag="fatal" test="count(cac:PaymentMeans/cac:PaymentMandate) &lt;= 1">[BR-67]-An Invoice shall contain maximum one Payment Mandate (BG-19).</assert>
@@ -139,14 +139,14 @@
       <assert id="BR-B-02" flag="fatal" test="((//cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B') and (not(//cac:TaxCategory/cbc:ID ='S' or //cac:ClassifiedTaxCategory/cbc:ID = 'S'))) or (not(//cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B'))">[BR-B-02]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is “Split payment" shall not contain an invoice line (BG-25), a Document level allowance (BG-20) or  a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is “Standard rated”.</assert>
     </rule>
     <rule context="cac:InvoiceLine | cac:CreditNoteLine">
-      <assert id="BR-21" flag="fatal" test="(cbc:ID) != ''">[BR-21]-Each Invoice line (BG-25) shall have an Invoice line identifier (BT-126).</assert>
-      <assert id="BR-22" flag="fatal" test="exists(cbc:InvoicedQuantity) or exists(cbc:CreditedQuantity)">[BR-22]-Each Invoice line (BG-25) shall have an Invoiced quantity (BT-129).</assert>
-      <assert id="BR-23" flag="fatal" test="exists(cbc:InvoicedQuantity/@unitCode) or exists(cbc:CreditedQuantity/@unitCode)">[BR-23]-An Invoice line (BG-25) shall have an Invoiced quantity unit of measure code (BT-130).</assert>
-      <assert id="BR-24" flag="fatal" test="exists(cbc:LineExtensionAmount)">[BR-24]-Each Invoice line (BG-25) shall have an Invoice line net amount (BT-131).</assert>
-      <assert id="BR-25" flag="fatal" test="(cac:Item/cbc:Name) != ''">[BR-25]-Each Invoice line (BG-25) shall contain the Item name (BT-153).</assert>
-      <assert id="BR-26" flag="fatal" test="exists(cac:Price/cbc:PriceAmount)">[BR-26]-Each Invoice line (BG-25) shall contain the Item net price (BT-146).</assert>
-      <assert id="BR-27" flag="fatal" test="(cac:Price/cbc:PriceAmount) >= 0">[BR-27]-The Item net price (BT-146) shall NOT be negative.</assert>
-      <assert id="BR-28" flag="fatal" test="(cac:Price/cac:AllowanceCharge/cbc:BaseAmount) >= 0 or not(exists(cac:Price/cac:AllowanceCharge/cbc:BaseAmount))">[BR-28]-The Item gross price (BT-148) shall NOT be negative.</assert>
+      <assert id="BR-21" flag="fatal" test="(cbc:ID) != ''" diagnostics="BR-21-ja">[BR-21]-Each Invoice line (BG-25) shall have an Invoice line identifier (BT-126).</assert>
+      <assert id="BR-22" flag="fatal" test="exists(cbc:InvoicedQuantity) or exists(cbc:CreditedQuantity)" diagnostics="BR-22-ja">[BR-22]-Each Invoice line (BG-25) shall have an Invoiced quantity (BT-129).</assert>
+      <assert id="BR-23" flag="fatal" test="exists(cbc:InvoicedQuantity/@unitCode) or exists(cbc:CreditedQuantity/@unitCode)" diagnostics="BR-23-ja">[BR-23]-An Invoice line (BG-25) shall have an Invoiced quantity unit of measure code (BT-130).</assert>
+      <assert id="BR-24" flag="fatal" test="exists(cbc:LineExtensionAmount)" diagnostics="BR-24-ja">[BR-24]-Each Invoice line (BG-25) shall have an Invoice line net amount (BT-131).</assert>
+      <assert id="BR-25" flag="fatal" test="(cac:Item/cbc:Name) != ''" diagnostics="BR-25-ja">[BR-25]-Each Invoice line (BG-25) shall contain the Item name (BT-153).</assert>
+      <assert id="BR-26" flag="fatal" test="exists(cac:Price/cbc:PriceAmount)" diagnostics="BR-26-ja">[BR-26]-Each Invoice line (BG-25) shall contain the Item net price (BT-146).</assert>
+      <assert id="BR-27" flag="fatal" test="(cac:Price/cbc:PriceAmount) >= 0" diagnostics="BR-27-ja">[BR-27]-The Item net price (BT-146) shall NOT be negative.</assert>
+      <assert id="BR-28" flag="fatal" test="(cac:Price/cac:AllowanceCharge/cbc:BaseAmount) >= 0 or not(exists(cac:Price/cac:AllowanceCharge/cbc:BaseAmount))" diagnostics="BR-28-ja">[BR-28]-The Item gross price (BT-148) shall NOT be negative.</assert>
       <assert id="BR-CO-04" flag="fatal" test="(cac:Item/cac:ClassifiedTaxCategory[cac:TaxScheme/(normalize-space(upper-case(cbc:ID))='VAT')]/cbc:ID)">[BR-CO-04]-Each Invoice line (BG-25) shall be categorized with an Invoiced item VAT category code (BT-151).</assert>
       <assert id="BR-DEC-23" flag="fatal" test="string-length(substring-after(cbc:LineExtensionAmount,'.'))&lt;=2">[BR-DEC-23]-The allowed maximum number of decimals for the Invoice line net amount (BT-131) is 2.</assert>
     </rule>
@@ -167,11 +167,11 @@
       <assert id="BR-DEC-28" flag="fatal" test="string-length(substring-after(cbc:BaseAmount,'.'))&lt;=2">[BR-DEC-28]-The allowed maximum number of decimals for the Invoice line charge base amount (BT-142) is 2.</assert>
     </rule>
     <rule context="cac:InvoiceLine/cac:InvoicePeriod | cac:CreditNoteLine/cac:InvoicePeriod">
-      <assert id="BR-30" flag="fatal" test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))">[BR-30]-If both Invoice line period start date (BT-134) and Invoice line period end date (BT-135) are given then the Invoice line period end date (BT-135) shall be later or equal to the Invoice line period start date (BT-134).</assert>
+      <assert id="BR-30" flag="fatal" test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))" diagnostics="BR-30-ja">[BR-30]-If both Invoice line period start date (BT-134) and Invoice line period end date (BT-135) are given then the Invoice line period end date (BT-135) shall be later or equal to the Invoice line period start date (BT-134).</assert>
       <assert id="BR-CO-20" flag="fatal" test="exists(cbc:StartDate) or exists(cbc:EndDate)">[BR-CO-20]-If Invoice line period (BG-26) is used, the Invoice line period start date (BT-134) or the Invoice line period end date (BT-135) shall be filled, or both.</assert>
     </rule>
     <rule context="cac:InvoicePeriod">
-      <assert id="BR-29" flag="fatal" test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))">[BR-29]-If both Invoicing period start date (BT-73) and Invoicing period end date (BT-74) are given then the Invoicing period end date (BT-74) shall be later or equal to the Invoicing period start date (BT-73).</assert>
+      <assert id="BR-29" flag="fatal" test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))" diagnostics="BR-29-ja">[BR-29]-If both Invoicing period start date (BT-73) and Invoicing period end date (BT-74) are given then the Invoicing period end date (BT-74) shall be later or equal to the Invoicing period start date (BT-73).</assert>
       <assert id="BR-CO-19" flag="fatal" test="((exists(cbc:StartDate) or exists(cbc:EndDate)) and not(exists(cbc:DescriptionCode))) or (exists(cbc:DescriptionCode) and (not(exists(cbc:StartDate)) and not(exists(cbc:EndDate))))">[BR-CO-19]-If Invoicing period (BG-14) is used, the Invoicing period start date (BT-73) or the Invoicing period end date (BT-74) shall be filled, or both.</assert>
     </rule>
     <rule context="//cac:AdditionalItemProperty">
@@ -187,7 +187,7 @@
       <assert id="BR-CL-08" flag="fatal" test="(contains(.,'#') and string-length(substring-before(substring-after(.,'#'),'#'))=3 and ( ( contains(' AAA AAB AAC AAD AAE AAF AAG AAI AAJ AAK AAL AAM AAN AAO AAP AAQ AAR AAS AAT AAU AAV AAW AAX AAY AAZ ABA ABB ABC ABD ABE ABF ABG ABH ABI ABJ ABK ABL ABM ABN ABO ABP ABQ ABR ABS ABT ABU ABV ABW ABX ABZ ACA ACB ACC ACD ACE ACF ACG ACH ACI ACJ ACK ACL ACM ACN ACO ACP ACQ ACR ACS ACT ACU ACV ACW ACX ACY ACZ ADA ADB ADC ADD ADE ADF ADG ADH ADI ADJ ADK ADL ADM ADN ADO ADP ADQ ADR ADS ADT ADU ADV ADW ADX ADY ADZ AEA AEB AEC AED AEE AEF AEG AEH AEI AEJ AEK AEL AEM AEN AEO AEP AEQ AER AES AET AEU AEV AEW AEX AEY AEZ AFA AFB AFC AFD AFE AFF AFG AFH AFI AFJ AFK AFL AFM AFN AFO AFP AFQ AFR AFS AFT AFU AFV AFW AFX AFY AFZ AGA AGB AGC AGD AGE AGF AGG AGH AGI AGJ AGK AGL AGM AGN AGO AGP AGQ AGR AGS AGT AGU AGV AGW AGX AGY AGZ AHA AHB AHC AHD AHE AHF AHG AHH AHI AHJ AHK AHL AHM AHN AHO AHP AHQ AHR AHS AHT AHU AHV AHW AHX AHY AHZ AIA AIB AIC AID AIE AIF AIG AIH AII AIJ AIK AIL AIM AIN AIO AIP AIQ AIR AIS AIT AIU AIV AIW AIX AIY AIZ AJA AJB ALC ALD ALE ALF ALG ALH ALI ALJ ALK ALL ALM ALN ALO ALP ALQ ARR ARS AUT AUU AUV AUW AUX AUY AUZ AVA AVB AVC AVD AVE AVF BAG BAH BAI BAJ BAK BAL BAM BAN BAO BAP BAQ BAR BAS BLC BLD BLE BLF BLG BLH BLI BLJ BLK BLL BLM BLN BLO BLP BLQ BLR BLS BLT BLU BLV BLW BLX BLY BLZ BMA BMB BMC BMD BME CCI CEX CHG CIP CLP CLR COI CUR CUS DAR DCL DEL DIN DOC DUT EUR FBC GBL GEN GS7 HAN HAZ ICN IIN IMI IND INS INV IRP ITR ITS LAN LIN LOI MCO MDH MKS ORI OSI PAC PAI PAY PKG PKT PMD PMT PRD PRF PRI PUR QIN QQD QUT RAH REG RET REV RQR SAF SIC SIN SLR SPA SPG SPH SPP SPT SRN SSR SUR TCA TDT TRA TRR TXD WHI ZZZ ',substring-before(substring-after(.,'#'),'#') ) ) )) or not(contains(.,'#')) or not(string-length(substring-before(substring-after(.,'#'),'#'))=3)">[BR-CL-08]-Invoiced note subject code shall be coded using UNCL4451</assert>
     </rule>
     <rule context="cac:PayeeParty">
-      <assert id="BR-17" flag="fatal" test="exists(cac:PartyName/cbc:Name) and (not(cac:PartyName/cbc:Name = ../cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name) and not(cac:PartyIdentification/cbc:ID = ../cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID) )">[BR-17]-The Payee name (BT-59) shall be provided in the Invoice, if the Payee (BG-10) is different from the Seller (BG-4)</assert>
+      <assert id="BR-17" flag="fatal" test="exists(cac:PartyName/cbc:Name) and (not(cac:PartyName/cbc:Name = ../cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name) and not(cac:PartyIdentification/cbc:ID = ../cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID) )" diagnostics="BR-17-ja">[BR-17]-The Payee name (BT-59) shall be provided in the Invoice, if the Payee (BG-10) is different from the Seller (BG-4)</assert>
     </rule>
     <rule context="cac:PaymentMeans[cbc:PaymentMeansCode='30' or cbc:PaymentMeansCode='58']/cac:PayeeFinancialAccount">
       <assert id="BR-50" flag="fatal" test="(cbc:ID) != ''">[BR-50]-A Payment account identifier (BT-84) shall be present if Credit transfer (BG-17) information is provided in the Invoice.</assert>
@@ -206,15 +206,15 @@
       <assert id="BR-62" flag="fatal" test="exists(@schemeID)">[BR-62]-The Seller electronic address (BT-34) shall have a Scheme identifier.</assert>
     </rule>
     <rule context="cac:AccountingSupplierParty/cac:Party/cac:PostalAddress">
-      <assert id="BR-09" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''">[BR-09]-The Seller postal address (BG-5) shall contain a Seller country code (BT-40).</assert>
+      <assert id="BR-09" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''" diagnostics="BR-09-ja">[BR-09]-The Seller postal address (BG-5) shall contain a Seller country code (BT-40).</assert>
     </rule>
     <rule context="cac:TaxRepresentativeParty">
-      <assert id="BR-18" flag="fatal" test="(cac:PartyName/cbc:Name) != ''">[BR-18]-The Seller tax representative name (BT-62) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11)</assert>
-      <assert id="BR-19" flag="fatal" test="exists(cac:PostalAddress)">[BR-19]-The Seller tax representative postal address (BG-12) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
+      <assert id="BR-18" flag="fatal" test="(cac:PartyName/cbc:Name) != ''" diagnostics="BR-18-ja">[BR-18]-The Seller tax representative name (BT-62) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11)</assert>
+      <assert id="BR-19" flag="fatal" test="exists(cac:PostalAddress)" diagnostics="BR-19-ja">[BR-19]-The Seller tax representative postal address (BG-12) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
       <assert id="BR-56" flag="fatal" test="exists(cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID)">[BR-56]-Each Seller tax representative party (BG-11) shall have a Seller tax representative VAT identifier (BT-63).</assert>
     </rule>
     <rule context="cac:TaxRepresentativeParty/cac:PostalAddress">
-      <assert id="BR-20" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''">[BR-20]-The Seller tax representative postal address (BG-12) shall contain a Tax representative country code (BT-69), if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
+      <assert id="BR-20" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''" diagnostics="BR-20-ja">[BR-20]-The Seller tax representative postal address (BG-12) shall contain a Tax representative country code (BT-69), if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
     </rule>
     <rule context="/ubl:Invoice/cac:TaxTotal | /cn:CreditNote/cac:TaxTotal">
       <assert id="BR-CO-14" flag="fatal" test="(xs:decimal(child::cbc:TaxAmount)= round((sum(cac:TaxSubtotal/xs:decimal(cbc:TaxAmount)) * 10 * 10)) div 100) or not(cac:TaxSubtotal)">[BR-CO-14]-Invoice total VAT amount (BT-110) = Σ VAT category tax amount (BT-117).</assert>
@@ -1208,4 +1208,42 @@
       <assert id="BR-CL-26" flag="fatal" test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0093 0094 0095 0096 0097 0098 0099 0100 0101 0102 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0183 0184 0185 0186 0187 0188 0189 0190 0191 0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 0203 0204 0205 0206 0207 0208 0209 ', concat(' ', normalize-space(@schemeID), ' '))))">[BR-CL-26]-Delivery location identifier scheme identifier MUST belong to the ISO 6523 ICD code list</assert>
     </rule>
   </pattern>
+  <diagnostics>
+    <diagnostic id="BR-01-ja" xml:lang="ja">[BR-01]-仕様識別子を記載する必要があります。(BT-24)</diagnostic>
+    <diagnostic id="BR-02-ja" xml:lang="ja">[BR-02]-請求書番号を記載する必要があります。(BT-1)</diagnostic>
+    <diagnostic id="BR-03-ja" xml:lang="ja">[BR-03]-発行日を記載する必要があります。(BT-2)</diagnostic>
+    <diagnostic id="BR-04-ja" xml:lang="ja">[BR-04]-請求書タイプコードを記載する必要があります。(BT-3)</diagnostic>
+    <diagnostic id="BR-05-ja" xml:lang="ja">[BR-05]-通貨コードを記載する必要があります。(BT-5)</diagnostic>
+    <diagnostic id="BR-06-ja" xml:lang="ja">[BR-06]-売り手の名前を記載する必要があります。(BT-27)</diagnostic>
+    <diagnostic id="BR-07-ja" xml:lang="ja">[BR-07]-買い手の名前を記載する必要があります。(BT-44)</diagnostic>
+    <diagnostic id="BR-08-ja" xml:lang="ja">[BR-08]-売り手の住所が含まれている必要があります。(BG-5)</diagnostic>
+    <diagnostic id="BR-09-ja" xml:lang="ja">[BR-09]-売り手の住所 (BG-5) 内には売り手の国コードを記載する必要があります。(BT-40)</diagnostic>
+    <diagnostic id="BR-10-ja" xml:lang="ja">[BR-10]-買い手の住所が含まれている必要があります。(BG-8)</diagnostic>
+    <diagnostic id="BR-11-ja" xml:lang="ja">[BR-11]-買い手の住所 (BG-8) 内には買い手の国コードを記載する必要があります。(BT-55)</diagnostic>
+    <diagnostic id="BR-12-ja" xml:lang="ja">[BR-12]-明細の合計額を記載する必要があります。(BT-106)</diagnostic>
+    <diagnostic id="BR-13-ja" xml:lang="ja">[BR-13]-負荷価値税（VAT）抜きの合計額を記載する必要があります。(BT-109)</diagnostic>
+    <diagnostic id="BR-14-ja" xml:lang="ja">[BR-14]-付加価値税（VAT）込みの合計額を記載する必要があります。(BT-112)</diagnostic>
+    <diagnostic id="BR-15-ja" xml:lang="ja">[BR-15]-期日までに支払う金額を記載する必要があります。(BT-115)</diagnostic>
+    <diagnostic id="BR-16-ja" xml:lang="ja">[BR-16]-明細行が1行以上含まれている必要があります。(BG-25)</diagnostic>
+    <diagnostic id="BR-17-ja" xml:lang="ja">[BR-17]-支払人（BG-10）が売り手と異なる場合は、支払人名（BT-59）を記載する必要があります。(BG-4)</diagnostic>
+    <diagnostic id="BR-18-ja" xml:lang="ja">[BR-18]-売り手（BG-4）に税務担当者がいる場合は、税務担当者（BT-62）を記載する必要があります。(BG-11)</diagnostic>
+    <diagnostic id="BR-19-ja" xml:lang="ja">[BR-19]-売り手（BG-4）に税務担当者がいる場合は、税務担当者住所（BG-12）を記載する必要があります。(BG-11)</diagnostic>
+    <diagnostic id="BR-20-ja" xml:lang="ja">[BR-20]-売り手（BG-4）に税務担当者がいる場合は、売り手の税務担当者住所（BG-12）に税務担当者国コード（BT-69）を記載する必要があります。(BG-11)</diagnostic>
+    <diagnostic id="BR-21-ja" xml:lang="ja">[BR-21]-各明細行 (BG-25) には、明細識別子 (BT-126) を記載する必要があります。(BT-126)</diagnostic>
+    <diagnostic id="BR-22-ja" xml:lang="ja">[BR-22]-各明細行 (BG-25) には、数量 (BT-129) を記載する必要があります。</diagnostic>
+    <diagnostic id="BR-23-ja" xml:lang="ja">[BR-23]-各明細行 (BG-25) には、単位 (BT-130) を記載する必要があります。</diagnostic>
+    <diagnostic id="BR-24-ja" xml:lang="ja">[BR-24]-各明細行 (BG-25) には、金額 (BT-131) を記載する必要があります。</diagnostic>
+    <diagnostic id="BR-25-ja" xml:lang="ja">[BR-25]-各明細行 (BG-25) には、品名 (BT-153) を記載する必要があります。</diagnostic>
+    <diagnostic id="BR-26-ja" xml:lang="ja">[BR-26]-各明細行 (BG-25) には、単価 (BT-146) を記載する必要があります。</diagnostic>
+    <diagnostic id="BR-27-ja" xml:lang="ja">[BR-27]-小計 (BT-146) は、0より大きい値である必要があります。</diagnostic>
+    <diagnostic id="BR-28-ja" xml:lang="ja">[BR-28]-純小計 (BT-148) は、0より大きい値である必要があります。</diagnostic>
+    <diagnostic id="BR-29-ja" xml:lang="ja">[BR-29]-請求期間開始日 (BT-73) と請求期間終了日 (BT-74) の両方を指定する場合、請求期間終了日 (BT-74) は請求期間開始日と同じかそれ以降である必要があります。(BT-73)</diagnostic>
+    <diagnostic id="BR-30-ja" xml:lang="ja">[BR-30]-明細期間開始日 (BT-134)と明細期間終了日 (BT-135) の両方を指定する場合、明細期間終了日　(BT-135)は明細期間開始日と同じかそれ以降である必要があります。(BT-134)</diagnostic>
+    <diagnostic id="BR-31-ja" xml:lang="ja">[BR-31]-文書引当金 (BG-20）には、引当金額 (BT-92) を含める必要があります。</diagnostic>
+    <diagnostic id="BR-32-ja" xml:lang="ja">[BR-32]-文書引当金 (BG-20）には、引当金額の付加価値税（VAT）カテゴリーコード (BT-95) を含める必要があります。</diagnostic>
+    <diagnostic id="BR-33-ja" xml:lang="ja">[BR-33]-文書引当金 (BG-20）には、引当金理由 (BT-97) または引当金理由コード (BT-98) を含める必要があります。</diagnostic>
+    <diagnostic id="BR-36-ja" xml:lang="ja">[BR-36]-文書手数料 (BG-21) には、文書手数料額を含める必要があります。(BT-99)</diagnostic>
+    <diagnostic id="BR-37-ja" xml:lang="ja">[BR-37]-文書手数料 (BG-21) には、文書手数料額の付加価値税（VAT）カテゴリーコードを含める必要があります。(BT-102)</diagnostic>
+    <diagnostic id="BR-38-ja" xml:lang="ja">[BR-38]-文書手数料 (BG-21) には、文書手数料額の理由 (BT-104) または理由コード(BT-105) を含める必要があります。</diagnostic>
+  </diagnostics>
 </schema>

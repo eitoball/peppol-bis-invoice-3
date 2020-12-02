@@ -10,12 +10,16 @@ $x in //iso:pattern/iso:rule/iso:assert
 let $RuleId := string($x/@id)
 let $rule := replace(normalize-space(string($x/../@context)), '\|', '\\|')
 let $flag := string($x/@flag)
-let $assert := string($x/@test)
+let $assert := normalize-space(string($x/@test))
 let $tekst := normalize-space($x/text())
 
 where starts-with($x/@id, 'PEPPOL')
 order by $x/@id
 
 return
-
-    concat(".3+| ", $RuleId, " *(", $flag , ")* | *", $tekst, "* | [small]#",  $rule, "# | [small]#", $assert, "# &#10;")
+    if (contains($x/@diagnostics, concat($RuleId, '-ja'))) then
+      let $diagnostic := //iso:diagnostics/iso:diagnostic[@id=concat($RuleId, '-ja')]/text()
+      let $tekst := normalize-space($diagnostic)
+      return concat(".3+| ", $RuleId, " *(", $flag , ")* | *", $tekst, "* | [small]#",  $rule, "# | [small]#", $assert, "# &#10;")
+    else
+      concat(".3+| ", $RuleId, " *(", $flag , ")* | *", $tekst, "* | [small]#",  $rule, "# | [small]#", $assert, "# &#10;")
