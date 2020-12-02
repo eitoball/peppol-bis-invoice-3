@@ -1,33 +1,34 @@
-= Validation Principles
+= 検証の原則
 
-Stages in the validation process:
+検証プロセスの各段階は以下のようになります::
 
-Validation of syntax::
- For example:
-  * Check well-formedness
-  * Tag names and attributes shall be correctly written and follow the UBL 2.1 sequence
-  * All UBL 2.1 mandatory elements shall be present.
-  * The element’s contents shall be according to the element’s type definition.
+構文の検証::
+ 例えば:
+  * 整形性のチェック
+  * UBL 2.1 で定義される順序でタグと属性が記述されていること
+  * UBL 2.1 で定義される必須要素が存在すること
+  * 各要素の値は，要素の型定義に従っていること
 
-Validation against {EN16931}::
- To verify that the instance message is compliant to the european standard, like:
-  * Valid codes for currencies, countries, tax  etc.
-  * Mandatory elements according to {EN16931}.
-  * Logical correlations between information element, i.e. that start date is lower than or equal to end date, calculations give the correct result etc.
+{EN16931} に対する検証::
+ インスタンスメッセージが欧州標準に準拠していることを検証するため、例えば:
+  * 通貨、国、税などに有効なコードが利用されていること
+  * {EN16931} に従った必須要素が存在すること
+  * 開始日が、終了日よりも同じか早いか、金額の計算が正しいかなど、情報要素間の論理的な相関関係が正しいこと
 
-CIUS - General rules::
-General rule that applies to all invoices and are triggered by the existence of one or more specific business term(s).
+CIUS - 一般規則::
+すべての請求書に適用され、1つ以上の特定のビジネス用語の存在によってトリガーされる一般的なルール:
 
-* *Example rule text* +
-_An invoice shall have a buyers reference *or* an order reference_
+* *ルールの例文* +
+_請求書には、買い手の参照 *または* 注文の参照があるものとする。_
 
-* *Context that triggers the rule* +
-_Existence of either Buyer reference (BT-10) *OR* Purchased order reference (BT-13)_
+* *ルールをトリガーとするコンテキスト* +
+_買い手参照 (BT-10) *または* 購入注文参照　(BT-13)_のいずれかの存在がする。_
 
-CIUS - Country qualified validation rules::
-Applies only for invoices issued in a specific country. The rule is triggered by the given country code of the seller (BT-40).
-* *Example rule text* +
-_When the Seller is Swedish, the Legal Registration Number shall be numeric with 10 digits._
+CIUS - 国別認証検証ルール::
+C特定の国で発行された請求書にのみ適用されます。ルールは、売り手の指定された国コード（BT-40）によって適用されます。
 
-* *Context that triggers the rule* +
-_Existence of Seller/Address/CountryCode=‘SE’ *AND* existence of Seller/LegalRegistrationNumber_
+* *ルールの例文* +
+_売り手がスウェーデン人の場合、法定登録番号は10桁の数字でなければなりません。_
+
+* *ルールのトリガーとなるコンテキスト* +
+_Seller/Address/CountryCode='SE'で *かつ* Seller/LegalRegistrationNumber が存在している。_

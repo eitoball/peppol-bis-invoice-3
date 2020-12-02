@@ -1,7 +1,8 @@
 
-= Validation
+= （文書の）検証
 
-To optimize the flexibility in the validation process, each PEPPOL document is validated in different stages with shifting focus in every stage. The diagram below illustrates the different stages.
+検証プロセスの柔軟性を最適化するために、各 PEPPOL 文書は、複数の段階で、視点を変えながら検証されます。以下の図は、異なる段階を示しています。
+
 
 image::../shared/images/validation-new.png[Validation stages, align="left"]
 
