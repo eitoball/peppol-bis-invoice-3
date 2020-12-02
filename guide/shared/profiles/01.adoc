@@ -1,7 +1,7 @@
 
 [[prof-01]]
-= Profile 01 - Billing
+= プロファイル 01 - 請求
 
-In the table below you will find the values to be used as the specification identifier (BT-24) and the business process type (BT-23) for this profile
+以下の表に、このプロファイルの仕様識別子（BT-24）とビジネス・プロセス・タイプ（BT-23）として使用される値を示します。
 
 include::../../syntax/profile.adoc[]

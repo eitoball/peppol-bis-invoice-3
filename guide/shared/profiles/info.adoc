@@ -1,9 +1,9 @@
 
-= Profiles and messages [[profiles]]
+= プロファイルとメッセージ [[profiles]]
 
-All messages contains ProfileID and CustomizationID. ProfileID identifies what business process a given message is part of, and CustomizationID identifies the kind of message and the rules applied.
+すべてのメッセージには、 ProfileID と CustomizationID が含まれています。 ProfileID は、与えられたメッセージがどのようなビジネスプロセスの一部であるかを識別し、 CustomizationID は、メッセージの種類と適用されるルールを識別します。
 
-Profiles are connected to one business process, and may contain multiple document types. Valid document instances shall contain corresponding ProfileID and CustomizationID.
+プロファイルは、一つのビジネスプロセスに接続され、複数の文書タイプを含むことができます。有効な文書インスタンスには、対応する ProfileID と CustomizationID を含んでいる必要があります。
 
 
-IMPORTANT: CustomizationID is a string without spaces. The list below contains spaces in CustomizationID to make them easier to read. *Make sure to remove any spaces before use.*
+IMPORTANT: CustomizationID はスペースを除いた文字列です。以下のリストでは、読みやすくするために CustomizationID にスペースを入れています。 *必ずスペースを削除してから使用してください。*

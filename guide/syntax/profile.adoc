@@ -1,12 +1,12 @@
 
 [cols="2s,5a,5a", options="header"]
 |===
-| Type
-| Element `cbc:CustomizationID`
-| Element `cbc:ProfileID`
+| タイプ
+| `cbc:CustomizationID` 要素
+| `cbc:ProfileID` 要素
 
 
-| Invoice and credit note
+| 請求書とクレジット・ノート
 | urn:cen.eu:en16931:2017# +
 compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0
 | urn:fdc:peppol.eu:2017:poacc:billing:01:1.0
@@ -14,7 +14,7 @@ compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0
 |===
 
 
-.UBL example of profile identifier
+.プロファイル識別子の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Snippet-full.xml[tags=profile]
