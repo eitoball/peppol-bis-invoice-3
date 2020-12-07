@@ -1,14 +1,14 @@
 [appendix]
 [[syntax_rules]]
-= Syntax rules
+= 構文ルール
 
-The following {EN16931} syntax rules apply to invoice and credit note transaction as it is used in this {peppol} BIS.
+以下の {EN16931} 構文ルールは、この {peppol} BIS で使用されているように、請求書とクレジットノートでの取引に適用されます。
 
-.EN 16931 syntax rules
+.EN 16931 構文ルール
 [cols="1,4", options="header"]
 |====
-|Rule
-|Message
+| ルール
+| 説明
 
 include::{rules-dir}/CEN-EN16931-UBL-SYNTAX.sch.adoc[]
 |====

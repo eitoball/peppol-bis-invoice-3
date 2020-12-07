@@ -383,76 +383,76 @@
       <assert id="UBL-SR-31" flag="fatal" test="(count(cbc:AllowanceChargeReason) &lt;= 1)">[UBL-SR-31]-Document level charge reason shall occur maximum once</assert>
     </rule>
     <rule context="/ubl:Invoice | /cn:CreditNote">
-      <assert id="UBL-CR-001" flag="warning" test="not(ext:UBLExtensions)">[UBL-CR-001]-A UBL invoice should not include extensions</assert>
-      <assert id="UBL-CR-002" flag="warning" test="not(cbc:UBLVersionID) or cbc:UBLVersionID = '2.1'">[UBL-CR-002]-A UBL invoice should not include the UBLVersionID or it should be 2.1</assert>
-      <assert id="UBL-CR-003" flag="warning" test="not(cbc:ProfileExecutionID)">[UBL-CR-003]-A UBL invoice should not include the ProfileExecutionID </assert>
-      <assert id="UBL-CR-004" flag="warning" test="not(cbc:CopyIndicator)">[UBL-CR-004]-A UBL invoice should not include the CopyIndicator </assert>
-      <assert id="UBL-CR-005" flag="warning" test="not(cbc:UUID)">[UBL-CR-005]-A UBL invoice should not include the UUID </assert>
-      <assert id="UBL-CR-006" flag="warning" test="not(cbc:IssueTime)">[UBL-CR-006]-A UBL invoice should not include the IssueTime </assert>
-      <assert id="UBL-CR-007" flag="warning" test="not(cbc:PricingCurrencyCode)">[UBL-CR-007]-A UBL invoice should not include the PricingCurrencyCode</assert>
-      <assert id="UBL-CR-008" flag="warning" test="not(cbc:PaymentCurrencyCode)">[UBL-CR-008]-A UBL invoice should not include the PaymentCurrencyCode</assert>
-      <assert id="UBL-CR-009" flag="warning" test="not(cbc:PaymentAlternativeCurrencyCode)">[UBL-CR-009]-A UBL invoice should not include the PaymentAlternativeCurrencyCode</assert>
-      <assert id="UBL-CR-010" flag="warning" test="not(cbc:AccountingCostCode)">[UBL-CR-010]-A UBL invoice should not include the AccountingCostCode</assert>
-      <assert id="UBL-CR-011" flag="warning" test="not(cbc:LineCountNumeric)">[UBL-CR-011]-A UBL invoice should not include the LineCountNumeric</assert>
-      <assert id="UBL-CR-012" flag="warning" test="not(cac:InvoicePeriod/cbc:StartTime)">[UBL-CR-012]-A UBL invoice should not include the InvoicePeriod StartTime</assert>
-      <assert id="UBL-CR-013" flag="warning" test="not(cac:InvoicePeriod/cbc:EndTime)">[UBL-CR-013]-A UBL invoice should not include the InvoicePeriod EndTime</assert>
-      <assert id="UBL-CR-014" flag="warning" test="not(cac:InvoicePeriod/cbc:DurationMeasure)">[UBL-CR-014]-A UBL invoice should not include the InvoicePeriod DurationMeasure</assert>
-      <assert id="UBL-CR-015" flag="warning" test="not(cac:InvoicePeriod/cbc:Description)">[UBL-CR-015]-A UBL invoice should not include the InvoicePeriod Description</assert>
-      <assert id="UBL-CR-016" flag="warning" test="not(cac:OrderReference/cbc:CopyIndicator)">[UBL-CR-016]-A UBL invoice should not include the OrderReference CopyIndicator</assert>
-      <assert id="UBL-CR-017" flag="warning" test="not(cac:OrderReference/cbc:UUID)">[UBL-CR-017]-A UBL invoice should not include the OrderReference UUID</assert>
-      <assert id="UBL-CR-018" flag="warning" test="not(cac:OrderReference/cbc:IssueDate)">[UBL-CR-018]-A UBL invoice should not include the OrderReference IssueDate</assert>
-      <assert id="UBL-CR-019" flag="warning" test="not(cac:OrderReference/cbc:IssueTime)">[UBL-CR-019]-A UBL invoice should not include the OrderReference IssueTime</assert>
-      <assert id="UBL-CR-020" flag="warning" test="not(cac:OrderReference/cbc:CustomerReference)">[UBL-CR-020]-A UBL invoice should not include the OrderReference CustomerReference</assert>
-      <assert id="UBL-CR-021" flag="warning" test="not(cac:OrderReference/cbc:OrderTypeCode)">[UBL-CR-021]-A UBL invoice should not include the OrderReference OrderTypeCode</assert>
-      <assert id="UBL-CR-022" flag="warning" test="not(cac:OrderReference/cbc:DocumentReference)">[UBL-CR-022]-A UBL invoice should not include the OrderReference DocumentReference</assert>
-      <assert id="UBL-CR-023" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:CopyIndicator)">[UBL-CR-023]-A UBL invoice should not include the BillingReference CopyIndicator</assert>
-      <assert id="UBL-CR-024" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:UUID)">[UBL-CR-024]-A UBL invoice should not include the BillingReference UUID</assert>
-      <assert id="UBL-CR-025" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueTime)">[UBL-CR-025]-A UBL invoice should not include the BillingReference IssueTime</assert>
-      <assert id="UBL-CR-026" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentTypeCode)">[UBL-CR-026]-A UBL invoice should not include the BillingReference DocumentTypeCode</assert>
-      <assert id="UBL-CR-027" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentType)">[UBL-CR-027]-A UBL invoice should not include the BillingReference DocumentType</assert>
-      <assert id="UBL-CR-028" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:Xpath)">[UBL-CR-028]-A UBL invoice should not include the BillingReference Xpath</assert>
-      <assert id="UBL-CR-029" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:LanguageID)">[UBL-CR-029]-A UBL invoice should not include the BillingReference LanguageID</assert>
-      <assert id="UBL-CR-030" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:LocaleCode)">[UBL-CR-030]-A UBL invoice should not include the BillingReference LocaleCode</assert>
-      <assert id="UBL-CR-031" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:VersionID)">[UBL-CR-031]-A UBL invoice should not include the BillingReference VersionID</assert>
-      <assert id="UBL-CR-032" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentStatusCode)">[UBL-CR-032]-A UBL invoice should not include the BillingReference DocumentStatusCode</assert>
-      <assert id="UBL-CR-033" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentDescription)">[UBL-CR-033]-A UBL invoice should not include the BillingReference DocumenDescription</assert>
-      <assert id="UBL-CR-034" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:Attachment)">[UBL-CR-034]-A UBL invoice should not include the BillingReference Attachment</assert>
-      <assert id="UBL-CR-035" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:ValidityPeriod)">[UBL-CR-035]-A UBL invoice should not include the BillingReference ValidityPeriod</assert>
-      <assert id="UBL-CR-036" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:IssuerParty)">[UBL-CR-036]-A UBL invoice should not include the BillingReference IssuerParty</assert>
-      <assert id="UBL-CR-037" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:ResultOfVerification)">[UBL-CR-037]-A UBL invoice should not include the BillingReference ResultOfVerification</assert>
-      <assert id="UBL-CR-038" flag="warning" test="not(cac:BillingReference/cac:SelfBilledInvoiceDocumentReference)">[UBL-CR-038]-A UBL invoice should not include the BillingReference SelfBilledInvoiceDocumentReference</assert>
-      <assert id="UBL-CR-039" flag="warning" test="not(cac:BillingReference/cac:CreditNoteDocumentReference)">[UBL-CR-039]-A UBL invoice should not include the BillingReference CreditNoteDocumentReference</assert>
-      <assert id="UBL-CR-040" flag="warning" test="not(cac:BillingReference/cac:SelfBilledCreditNoteDocumentReference)">[UBL-CR-040]-A UBL invoice should not include the BillingReference SelfBilledCreditNoteDocumentReference</assert>
-      <assert id="UBL-CR-041" flag="warning" test="not(cac:BillingReference/cac:DebitNoteDocumentReference)">[UBL-CR-041]-A UBL invoice should not include the BillingReference DebitNoteDocumentReference</assert>
-      <assert id="UBL-CR-042" flag="warning" test="not(cac:BillingReference/cac:ReminderDocumentReference)">[UBL-CR-042]-A UBL invoice should not include the BillingReference ReminderDocumentReference</assert>
-      <assert id="UBL-CR-043" flag="warning" test="not(cac:BillingReference/cac:AdditionalDocumentReference)">[UBL-CR-043]-A UBL invoice should not include the BillingReference AdditionalDocumentReference</assert>
-      <assert id="UBL-CR-044" flag="warning" test="not(cac:BillingReference/cac:BillingReferenceLine)">[UBL-CR-044]-A UBL invoice should not include the BillingReference BillingReferenceLine</assert>
-      <assert id="UBL-CR-045" flag="warning" test="not(cac:DespatchDocumentReference/cbc:CopyIndicator)">[UBL-CR-045]-A UBL invoice should not include the DespatchDocumentReference CopyIndicator</assert>
-      <assert id="UBL-CR-046" flag="warning" test="not(cac:DespatchDocumentReference/cbc:UUID)">[UBL-CR-046]-A UBL invoice should not include the DespatchDocumentReference UUID</assert>
-      <assert id="UBL-CR-047" flag="warning" test="not(cac:DespatchDocumentReference/cbc:IssueDate)">[UBL-CR-047]-A UBL invoice should not include the DespatchDocumentReference IssueDate</assert>
-      <assert id="UBL-CR-048" flag="warning" test="not(cac:DespatchDocumentReference/cbc:IssueTime)">[UBL-CR-048]-A UBL invoice should not include the DespatchDocumentReference IssueTime</assert>
-      <assert id="UBL-CR-049" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentTypeCode)">[UBL-CR-049]-A UBL invoice should not include the DespatchDocumentReference DocumentTypeCode</assert>
-      <assert id="UBL-CR-050" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentType)">[UBL-CR-050]-A UBL invoice should not include the DespatchDocumentReference DocumentType</assert>
-      <assert id="UBL-CR-051" flag="warning" test="not(cac:DespatchDocumentReference/cbc:Xpath)">[UBL-CR-051]-A UBL invoice should not include the DespatchDocumentReference Xpath</assert>
-      <assert id="UBL-CR-052" flag="warning" test="not(cac:DespatchDocumentReference/cbc:LanguageID)">[UBL-CR-052]-A UBL invoice should not include the DespatchDocumentReference LanguageID</assert>
-      <assert id="UBL-CR-053" flag="warning" test="not(cac:DespatchDocumentReference/cbc:LocaleCode)">[UBL-CR-053]-A UBL invoice should not include the DespatchDocumentReference LocaleCode</assert>
-      <assert id="UBL-CR-054" flag="warning" test="not(cac:DespatchDocumentReference/cbc:VersionID)">[UBL-CR-054]-A UBL invoice should not include the DespatchDocumentReference VersionID</assert>
-      <assert id="UBL-CR-055" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentStatusCode)">[UBL-CR-055]-A UBL invoice should not include the DespatchDocumentReference DocumentStatusCode</assert>
-      <assert id="UBL-CR-056" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentDescription)">[UBL-CR-056]-A UBL invoice should not include the DespatchDocumentReference DocumentDescription</assert>
-      <assert id="UBL-CR-057" flag="warning" test="not(cac:DespatchDocumentReference/cac:Attachment)">[UBL-CR-057]-A UBL invoice should not include the DespatchDocumentReference Attachment</assert>
-      <assert id="UBL-CR-058" flag="warning" test="not(cac:DespatchDocumentReference/cac:ValidityPeriod)">[UBL-CR-058]-A UBL invoice should not include the DespatchDocumentReference ValidityPeriod</assert>
-      <assert id="UBL-CR-059" flag="warning" test="not(cac:DespatchDocumentReference/cac:IssuerParty)">[UBL-CR-059]-A UBL invoice should not include the DespatchDocumentReference IssuerParty</assert>
-      <assert id="UBL-CR-060" flag="warning" test="not(cac:DespatchDocumentReference/cac:ResultOfVerification)">[UBL-CR-060]-A UBL invoice should not include the DespatchDocumentReference ResultOfVerification</assert>
-      <assert id="UBL-CR-061" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:CopyIndicator)">[UBL-CR-061]-A UBL invoice should not include the ReceiptDocumentReference CopyIndicator</assert>
-      <assert id="UBL-CR-062" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:UUID)">[UBL-CR-062]-A UBL invoice should not include the ReceiptDocumentReference UUID</assert>
-      <assert id="UBL-CR-063" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:IssueDate)">[UBL-CR-063]-A UBL invoice should not include the ReceiptDocumentReference IssueDate</assert>
-      <assert id="UBL-CR-064" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:IssueTime)">[UBL-CR-064]-A UBL invoice should not include the ReceiptDocumentReference IssueTime</assert>
-      <assert id="UBL-CR-065" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:DocumentTypeCode)">[UBL-CR-065]-A UBL invoice should not include the ReceiptDocumentReference DocumentTypeCode</assert>
-      <assert id="UBL-CR-066" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:DocumentType)">[UBL-CR-066]-A UBL invoice should not include the ReceiptDocumentReference DocumentType</assert>
-      <assert id="UBL-CR-067" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:Xpath)">[UBL-CR-067]-A UBL invoice should not include the ReceiptDocumentReference Xpath</assert>
-      <assert id="UBL-CR-068" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:LanguageID)">[UBL-CR-068]-A UBL invoice should not include the ReceiptDocumentReference LanguageID</assert>
-      <assert id="UBL-CR-069" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:LocaleCode)">[UBL-CR-069]-A UBL invoice should not include the ReceiptDocumentReference LocaleCode</assert>
-      <assert id="UBL-CR-070" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:VersionID)">[UBL-CR-070]-A UBL invoice should not include the ReceiptDocumentReference VersionID</assert>
+      <assert id="UBL-CR-001" flag="warning" test="not(ext:UBLExtensions)" diagnostics="UBL-CR-001-ja">[UBL-CR-001]-A UBL invoice should not include extensions</assert>
+      <assert id="UBL-CR-002" flag="warning" test="not(cbc:UBLVersionID) or cbc:UBLVersionID = '2.1'" diagnostics="UBL-CR-002-ja">[UBL-CR-002]-A UBL invoice should not include the UBLVersionID or it should be 2.1</assert>
+      <assert id="UBL-CR-003" flag="warning" test="not(cbc:ProfileExecutionID)" diagnostics="UBL-CR-003-ja">[UBL-CR-003]-A UBL invoice should not include the ProfileExecutionID </assert>
+      <assert id="UBL-CR-004" flag="warning" test="not(cbc:CopyIndicator)" diagnostics="UBL-CR-004-ja">[UBL-CR-004]-A UBL invoice should not include the CopyIndicator </assert>
+      <assert id="UBL-CR-005" flag="warning" test="not(cbc:UUID)" diagnostics="UBL-CR-005-ja">[UBL-CR-005]-A UBL invoice should not include the UUID </assert>
+      <assert id="UBL-CR-006" flag="warning" test="not(cbc:IssueTime)" diagnostics="UBL-CR-006-ja">[UBL-CR-006]-A UBL invoice should not include the IssueTime </assert>
+      <assert id="UBL-CR-007" flag="warning" test="not(cbc:PricingCurrencyCode)" diagnostics="UBL-CR-007-ja">[UBL-CR-007]-A UBL invoice should not include the PricingCurrencyCode</assert>
+      <assert id="UBL-CR-008" flag="warning" test="not(cbc:PaymentCurrencyCode)" diagnostics="UBL-CR-008-ja">[UBL-CR-008]-A UBL invoice should not include the PaymentCurrencyCode</assert>
+      <assert id="UBL-CR-009" flag="warning" test="not(cbc:PaymentAlternativeCurrencyCode)" diagnostics="UBL-CR-009-ja">[UBL-CR-009]-A UBL invoice should not include the PaymentAlternativeCurrencyCode</assert>
+      <assert id="UBL-CR-010" flag="warning" test="not(cbc:AccountingCostCode)" diagnostics="UBL-CR-010-ja">[UBL-CR-010]-A UBL invoice should not include the AccountingCostCode</assert>
+      <assert id="UBL-CR-011" flag="warning" test="not(cbc:LineCountNumeric)" diagnostics="UBL-CR-011-ja">[UBL-CR-011]-A UBL invoice should not include the LineCountNumeric</assert>
+      <assert id="UBL-CR-012" flag="warning" test="not(cac:InvoicePeriod/cbc:StartTime)" diagnostics="UBL-CR-012-ja">[UBL-CR-012]-A UBL invoice should not include the InvoicePeriod StartTime</assert>
+      <assert id="UBL-CR-013" flag="warning" test="not(cac:InvoicePeriod/cbc:EndTime)" diagnostics="UBL-CR-013-ja">[UBL-CR-013]-A UBL invoice should not include the InvoicePeriod EndTime</assert>
+      <assert id="UBL-CR-014" flag="warning" test="not(cac:InvoicePeriod/cbc:DurationMeasure)" diagnostics="UBL-CR-014-ja">[UBL-CR-014]-A UBL invoice should not include the InvoicePeriod DurationMeasure</assert>
+      <assert id="UBL-CR-015" flag="warning" test="not(cac:InvoicePeriod/cbc:Description)" diagnostics="UBL-CR-015-ja">[UBL-CR-015]-A UBL invoice should not include the InvoicePeriod Description</assert>
+      <assert id="UBL-CR-016" flag="warning" test="not(cac:OrderReference/cbc:CopyIndicator)" diagnostics="UBL-CR-016-ja">[UBL-CR-016]-A UBL invoice should not include the OrderReference CopyIndicator</assert>
+      <assert id="UBL-CR-017" flag="warning" test="not(cac:OrderReference/cbc:UUID)" diagnostics="UBL-CR-017-ja">[UBL-CR-017]-A UBL invoice should not include the OrderReference UUID</assert>
+      <assert id="UBL-CR-018" flag="warning" test="not(cac:OrderReference/cbc:IssueDate)" diagnostics="UBL-CR-018-ja">[UBL-CR-018]-A UBL invoice should not include the OrderReference IssueDate</assert>
+      <assert id="UBL-CR-019" flag="warning" test="not(cac:OrderReference/cbc:IssueTime)" diagnostics="UBL-CR-019-ja">[UBL-CR-019]-A UBL invoice should not include the OrderReference IssueTime</assert>
+      <assert id="UBL-CR-020" flag="warning" test="not(cac:OrderReference/cbc:CustomerReference)" diagnostics="UBL-CR-020-ja">[UBL-CR-020]-A UBL invoice should not include the OrderReference CustomerReference</assert>
+      <assert id="UBL-CR-021" flag="warning" test="not(cac:OrderReference/cbc:OrderTypeCode)" diagnostics="UBL-CR-021-ja">[UBL-CR-021]-A UBL invoice should not include the OrderReference OrderTypeCode</assert>
+      <assert id="UBL-CR-022" flag="warning" test="not(cac:OrderReference/cbc:DocumentReference)" diagnostics="UBL-CR-022-ja">[UBL-CR-022]-A UBL invoice should not include the OrderReference DocumentReference</assert>
+      <assert id="UBL-CR-023" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:CopyIndicator)" diagnostics="UBL-CR-023-ja">[UBL-CR-023]-A UBL invoice should not include the BillingReference CopyIndicator</assert>
+      <assert id="UBL-CR-024" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:UUID)" diagnostics="UBL-CR-024-ja">[UBL-CR-024]-A UBL invoice should not include the BillingReference UUID</assert>
+      <assert id="UBL-CR-025" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueTime)" diagnostics="UBL-CR-025-ja">[UBL-CR-025]-A UBL invoice should not include the BillingReference IssueTime</assert>
+      <assert id="UBL-CR-026" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentTypeCode)" diagnostics="UBL-CR-026-ja">[UBL-CR-026]-A UBL invoice should not include the BillingReference DocumentTypeCode</assert>
+      <assert id="UBL-CR-027" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentType)" diagnostics="UBL-CR-027-ja">[UBL-CR-027]-A UBL invoice should not include the BillingReference DocumentType</assert>
+      <assert id="UBL-CR-028" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:Xpath)" diagnostics="UBL-CR-028-ja">[UBL-CR-028]-A UBL invoice should not include the BillingReference Xpath</assert>
+      <assert id="UBL-CR-029" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:LanguageID)" diagnostics="UBL-CR-029-ja">[UBL-CR-029]-A UBL invoice should not include the BillingReference LanguageID</assert>
+      <assert id="UBL-CR-030" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:LocaleCode)" diagnostics="UBL-CR-030-ja">[UBL-CR-030]-A UBL invoice should not include the BillingReference LocaleCode</assert>
+      <assert id="UBL-CR-031" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:VersionID)" diagnostics="UBL-CR-031-ja">[UBL-CR-031]-A UBL invoice should not include the BillingReference VersionID</assert>
+      <assert id="UBL-CR-032" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentStatusCode)" diagnostics="UBL-CR-032-ja">[UBL-CR-032]-A UBL invoice should not include the BillingReference DocumentStatusCode</assert>
+      <assert id="UBL-CR-033" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentDescription)" diagnostics="UBL-CR-033-ja">[UBL-CR-033]-A UBL invoice should not include the BillingReference DocumenDescription</assert>
+      <assert id="UBL-CR-034" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:Attachment)" diagnostics="UBL-CR-034-ja">[UBL-CR-034]-A UBL invoice should not include the BillingReference Attachment</assert>
+      <assert id="UBL-CR-035" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:ValidityPeriod)" diagnostics="UBL-CR-035-ja">[UBL-CR-035]-A UBL invoice should not include the BillingReference ValidityPeriod</assert>
+      <assert id="UBL-CR-036" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:IssuerParty)" diagnostics="UBL-CR-036-ja">[UBL-CR-036]-A UBL invoice should not include the BillingReference IssuerParty</assert>
+      <assert id="UBL-CR-037" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:ResultOfVerification)" diagnostics="UBL-CR-037-ja">[UBL-CR-037]-A UBL invoice should not include the BillingReference ResultOfVerification</assert>
+      <assert id="UBL-CR-038" flag="warning" test="not(cac:BillingReference/cac:SelfBilledInvoiceDocumentReference)" diagnostics="UBL-CR-038-ja">[UBL-CR-038]-A UBL invoice should not include the BillingReference SelfBilledInvoiceDocumentReference</assert>
+      <assert id="UBL-CR-039" flag="warning" test="not(cac:BillingReference/cac:CreditNoteDocumentReference)" diagnostics="UBL-CR-039-ja">[UBL-CR-039]-A UBL invoice should not include the BillingReference CreditNoteDocumentReference</assert>
+      <assert id="UBL-CR-040" flag="warning" test="not(cac:BillingReference/cac:SelfBilledCreditNoteDocumentReference)" diagnostics="UBL-CR-040-ja">[UBL-CR-040]-A UBL invoice should not include the BillingReference SelfBilledCreditNoteDocumentReference</assert>
+      <assert id="UBL-CR-041" flag="warning" test="not(cac:BillingReference/cac:DebitNoteDocumentReference)" diagnostics="UBL-CR-041-ja">[UBL-CR-041]-A UBL invoice should not include the BillingReference DebitNoteDocumentReference</assert>
+      <assert id="UBL-CR-042" flag="warning" test="not(cac:BillingReference/cac:ReminderDocumentReference)" diagnostics="UBL-CR-042-ja">[UBL-CR-042]-A UBL invoice should not include the BillingReference ReminderDocumentReference</assert>
+      <assert id="UBL-CR-043" flag="warning" test="not(cac:BillingReference/cac:AdditionalDocumentReference)" diagnostics="UBL-CR-043-ja">[UBL-CR-043]-A UBL invoice should not include the BillingReference AdditionalDocumentReference</assert>
+      <assert id="UBL-CR-044" flag="warning" test="not(cac:BillingReference/cac:BillingReferenceLine)" diagnostics="UBL-CR-044-ja">[UBL-CR-044]-A UBL invoice should not include the BillingReference BillingReferenceLine</assert>
+      <assert id="UBL-CR-045" flag="warning" test="not(cac:DespatchDocumentReference/cbc:CopyIndicator)" diagnostics="UBL-CR-045-ja">[UBL-CR-045]-A UBL invoice should not include the DespatchDocumentReference CopyIndicator</assert>
+      <assert id="UBL-CR-046" flag="warning" test="not(cac:DespatchDocumentReference/cbc:UUID)" diagnostics="UBL-CR-046-ja">[UBL-CR-046]-A UBL invoice should not include the DespatchDocumentReference UUID</assert>
+      <assert id="UBL-CR-047" flag="warning" test="not(cac:DespatchDocumentReference/cbc:IssueDate)" diagnostics="UBL-CR-047-ja">[UBL-CR-047]-A UBL invoice should not include the DespatchDocumentReference IssueDate</assert>
+      <assert id="UBL-CR-048" flag="warning" test="not(cac:DespatchDocumentReference/cbc:IssueTime)" diagnostics="UBL-CR-048-ja">[UBL-CR-048]-A UBL invoice should not include the DespatchDocumentReference IssueTime</assert>
+      <assert id="UBL-CR-049" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentTypeCode)" diagnostics="UBL-CR-049-ja">[UBL-CR-049]-A UBL invoice should not include the DespatchDocumentReference DocumentTypeCode</assert>
+      <assert id="UBL-CR-050" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentType)" diagnostics="UBL-CR-050-ja">[UBL-CR-050]-A UBL invoice should not include the DespatchDocumentReference DocumentType</assert>
+      <assert id="UBL-CR-051" flag="warning" test="not(cac:DespatchDocumentReference/cbc:Xpath)" diagnostics="UBL-CR-051-ja">[UBL-CR-051]-A UBL invoice should not include the DespatchDocumentReference Xpath</assert>
+      <assert id="UBL-CR-052" flag="warning" test="not(cac:DespatchDocumentReference/cbc:LanguageID)" diagnostics="UBL-CR-052-ja">[UBL-CR-052]-A UBL invoice should not include the DespatchDocumentReference LanguageID</assert>
+      <assert id="UBL-CR-053" flag="warning" test="not(cac:DespatchDocumentReference/cbc:LocaleCode)" diagnostics="UBL-CR-053-ja">[UBL-CR-053]-A UBL invoice should not include the DespatchDocumentReference LocaleCode</assert>
+      <assert id="UBL-CR-054" flag="warning" test="not(cac:DespatchDocumentReference/cbc:VersionID)" diagnostics="UBL-CR-054-ja">[UBL-CR-054]-A UBL invoice should not include the DespatchDocumentReference VersionID</assert>
+      <assert id="UBL-CR-055" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentStatusCode)" diagnostics="UBL-CR-055-ja">[UBL-CR-055]-A UBL invoice should not include the DespatchDocumentReference DocumentStatusCode</assert>
+      <assert id="UBL-CR-056" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentDescription)" diagnostics="UBL-CR-056-ja">[UBL-CR-056]-A UBL invoice should not include the DespatchDocumentReference DocumentDescription</assert>
+      <assert id="UBL-CR-057" flag="warning" test="not(cac:DespatchDocumentReference/cac:Attachment)" diagnostics="UBL-CR-057-ja">[UBL-CR-057]-A UBL invoice should not include the DespatchDocumentReference Attachment</assert>
+      <assert id="UBL-CR-058" flag="warning" test="not(cac:DespatchDocumentReference/cac:ValidityPeriod)" diagnostics="UBL-CR-058-ja">[UBL-CR-058]-A UBL invoice should not include the DespatchDocumentReference ValidityPeriod</assert>
+      <assert id="UBL-CR-059" flag="warning" test="not(cac:DespatchDocumentReference/cac:IssuerParty)" diagnostics="UBL-CR-059-ja">[UBL-CR-059]-A UBL invoice should not include the DespatchDocumentReference IssuerParty</assert>
+      <assert id="UBL-CR-060" flag="warning" test="not(cac:DespatchDocumentReference/cac:ResultOfVerification)" diagnostics="UBL-CR-060-ja">[UBL-CR-060]-A UBL invoice should not include the DespatchDocumentReference ResultOfVerification</assert>
+      <assert id="UBL-CR-061" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:CopyIndicator)" diagnostics="UBL-CR-061-ja">[UBL-CR-061]-A UBL invoice should not include the ReceiptDocumentReference CopyIndicator</assert>
+      <assert id="UBL-CR-062" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:UUID)" diagnostics="UBL-CR-062-ja">[UBL-CR-062]-A UBL invoice should not include the ReceiptDocumentReference UUID</assert>
+      <assert id="UBL-CR-063" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:IssueDate)" diagnostics="UBL-CR-063-ja">[UBL-CR-063]-A UBL invoice should not include the ReceiptDocumentReference IssueDate</assert>
+      <assert id="UBL-CR-064" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:IssueTime)" diagnostics="UBL-CR-064-ja">[UBL-CR-064]-A UBL invoice should not include the ReceiptDocumentReference IssueTime</assert>
+      <assert id="UBL-CR-065" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:DocumentTypeCode)" diagnostics="UBL-CR-065-ja">[UBL-CR-065]-A UBL invoice should not include the ReceiptDocumentReference DocumentTypeCode</assert>
+      <assert id="UBL-CR-066" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:DocumentType)" diagnostics="UBL-CR-066-ja">[UBL-CR-066]-A UBL invoice should not include the ReceiptDocumentReference DocumentType</assert>
+      <assert id="UBL-CR-067" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:Xpath)" diagnostics="UBL-CR-067-ja">[UBL-CR-067]-A UBL invoice should not include the ReceiptDocumentReference Xpath</assert>
+      <assert id="UBL-CR-068" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:LanguageID)" diagnostics="UBL-CR-068-ja">[UBL-CR-068]-A UBL invoice should not include the ReceiptDocumentReference LanguageID</assert>
+      <assert id="UBL-CR-069" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:LocaleCode)" diagnostics="UBL-CR-069-ja">[UBL-CR-069]-A UBL invoice should not include the ReceiptDocumentReference LocaleCode</assert>
+      <assert id="UBL-CR-070" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:VersionID)" diagnostics="UBL-CR-070-ja">[UBL-CR-070]-A UBL invoice should not include the ReceiptDocumentReference VersionID</assert>
       <assert id="UBL-CR-071" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:DocumentStatusCode)">[UBL-CR-071]-A UBL invoice should not include the ReceiptDocumentReference DocumentStatusCode</assert>
       <assert id="UBL-CR-072" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:DocumentDescription)">[UBL-CR-072]-A UBL invoice should not include the ReceiptDocumentReference DocumentDescription</assert>
       <assert id="UBL-CR-073" flag="warning" test="not(cac:ReceiptDocumentReference/cac:Attachment)">[UBL-CR-073]-A UBL invoice should not include the ReceiptDocumentReference Attachment</assert>
@@ -1245,5 +1245,75 @@
     <diagnostic id="BR-36-ja" xml:lang="ja">[BR-36]-文書手数料 (BG-21) には、文書手数料額を含める必要があります。(BT-99)</diagnostic>
     <diagnostic id="BR-37-ja" xml:lang="ja">[BR-37]-文書手数料 (BG-21) には、文書手数料額の付加価値税（VAT）カテゴリーコードを含める必要があります。(BT-102)</diagnostic>
     <diagnostic id="BR-38-ja" xml:lang="ja">[BR-38]-文書手数料 (BG-21) には、文書手数料額の理由 (BT-104) または理由コード(BT-105) を含める必要があります。</diagnostic>
+    <diagnostic id="UBL-CR-001-ja" xml:lang="ja">[UBL-CR-001]-UBL 形式での請求書には拡張を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-002-ja" xml:lang="ja">[UBL-CR-002]-UBL 形式での請求書には、UBLVersionID を含めないようにするか、2.1 を指定する必要があります</diagnostic>
+    <diagnostic id="UBL-CR-003-ja" xml:lang="ja">[UBL-CR-003]-UBL 形式での請求書には、ProfileExecutionID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-004-ja" xml:lang="ja">[UBL-CR-004]-UBL 形式での請求書には、CopyIndicator を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-005-ja" xml:lang="ja">[UBL-CR-005]-UBL 形式での請求書には、UUID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-006-ja" xml:lang="ja">[UBL-CR-006]-UBL 形式での請求書には、IssueTime を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-007-ja" xml:lang="ja">[UBL-CR-007]-UBL 形式での請求書には、PricingCurrencyCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-008-ja" xml:lang="ja">[UBL-CR-008]-UBL 形式での請求書には、PaymentCurrencyCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-009-ja" xml:lang="ja">[UBL-CR-009]-UBL 形式での請求書には、PaymentAlternativeCurrencyCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-010-ja" xml:lang="ja">[UBL-CR-010]-UBL 形式での請求書には、AccountingCostCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-011-ja" xml:lang="ja">[UBL-CR-011]-UBL 形式での請求書には、LineCountNumeric を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-012-ja" xml:lang="ja">[UBL-CR-012]-UBL 形式での請求書には、InvoicePeriod 内で StartTime を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-013-ja" xml:lang="ja">[UBL-CR-013]-UBL 形式での請求書には、InvoicePeriod 内で EndTime を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-014-ja" xml:lang="ja">[UBL-CR-014]-UBL 形式での請求書には、InvoicePeriod 内で DurationMeasure を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-015-ja" xml:lang="ja">[UBL-CR-015]-UBL 形式での請求書には、InvoicePeriod 内で Description を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-016-ja" xml:lang="ja">[UBL-CR-016]-UBL 形式での請求書には、OrderReference 内で CopyIndicator を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-017-ja" xml:lang="ja">[UBL-CR-017]-UBL 形式での請求書には、OrderReference 内で UUID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-018-ja" xml:lang="ja">[UBL-CR-018]-UBL 形式での請求書には、OrderReference 内で IssueDate を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-019-ja" xml:lang="ja">[UBL-CR-019]-UBL 形式での請求書には、OrderReference 内で IssueTime を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-020-ja" xml:lang="ja">[UBL-CR-020]-UBL 形式での請求書には、OrderReference 内で CustomerReference を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-021-ja" xml:lang="ja">[UBL-CR-021]-UBL 形式での請求書には、OrderReference 内で OrderTypeCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-022-ja" xml:lang="ja">[UBL-CR-022]-UBL 形式での請求書には、OrderReference 内で DocumentReference を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-023-ja" xml:lang="ja">[UBL-CR-023]-UBL 形式での請求書には、BillingReference 内で CopyIndicator を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-024-ja" xml:lang="ja">[UBL-CR-024]-UBL 形式での請求書には、BillingReference 内で UUID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-025-ja" xml:lang="ja">[UBL-CR-025]-UBL 形式での請求書には、BillingReference 内で IssueTime を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-026-ja" xml:lang="ja">[UBL-CR-026]-UBL 形式での請求書には、BillingReference 内で DocumentTypeCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-027-ja" xml:lang="ja">[UBL-CR-027]-UBL 形式での請求書には、BillingReference 内で DocumentType を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-028-ja" xml:lang="ja">[UBL-CR-028]-UBL 形式での請求書には、BillingReference 内で Xpath を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-029-ja" xml:lang="ja">[UBL-CR-029]-UBL 形式での請求書には、BillingReference 内で LanguageID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-030-ja" xml:lang="ja">[UBL-CR-030]-UBL 形式での請求書には、BillingReference 内で LocaleCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-031-ja" xml:lang="ja">[UBL-CR-031]-UBL 形式での請求書には、BillingReference 内で DocumentTypeCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-032-ja" xml:lang="ja">[UBL-CR-032]-UBL 形式での請求書には、BillingReference 内で DocumentType を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-033-ja" xml:lang="ja">[UBL-CR-033]-UBL 形式での請求書には、BillingReference 内で Xpath を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-034-ja" xml:lang="ja">[UBL-CR-034]-UBL 形式での請求書には、BillingReference 内で LanguageID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-035-ja" xml:lang="ja">[UBL-CR-035]-UBL 形式での請求書には、BillingReference 内で LocaleCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-036-ja" xml:lang="ja">[UBL-CR-036]-UBL 形式での請求書には、BillingReference 内で IssuerParty を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-037-ja" xml:lang="ja">[UBL-CR-037]-UBL 形式での請求書には、BillingReference 内で ResultOfVerification を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-038-ja" xml:lang="ja">[UBL-CR-038]-UBL 形式での請求書には、BillingReference 内で SelfBilledInvoiceDocumentReference を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-039-ja" xml:lang="ja">[UBL-CR-039]-UBL 形式での請求書には、BillingReference 内で CreditNoteDocumentReference を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-040-ja" xml:lang="ja">[UBL-CR-040]-UBL 形式での請求書には、BillingReference 内で SelfBilledCreditNoteDocumentReference を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-041-ja" xml:lang="ja">[UBL-CR-041]-UBL 形式での請求書には、BillingReference 内で DebitNoteDocumentReference を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-042-ja" xml:lang="ja">[UBL-CR-042]-UBL 形式での請求書には、BillingReference 内で ReminderDocumentReference を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-043-ja" xml:lang="ja">[UBL-CR-043]-UBL 形式での請求書には、BillingReference 内で AdditionalDocumentReference を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-044-ja" xml:lang="ja">[UBL-CR-044]-UBL 形式での請求書には、BillingReference 内で BillingReferenceLine を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-045-ja" xml:lang="ja">[UBL-CR-045]-UBL 形式での請求書には、DespatchDocumentReference 内で CopyIndicator を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-046-ja" xml:lang="ja">[UBL-CR-046]-UBL 形式での請求書には、DespatchDocumentReference 内で UUID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-047-ja" xml:lang="ja">[UBL-CR-047]-UBL 形式での請求書には、DespatchDocumentReference 内で IssueDate を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-048-ja" xml:lang="ja">[UBL-CR-048]-UBL 形式での請求書には、DespatchDocumentReference 内で IssueTime を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-049-ja" xml:lang="ja">[UBL-CR-049]-UBL 形式での請求書には、DespatchDocumentReference 内で DocumentTypeCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-050-ja" xml:lang="ja">[UBL-CR-050]-UBL 形式での請求書には、DespatchDocumentReference 内で DocumentType を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-051-ja" xml:lang="ja">[UBL-CR-051]-UBL 形式での請求書には、DespatchDocumentReference 内で Xpath を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-052-ja" xml:lang="ja">[UBL-CR-052]-UBL 形式での請求書には、DespatchDocumentReference 内で LanguageID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-053-ja" xml:lang="ja">[UBL-CR-053]-UBL 形式での請求書には、DespatchDocumentReference 内で LocaleCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-054-ja" xml:lang="ja">[UBL-CR-054]-UBL 形式での請求書には、DespatchDocumentReference 内で VersionID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-055-ja" xml:lang="ja">[UBL-CR-055]-UBL 形式での請求書には、DespatchDocumentReference 内で DocumentStatusCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-056-ja" xml:lang="ja">[UBL-CR-056]-UBL 形式での請求書には、DespatchDocumentReference 内で DocumentDescription を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-057-ja" xml:lang="ja">[UBL-CR-057]-UBL 形式での請求書には、DespatchDocumentReference 内で Attachment を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-058-ja" xml:lang="ja">[UBL-CR-058]-UBL 形式での請求書には、DespatchDocumentReference 内で ValidationPeriod を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-059-ja" xml:lang="ja">[UBL-CR-059]-UBL 形式での請求書には、DespatchDocumentReference 内で IssuerParty を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-060-ja" xml:lang="ja">[UBL-CR-060]-UBL 形式での請求書には、DespatchDocumentReference 内で ResultOfVerification を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-061-ja" xml:lang="ja">[UBL-CR-061]-UBL 形式での請求書には、ReceiptDocumentReference 内で CopyIndicator を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-062-ja" xml:lang="ja">[UBL-CR-062]-UBL 形式での請求書には、ReceiptDocumentReference 内で UUID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-063-ja" xml:lang="ja">[UBL-CR-063]-UBL 形式での請求書には、ReceiptDocumentReference 内で IssueDate を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-064-ja" xml:lang="ja">[UBL-CR-064]-UBL 形式での請求書には、ReceiptDocumentReference 内で IssueTime を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-065-ja" xml:lang="ja">[UBL-CR-065]-UBL 形式での請求書には、ReceiptDocumentReference 内で DocumentTypeCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-066-ja" xml:lang="ja">[UBL-CR-066]-UBL 形式での請求書には、ReceiptDocumentReference 内で DocumentType を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-067-ja" xml:lang="ja">[UBL-CR-067]-UBL 形式での請求書には、ReceiptDocumentReference 内で Xpath を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-068-ja" xml:lang="ja">[UBL-CR-068]-UBL 形式での請求書には、ReceiptDocumentReference 内で LanguageID を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-069-ja" xml:lang="ja">[UBL-CR-069]-UBL 形式での請求書には、ReceiptDocumentReference 内で LocaleCode を使うことはできません</diagnostic>
+    <diagnostic id="UBL-CR-070-ja" xml:lang="ja">[UBL-CR-070]-UBL 形式での請求書には、ReceiptDocumentReference 内で VersionID を使うことはできません</diagnostic>
   </diagnostics>
 </schema>

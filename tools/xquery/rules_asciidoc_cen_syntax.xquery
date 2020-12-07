@@ -17,5 +17,9 @@ where starts-with($x/@id, 'UBL-') or starts-with($x/@id, 'CII-')
 order by $x/@id
 
 return
-
-    concat("| ", $RuleId, " *(", $flag , ")* | ", $tekst, " &#10;")
+    if (contains($x/@diagnostics, concat($RuleId, '-ja'))) then
+      let $diagnostic := //iso:diagnostics/iso:diagnostic[@id=concat($RuleId, '-ja')]/text()
+      let $tekst := tokenize(normalize-space($diagnostic), '\]\-')[2]
+      return concat("| ", $RuleId, " *(", $flag, ")* | ", $tekst, "&#10;")
+    else
+      concat("| ", $RuleId, " *(", $flag , ")* | ", $tekst, " &#10;")
