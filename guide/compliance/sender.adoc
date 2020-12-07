@@ -1,5 +1,5 @@
-= Senders compliance to BIS
+= 送信者側での BIS への準拠
 [horizontal]
 
-== Processing of rules
-* A sender SHALL NOT send messages that are not compliant to the BIS.
+== ルールの処理
+* 送信者は、BIS に準拠していないメッセージを送信してはならない。

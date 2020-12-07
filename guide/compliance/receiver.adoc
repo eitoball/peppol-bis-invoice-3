@@ -1,9 +1,8 @@
-= Receivers compliance to BIS
+= 受信者側での BIS への準拠
 [horizontal]
 
-== Processing of rules
-* A receiver SHALL NOT reject receiving messages which are compliant to the BIS.
+== ルールの処理
+* 受信者は、BIS に準拠したメッセージの受信を拒否することはできません。
 
-* A receiver MAY reject receiving messages which are not compliant to the BIS.
-
+* 受信者は、BIS に準拠しないメッセージの受信を拒否することができます。
 
