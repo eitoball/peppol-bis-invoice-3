@@ -1,14 +1,14 @@
 
-= Restrictions on the supported processes
+= サポートしているビジネスプロセスでの制限
 
-Chapter 5.2 in the {EN16931} defines the business processes supported by the {EN16931}.
+{EN19631} の第5.2章では、サポートしているビジネスプロセスを定義しています。
 
-This {CIUS} has made restrictions to not explicitly support the following business processes:
+本 {CIUS} では、以下に示すビジネスプロセスを明白にサポートしない制限をしています。:
 
-P10 - Corrective invoicing::
-The process as descibed for corrective invoicing was seen as unclear as to the  differentiating between a corrective invoice and a credit note, and this process was set to be out of scope.
+P10 - 訂正請求書::
+訂正請求書とクレジットノートの区別が曖昧なため、訂正請求書の処理はサポート外としています。
 
-P11 - Partial and final invoicing::
-Due to the fact that partial and final invoices does not require all information that is mandated, this process is out of scope for this PEPPOL BIS.
+P11 - 分割、および、最終請求書::
+分割、および、最終請求書では、必須なすべての情報を必要としないため、これらのプロセスはPEPPOL BIS のサポート外となります。
 
-P12 - Self billing:: Directive 2006/112/EC (Article 224) requires a specific process to be observed, involving prior agreement and a procedure where the supplier is to accept each invoice. Self-billing requires a specific set-up due to the requirements for prior agreement and procedure for the acceptance of each self-bill. Specific milestones have to be observed at time of setting it up as well as in the operation of self-billing.
+P12 - 自己請求書:: 指令 2006/112/EC（第224条）は、事前の合意と供給者が各請求書を受け入れる手続きを含む特定のプロセスを遵守することを必須としています。自己請求書は、事前の合意と各自己請求書の受領手続きの要件のため、特定の作成方法を必要とします。特定の目標は、自己請求書の運用だけでなく、設定時にも遵守される必要があります。

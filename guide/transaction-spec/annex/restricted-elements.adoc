@@ -1,172 +1,172 @@
 
 
-= Restrictions on the invoice and credit note transaction
+= 請求書・クレジットノート取引での制限
 
 [cols="2s,2s,3,3,2", options="header"]
 |====
 
-| BT-ID
-| Business Term
-| Restrition Type
-| Description
-| Rule
+| ビジネス用語ID
+| ビジネス用語
+| 制限のタイプ
+| 説明
+| ルール
 
 | BT-2 , BT-7 , BT-9 , BT-26, BT-72, BT-73, BT-74, BT-134, BT-135
-| All date elements
-| Add new non-conflicting business rule to existing element(s)
-| A date shall be formatted `YYYY-MM-DD`
+| 全ての日付要素
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 日付は YYYY-MM-DD 形式に固定
 | PEPPOL-EN16931-F001
 
 | BT-6
-| VAT accounting currency code
-| Add new non-conflicting business rule to existing element(s)
-| VAT accounting currency code shall be different from invoice currency code when provided.
+| 付加価値税（VAT）会計通貨コード
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 付加価値税（VAT）会計通貨コードは請求書貨幣コードと違うコードとすること
 | PEPPOL-EN16931-R005
 
 | BT-9, BT-20
-| Payment due date or payment terms
-| Change to existing CEN TC434 rule (issue reported to TC434)
-| Ensure the rule only fires for invoices, not credit notes
+| 支払い期日、もしくは、支払い期限
+| 既存の CEN TC434 ルールへの変更（TC434 委員会へ報告済み）
+| ルールを請求書のみに適用。クレジットノートは対象外。
 | BR-CO-25
 
 | BT-10, BT-13
-| Buyer reference or Purchase order
-| Add new non-conflicting business rule to existing element(s)
-| A buyer reference or purchase order reference shall be provided.
+| 売り手参照、もしくは、注文書
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 売り手、もしくは、注文書への参照を記載は必須
 | PEPPOL-EN16931-R003
 
 | BG-1
-| Invoice note
-| Decrease number of repetitions (x..n – > x..1)
-| Change cardinality from 0..n to 0..1
+| 請求書備考
+| 多重度の減少 (x..n – > x..1)
+| 多重度を 0..n から 0..1 へと変更
 | PEPPOL-EN16931-R002
 
 | BT-21
-| Invoice note subject code
-| Mark conditional information element not to be used
-| Changing cardinality 0..1 to 0..0
-| Not applicable
+| 請求書備考題目コード
+| 条件付き情報要素の使用禁止
+| 多重度を 0..1 から 0..0 へと変更
+| 該当なし
 
 | BT-23
-| Business process type
-| Make a conditional element mandatory (0..x  – > 1..x)
-| Changing cardinality 0..1 to 1..1
+| ビジネスプロセスタイプ
+| 任意の要素を必須化 (0..x – > 1..x)
+| 多重度を 0..1 から 1..1 へ変更
 | PEPPOL-EN16931-R001
 
 | BT-24
-| Specification identifier
-| Add new non-conflicting business rule to existing element(s)
-| Specification identifier shall have the value +
-'urn:cen.eu:en16931:2017#compliant# +
- urn:fdc:peppol.eu:2017:poacc:billing:3.0'. +
-*(Remove spaces before use of value)*
+| 仕様識別子
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 仕様識別子は
+'urn:cen.eu:en16931:2017#compliant#
+urn:fdc:peppol.eu:2017:poacc:billing:3.0'.
+*(値を使用する場合は空白を削除して下さい)*
 | PEPPOL-EN16931-R004
 
 | BT-34
-| Seller electronic address
-| Make a conditional element mandatory (0..x  – > 1..x)
-| Seller electronic address shall be provided
+| 売り手の電子アドレス
+| 任意の要素を必須化 (0..x – > 1..x)
+| 売り手の電子アドレスは必須
 | PEPPOL-EN16931-R020
 
 | BT-49
-| Buyer electronic address
-| Make a conditional element mandatory (0..x  – > 1..x)
-| Buyer electronic address shall be provided
+| 買い手の電子アドレス
+| 任意の要素を必須化 (0..x – > 1..x)
+| 買い手の電子アドレスは必須
 | PEPPOL-EN16931-R010
 
 | BG-19
-| Direct debit
-| Add new non-conflicting business rule to existing element(s)
-| Mandate reference shall be provided for direct debit.
+| 口座引き落とし
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 口座引き落としでは委任参照の記載は必須
 | PEPPOL-EN16931-R061
 
 | BT-93, BT-100, BT-137, BT-142
-| Allowance/charge base amount
-| Add new non-conflicting business rule to existing element(s)
-| Allowance/charge base amount shall be provided when allowance/charge percentage is provided.
+| 引当金・手数料の基準金額
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 引当金・手数料の割合を記載している場合は基準金額の記載は必須
 | PEPPOL-EN16931-R041
 
 | BT-94, BT-101, BT-138, BT-143
-| Allowance/charge percentage
-| Add new non-conflicting business rule to existing element(s)
-| Allowance/charge percentage shall be provided when allowance/charge base amount is provided.
+| 引当金・手数料の割合
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 引当金・手数料の基準金額を記載している場合は割合の記載は必須
 | PEPPOL-EN16931-R042
 
 | BT-92, BT-99, BT-136, BT-141
-| Allowance/charge amount
-| Add new non-conflicting business rule to existing element(s)
-| If base amount and percentage exists in the instance, then +
-stem:["Allowance/charge amount" =] +
-stem:["base amount" times ("percentage" div 100)]
+| 引当金・手数料の額
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 文書インスタンスに基準額と割合が記載されている場合には +
+stem:["引当金・手数料の額" =] +
+stem:["基準額" × ("割合" ÷ 100)]
 | PEPPOL-EN16931-R040
 
 | BT-98, BT-140
-| Allowance reason code
-| Mark defined values as not allowed
-| Reason code shall be according to subset of UNCL 5189 D.16B.
+| 引当金理由コード
+| 適宜されている値の不許可
+| 理由コードには、FLIP 5189 D.16B の一部のみ
 | PEPPOL-EN16931-CL002
 
 | BT-110
-| Invoice total VAT amount
-| Add new non-conflicting business rule to existing element(s)
-| Only one tax total without tax subtotals shall be provided when tax currency code is provided.
+| 請求書付加価値税（VAT）合計額
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 税通貨コードを記載する場合は、税小計を記載していない税合計1つ記載する必要があります。
 | PEPPOL-EN16931-R054
 
 | BG-23
-| VAT breakdown
-| Add new non-conflicting business rule to existing element(s)
-| Only one tax total with tax subtotals shall be provided
+| 付加価値税（VAT）明細
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 税小計付きの税合計を1つ記載する必要があります。
 | PEPPOL-EN16931-R053
 
 | BG-23
-| VAT breakdown
-| Add new non-conflicting business rule to existing element(s)
-| Only one tax total without tax subtotals shall be provided when tax currency code is provided.
+| 付加価値税（VAT）明細
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 税通貨コードを記載する場合は、税小計を記載していない税合計1つ記載する必要があります。
 | PEPPOL-EN16931-R054
 
 | BT-131
-| Invoice line net amount
-| Add new non-conflicting business rule to existing element(s)
-| Calculation shall equal
-stem:[ ("Invoiced quantity" times ("Item net price" div "item price base amount"))] +
-stem:[ + "Invoice line charge amount"] +
-stem:[ - "Invoice line allowance amount"]
+| 請求明細総額
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 計算が正しくなっている必要があります。
+stem:[ ("数量" × ("正価" ÷ "基準数量あたり価格"))] +
+stem:[ + "明細手数料"] +
+stem:[ - "明細引当金"]
 | PEPPOL-EN16931-R120
 
 | BT-134
-| Invoice line period start date
-| Add new non-conflicting business rule to existing element(s)
-| Start date of line period shall be within invoice period.
+| 請求明細行の期間開始日
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 請求明細行の期間開始日は請求期間内である必要があります。
 | PEPPOL-EN16931-R110
 
 | BT-135
-| Invoice line period end date
-| Add new non-conflicting business rule to existing element(s)
-| End date of line period shall be within invoice period.
+| 請求明細行の期間終了日
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 請求明細行の期間終了日は請求期間内である必要があります。
 | PEPPOL-EN16931-R111
 
 | BT-146
-| Item net price
-| Add new non-conflicting business rule to existing element(s)
-| Item net price shall equal (Gross price - Allowance amount) when gross price is provided.
+| 明細合計額
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 総値段が記載されている場合には、明細合計額は (総値段 - 引当金額) と等しくなっている必要があります。
 | PEPPOL-EN16931-R046
 
 | BT-149
-| Item price base quantity
-| Add new non-conflicting business rule to existing element(s)
-| Base quantity shall be a positive number above zero.
+| 商品価格基準数量
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 商品価格基準数量は 0 以上の正の数である必要があります。
 | PEPPOL-EN16931-R121
 
 | BT-150
-| Item price base quantity unit of measure
-| Add new non-conflicting business rule to existing element(s)
-| Unit code of price base quantity shall be same as invoiced quantity.
+| 商品価格基準数量の測定単位コード
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 商品価格基準数量の測定単位コードは、請求数量の測定単位コードと同じである必要があります。
 | PEPPOL-EN16931-R130
 
-| Not applicable
-| All currencyID attributes
-| Add new non-conflicting business rule to existing element(s)
-| All currencyID attributes shall have the same value as the invoice currency code (BT-5), except for the invoice total VAT amount in accounting currency (BT-111)
+| 該当なし
+| すべての currencyID 属性
+| 既存の要素への新しい矛盾しないビジネスルールの追加
+| 会計通貨 (BT-111) の請求書付加価値税（VAT）合計額を除く すべての currencyID 属性には、請求書の通貨コード（BT-5）と同じ値を記載する必要があります。
 | PEPPOL-EN16931-R051
 
 |====

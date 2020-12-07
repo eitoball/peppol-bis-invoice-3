@@ -1,20 +1,20 @@
 
-= Restrictions for profile 01 - Billing
+= プロファイル 01 - 請求での制限
 
 
 [cols="1s,2s,2,4,1", options="header"]
 |====
 
-| BT-ID
-| Business Term
-| Restrition Type
-| Description
-| Rule
+| ビジネス用語ID
+| ビジネス用語
+| 制限のタイプ
+| 説明
+| ルール
 
 | BT-3
-| Invoice type code
-| Mark defined values as not allowed
-| Allowed set of values can be found in <<Invoice Type Code>>
+| 請求書タイプコード
+| 定義されている値の使用禁止
+| 許可されている値の一覧は <<Invoice Type Code>> にあります
 | PEPPOL-EN16931-P0100, PEPPOL-EN16931-P0101
 
 |====

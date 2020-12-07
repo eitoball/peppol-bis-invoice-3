@@ -1,18 +1,18 @@
 
-= Known Issues for profile 01 - Billing
+= プロファイル 01 - 請求に関する既知の問題について
 
 
 [cols="1s,2s,4,3", options="header"]
 |====
 
-| BT-ID
-| Business Term
-| Known Issue
-| Work Around
+| ビジネス用語ID
+| ビジネス用語
+| 既知の問題
+| 対処方法
 
 | BT-60, BT-90
-| Payee identifier with cardinality, Bank assigned creditor identifier
-| In the EN 16931 data model BT-60 and BT-90 are business terms that are defined independently of each other. Both map onto PayeeParty/PartyIdentification/ID. However, the cardinalities stated in the syntax block simultaneous use of the BT-60 and BT-90 identifiers. This situation might arise if the payment provision is to be based on factored SEPA direct debit.
-| None
+| 複数の受取人識別子、銀行提供の債権者識別子
+| EN 16931データモデルでは、 BT-60 と BT-90 は、互いに独立して定義されるビジネス用語である。両方とも PayeeParty/PartyIdentification/ID に対応します。しかし、構文に記載されている多重度は、BT-60とBT-90 識別子の同時に使用できません。この状況は、支払い規定が、事実上の SEPA 口座引き落としに基づいている場合に発生する可能性があります。
+| なし
 
 |====
