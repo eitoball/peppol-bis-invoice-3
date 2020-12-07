@@ -2,9 +2,6 @@
 [[allowance-calc]]
 = 値引きと手数料の計算
 
-Allowance and charge on document- and line level consists of elements carrying information on the allowance/charge base amount and the allowance/charge percentage. These are, if present in the invoice instance, used for calculating the allowance/charge amount.
-
-If base amount is present, the percentage shall also be present, and if percentage is present, the base amount shall also be present, and the calculation of the amount shall be:
 文書、および、明細行での値引きと手数料は、値引きと手数料の基準額、および、割合に関する情報を記載した要素で構成されます。これらは、請求書のインスタンスに存在する場合、明細行と値引きを計算するために使用されます。
 
 基準額がある場合には、割合が必要で、割合がある場合には、基準額も必要で、その金額を計算する必要があります。

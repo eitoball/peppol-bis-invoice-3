@@ -1,24 +1,24 @@
 
 
-.UBL example of invoice line net amount where no line allowance/charge exist
+.引当金・手数料がない場合の請求明細総額の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Calc.xml[tags=lineamount]
 ----
-<1> Item net price
-<2> Item price base quantity
-<3> Invoiced quantity
-<4> stem:["Invoice line net amount" = (("Item net price" div "Item price base quantity") times ("Invoiced Quantity")]
+<1> 明細合計額
+<2> 商品価格基準数量
+<3> 数量
+<4> stem:["請求明細総額" = (("明細合計額" div "商品価格基準数量") times ("数量")]
 
 
 
-.UBL example of invoice line net amount where line allowance and charge exist
+.引当金・手数料がある場合の請求明細総額の UBL での例
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Calc.xml[tags=lineamount2]
 ----
-<1> Item net price
-<2> Line charge amounts
-<3> Line allowance amount
-<4> Invoiced quantity
-<5> stem:["Invoice line net amount" = ("Item net price" times "Invoiced Quantity") + "line charge amount" - "line allowance amount"]
+<1> 明細合計額
+<2> 手数料
+<3> 引当金
+<4> 数量
+<5> stem:["請求明細総額" = ("明細合計額" times "数量") + "手数料" - "引当金"]

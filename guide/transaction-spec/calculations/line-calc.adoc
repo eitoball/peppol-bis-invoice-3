@@ -17,21 +17,21 @@ include::../../syntax/priceamount.adoc[]
 
 
 [[lineamount-calc]]
-== Invoice line net amount (BT-131)
+== 請求明細総額 (BT-131)
 
-The invoice line net amount (BT-131) is as the name implies the *net* amount without VAT, and inclusive of line level allowance and charges.
+請求明細総額 (BT-131) は、その名の通り、付加価値税（VAT）抜きの明細行での引当金と手数料を含む合計額です。
 
-The formula for calculating the invoice line net amount is:
+請求明細総額の計算式は以下になります:
 
 ====
-stem:["Item line net amount" = (("Item net price (BT-146)" div "Item price base quantity (BT-149)")] +
-stem:[times ("Invoiced Quantity (BT-129)")] +
-stem:[+ "Invoice line charge amount (BT-141)" - "Invoice line allowance amount (BT-136)"]
+stem:["請求明細総額" = (("明細合計額 (BT-146)" div "商品価格基準数量 (BT-149)")] +
+stem:[times ("数量 (BT-129)")] +
+stem:[+ "明細手数料 (BT-141)" - "明細引当金 (BT-136)"]
 ====
 
-IMPORTANT: As the line net amount must be rounded to two decimals, please note that the different parts of the calculation must be rounded separately. +
-I.e the result of
-stem:["Item line net amount" = (("Item net price (BT-146)" div "Item price base quantity (BT-149)") times ("Invoiced Quantity (BT-129)")]
-must be rounded to two decimals, and the allowance/charge amounts are also rounded separately.
+IMPORTANT: 請求明細合計は、小数点以下2桁に四捨五入する必要があるため、計算の異なる部分は個別に四捨五入する必要がありますのでご注意ください。 +
+つまり、
+stem:["請求明細総額" = (("明細合計額 (BT-146)" div "商品価格基準数量 (BT-149)") times ("数量 (BT-129)")] の結果は、
+小数点以下2桁に四捨五入しなければならず、手当・請求額も別途四捨五入しています。
 
 include::../../syntax/lineamount.adoc[]
